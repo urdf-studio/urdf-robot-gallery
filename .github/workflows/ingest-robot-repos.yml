@@ -22,6 +22,7 @@ jobs:
       issues: write
     steps:
       - name: Update robots.json from issue
+        id: ingest
         uses: actions/github-script@v7
         with:
           script: |
@@ -310,4 +311,28 @@ jobs:
               repo: context.repo.repo,
               issue_number: issue.number,
               body: "Auto-ingest: saved to robots.json.",
+            });
+
+            core.setOutput(
+              "dispatch_payload",
+              JSON.stringify({
+                issueNumber: issue.number,
+                repo: entry.repo,
+              })
+            );
+
+      - name: Trigger URDF Studio sync
+        if: ${{ steps.ingest.outputs.dispatch_payload != '' && secrets.URDF_STUDIO_DISPATCH_TOKEN != '' }}
+        uses: actions/github-script@v7
+        env:
+          DISPATCH_PAYLOAD: ${{ steps.ingest.outputs.dispatch_payload }}
+        with:
+          github-token: ${{ secrets.URDF_STUDIO_DISPATCH_TOKEN }}
+          script: |
+            const payload = JSON.parse(process.env.DISPATCH_PAYLOAD || "{}");
+            await github.rest.repos.createDispatchEvent({
+              owner: "amtellezfernandez",
+              repo: "urdf-star-studio",
+              event_type: "robot-repos-updated",
+              client_payload: payload,
             });
