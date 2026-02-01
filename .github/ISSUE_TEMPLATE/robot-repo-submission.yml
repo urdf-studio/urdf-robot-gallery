@@ -1,49 +1,27 @@
 name: Robot Repo Submission
-description: Suggest a robot repository to feature in URDF Robot Gallery.
+description: Submit a robot repository.
 title: "[Robot Repo] "
 labels:
   - robot-repo
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for sharing your robot repo! Please include a **GitHub repo link** and a **one-line summary**.
-        After you submit, we auto-detect URDF/Xacro files and comment back in ~1 minute.
-
-        **Required**
-        - GitHub repo URL
-        - Short summary
-
-        **Optional**
-        - Robot / project name
-        - Author or company / lab
-        - Tags
-        - Robots list (one per line)
   - type: input
     id: repo
     attributes:
       label: GitHub repo URL
-      description: "Paste the GitHub repository URL you want featured."
-      placeholder: https://github.com/org/repo
     validations:
       required: true
   - type: input
     id: name
     attributes:
       label: Robot / project name (optional)
-      description: "If left blank, we will use the repo name."
-      placeholder: SO100
   - type: input
     id: org
     attributes:
       label: Author / Company / Lab (optional)
-      description: "Who created or maintains the robot."
   - type: textarea
     id: summary
     attributes:
       label: Short summary
-      description: "One line about what makes it interesting."
-      placeholder: Lightweight humanoid arm with sample URDF.
     validations:
       required: true
   - type: input
@@ -54,19 +32,15 @@ body:
     id: tags
     attributes:
       label: Tags (optional)
-      description: "Comma-separated (e.g. arm, urdf, simulation)."
   - type: textarea
     id: robots
     attributes:
-      label: Robots inside the repo (optional)
-      description: "One per line. Example: SO100 — urdf/so100.urdf"
+      label: Robots (optional)
   - type: input
     id: contact
     attributes:
       label: Contact (optional)
-      description: Email, Discord, or other contact.
   - type: textarea
     id: extra
     attributes:
       label: Extra links or notes (optional)
-      description: Papers, videos, docs, etc.
