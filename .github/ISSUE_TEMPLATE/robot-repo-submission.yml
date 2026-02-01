@@ -49,7 +49,9 @@ body:
     id: robots
     attributes:
       label: Robots (optional)
-      placeholder: SO100 — urdf/so100.urdf\nSO101 — urdf/so101.urdf
+      placeholder: |-
+        SO100 — urdf/so100.urdf
+        SO101 — urdf/so101.urdf
   - type: input
     id: contact
     attributes:
