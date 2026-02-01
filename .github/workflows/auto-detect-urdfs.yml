@@ -1,0 +1,141 @@
+name: Auto-detect URDFs
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+jobs:
+  detect:
+    if: contains(join(github.event.issue.labels.*.name, ','), 'robot-repo')
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+    steps:
+      - name: Scan repo and comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const body = issue.body || "";
+            const repoUrlMatch = body.match(/https?:\/\/github\.com\/[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+(?:\/[^\s\)]*)?/);
+            if (!repoUrlMatch) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: "Auto-detect: I couldn't find a GitHub repo URL in this issue. Please add it so I can scan for URDF files.",
+              });
+              return;
+            }
+
+            const repoUrl = repoUrlMatch[0];
+            const parsed = (() => {
+              try {
+                const url = new URL(repoUrl);
+                const parts = url.pathname.split("/").filter(Boolean);
+                const owner = parts[0];
+                const repo = parts[1];
+                let path = "";
+                if (parts.length > 2 && parts[2] === "tree") {
+                  if (parts.length > 4) {
+                    path = parts.slice(4).join("/");
+                  }
+                } else if (parts.length > 2) {
+                  path = parts.slice(2).join("/");
+                }
+                return { owner, repo, path };
+              } catch {
+                return null;
+              }
+            })();
+
+            if (!parsed) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: `Auto-detect: I couldn't parse this repo URL: ${repoUrl}`,
+              });
+              return;
+            }
+
+            const { owner, repo, path } = parsed;
+            let defaultBranch = "main";
+            try {
+              const repoInfo = await github.rest.repos.get({ owner, repo });
+              defaultBranch = repoInfo.data.default_branch || "main";
+            } catch (error) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: `Auto-detect: I couldn't access ${owner}/${repo}. Is it public?`,
+              });
+              return;
+            }
+
+            const treeRef = path ? `${defaultBranch}:${path}` : defaultBranch;
+            let treeData;
+            try {
+              treeData = await github.rest.git.getTree({
+                owner,
+                repo,
+                tree_sha: treeRef,
+                recursive: "1",
+              });
+            } catch (error) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: `Auto-detect: I couldn't read the repo tree for ${owner}/${repo}.`,
+              });
+              return;
+            }
+
+            const tree = Array.isArray(treeData.data.tree) ? treeData.data.tree : [];
+            const filtered = tree.filter(
+              (entry) =>
+                entry.type === "blob" &&
+                (entry.path.endsWith(".urdf") || entry.path.endsWith(".xacro"))
+            );
+
+            const limited = filtered.slice(0, 50).map((entry) => `- ${entry.path}`);
+            const truncated = treeData.data.truncated ? "\nNote: GitHub API returned a truncated tree." : "";
+            const listBlock = limited.length ? `\n\n${limited.join("\n")}` : "\n\nNo URDF/Xacro files found.";
+            const bodyText =
+              `Auto-detect: found ${filtered.length} URDF/Xacro file(s) in ${owner}/${repo}.` +
+              listBlock +
+              truncated +
+              "\n\nIf you want specific robots featured, list them in the issue.";
+
+            const comments = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+            });
+
+            const existing = comments.data.find(
+              (comment) =>
+                comment.user &&
+                comment.user.type === "Bot" &&
+                comment.body &&
+                comment.body.startsWith("Auto-detect:")
+            );
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body: bodyText,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: bodyText,
+              });
+            }
