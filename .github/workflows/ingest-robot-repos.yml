@@ -1,0 +1,287 @@
+name: Ingest robot repo submissions
+
+on:
+  issues:
+    types: [opened, edited]
+
+concurrency:
+  group: ingest-robot-repos
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    if: contains(join(github.event.issue.labels.*.name, ','), 'robot-repo')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - name: Update robots.json from issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const body = issue.body || "";
+
+            const clean = (value) => {
+              if (!value) return "";
+              const trimmed = value.trim();
+              if (!trimmed || trimmed.toLowerCase() === "no response" || trimmed === "_No response_") {
+                return "";
+              }
+              return trimmed;
+            };
+
+            const parseIssueFields = (text) => {
+              const fields = {};
+              const regex = /^###\s+(.+)\n+([\s\S]*?)(?=^###\s+|\Z)/gm;
+              let match;
+              while ((match = regex.exec(text)) !== null) {
+                fields[match[1].trim()] = clean(match[2]);
+              }
+              return fields;
+            };
+
+            const parseRepoUrl = (url) => {
+              try {
+                const normalized = url.trim().replace(/\/$/, "");
+                if (!normalized.includes("github.com")) {
+                  const parts = normalized.split("/").filter(Boolean);
+                  if (parts.length >= 2) {
+                    return { owner: parts[0], repo: parts[1], path: parts.slice(2).join("/") || "" };
+                  }
+                  return null;
+                }
+                const urlObj = new URL(normalized);
+                const parts = urlObj.pathname.split("/").filter(Boolean);
+                if (parts.length < 2) return null;
+                const owner = parts[0];
+                const repo = parts[1];
+                let path = "";
+                if (parts.length > 2 && parts[2] === "tree") {
+                  if (parts.length > 4) {
+                    path = parts.slice(4).join("/");
+                  }
+                } else if (parts.length > 2) {
+                  path = parts.slice(2).join("/");
+                }
+                return { owner, repo, path };
+              } catch {
+                return null;
+              }
+            };
+
+            const parseLines = (value) =>
+              value
+                .split(/\r?\n/)
+                .map((line) => line.trim())
+                .filter(Boolean);
+
+            const parseTags = (value) => {
+              if (!value) return [];
+              return value
+                .split(/[,\n]/)
+                .map((tag) => tag.trim())
+                .filter(Boolean);
+            };
+
+            const parseRobotMapping = (value) => {
+              if (!value) return [];
+              const lines = parseLines(value);
+              const robots = [];
+              for (const line of lines) {
+                let name = "";
+                let file = "";
+                const separators = [" — ", " – ", " - ", " —", " –", " -"];
+                let parts = null;
+                for (const sep of separators) {
+                  if (line.includes(sep)) {
+                    parts = line.split(sep);
+                    break;
+                  }
+                }
+                if (!parts && line.includes(":")) {
+                  parts = line.split(":");
+                }
+                if (parts && parts.length >= 2) {
+                  name = parts[0].trim();
+                  file = parts.slice(1).join("-").trim();
+                } else {
+                  name = line.trim();
+                }
+                if (!name && !file) continue;
+                if (file) {
+                  const fileName = file.split("/").pop() || file;
+                  robots.push({ name: name || fileName.replace(/\.urdf$/i, ""), file: fileName });
+                } else {
+                  robots.push({ name });
+                }
+              }
+              return robots;
+            };
+
+            const fields = parseIssueFields(body);
+            const repoUrl = clean(fields["GitHub repo URL"]);
+            if (!repoUrl) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: "Auto-ingest: missing GitHub repo URL.",
+              });
+              return;
+            }
+
+            const repoInfo = parseRepoUrl(repoUrl);
+            if (!repoInfo) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: `Auto-ingest: couldn't parse repo URL: ${repoUrl}`,
+              });
+              return;
+            }
+
+            const { owner, repo, path } = repoInfo;
+            let defaultBranch = "main";
+            try {
+              const repoData = await github.rest.repos.get({ owner, repo });
+              defaultBranch = repoData.data.default_branch || "main";
+            } catch (error) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: `Auto-ingest: couldn't access ${owner}/${repo}.`,
+              });
+              return;
+            }
+
+            const fetchTree = async () => {
+              const treeRef = path ? `${defaultBranch}:${path}` : defaultBranch;
+              try {
+                const tree = await github.rest.git.getTree({
+                  owner,
+                  repo,
+                  tree_sha: treeRef,
+                  recursive: "1",
+                });
+                return tree.data.tree || [];
+              } catch {
+                if (!path) return [];
+                const rootTree = await github.rest.git.getTree({
+                  owner,
+                  repo,
+                  tree_sha: defaultBranch,
+                  recursive: "1",
+                });
+                return (rootTree.data.tree || []).filter((entry) => entry.path.startsWith(path));
+              }
+            };
+
+            const tree = await fetchTree();
+            const urdfFiles = tree
+              .filter((entry) => entry.type === "blob" && entry.path.toLowerCase().endsWith(".urdf"))
+              .map((entry) => entry.path);
+
+            const mapping = parseRobotMapping(clean(fields["Robot mapping (optional)"]));
+            const robots =
+              mapping.length > 0
+                ? mapping
+                : urdfFiles.map((filePath) => {
+                    const fileName = filePath.split("/").pop() || filePath;
+                    return { name: fileName.replace(/\.urdf$/i, ""), file: fileName };
+                  });
+
+            const entry = {
+              repo: `https://github.com/${owner}/${repo}`,
+              repoKey: `${owner}/${repo}`.toLowerCase(),
+              path: path || undefined,
+              org: clean(fields["Author / Company / Lab (optional)"]),
+              summary: clean(fields["Short summary"]),
+              demo: clean(fields["Demo URL (optional)"]),
+              tags: parseTags(clean(fields["Tags (optional)"])),
+              robots: robots.length ? robots : undefined,
+              hfDatasets: parseLines(clean(fields["Hugging Face datasets (one per line, optional)"])),
+              authorWebsite: clean(fields["Author website (optional)"]),
+              authorX: clean(fields["Author X/Twitter (optional)"]),
+              authorLinkedin: clean(fields["Author LinkedIn (optional)"]),
+              authorGithub: clean(fields["Author GitHub (optional)"]),
+              contact: clean(fields["Contact (optional)"]),
+              extra: clean(fields["Extra links or notes (optional)"]),
+              updatedAt: new Date().toISOString(),
+            };
+
+            const normalizeRepoKey = (value) =>
+              value
+                ? value
+                    .replace(/^https?:\/\/github\.com\//, "")
+                    .split("/")
+                    .slice(0, 2)
+                    .join("/")
+                    .toLowerCase()
+                : "";
+
+            let existing = [];
+            let existingSha = null;
+            try {
+              const file = await github.rest.repos.getContent({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                path: "docs/robots.json",
+              });
+              if (!Array.isArray(file.data) && file.data.content) {
+                const decoded = Buffer.from(file.data.content, "base64").toString("utf8");
+                existing = JSON.parse(decoded);
+                existingSha = file.data.sha;
+              }
+            } catch {
+              existing = [];
+            }
+
+            const repoKey = entry.repoKey;
+            const idx = existing.findIndex((item) => normalizeRepoKey(item.repo || item.repoKey) === repoKey);
+            if (idx >= 0) {
+              const prev = existing[idx];
+              const mergeValue = (value, fallback) => (value !== undefined && value !== "" ? value : fallback);
+              const mergeArray = (value, fallback) => (Array.isArray(value) && value.length ? value : fallback);
+              existing[idx] = {
+                ...prev,
+                repo: entry.repo || prev.repo,
+                repoKey,
+                path: mergeValue(entry.path, prev.path),
+                org: mergeValue(entry.org, prev.org),
+                summary: mergeValue(entry.summary, prev.summary),
+                demo: mergeValue(entry.demo, prev.demo),
+                tags: mergeArray(entry.tags, prev.tags),
+                robots: mergeArray(entry.robots, prev.robots),
+                hfDatasets: mergeArray(entry.hfDatasets, prev.hfDatasets),
+                authorWebsite: mergeValue(entry.authorWebsite, prev.authorWebsite),
+                authorX: mergeValue(entry.authorX, prev.authorX),
+                authorLinkedin: mergeValue(entry.authorLinkedin, prev.authorLinkedin),
+                authorGithub: mergeValue(entry.authorGithub, prev.authorGithub),
+                contact: mergeValue(entry.contact, prev.contact),
+                extra: mergeValue(entry.extra, prev.extra),
+                updatedAt: entry.updatedAt,
+              };
+            } else {
+              existing.unshift(entry);
+            }
+
+            const content = Buffer.from(JSON.stringify(existing, null, 2)).toString("base64");
+            await github.rest.repos.createOrUpdateFileContents({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              path: "docs/robots.json",
+              message: `Update robots.json from issue #${issue.number}`,
+              content,
+              sha: existingSha || undefined,
+            });
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              body: "Auto-ingest: saved to robots.json.",
+            });
