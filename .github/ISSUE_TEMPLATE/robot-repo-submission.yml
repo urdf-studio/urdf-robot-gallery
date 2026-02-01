@@ -20,6 +20,26 @@ body:
     attributes:
       label: Author / Company / Lab (optional)
       placeholder: The Robot Studio
+  - type: input
+    id: author_site
+    attributes:
+      label: Author website (optional)
+      placeholder: https://www.therobotstudio.com/
+  - type: input
+    id: author_x
+    attributes:
+      label: Author X/Twitter (optional)
+      placeholder: https://x.com/yourhandle
+  - type: input
+    id: author_linkedin
+    attributes:
+      label: Author LinkedIn (optional)
+      placeholder: https://www.linkedin.com/company/yourcompany
+  - type: input
+    id: author_github
+    attributes:
+      label: Author GitHub (optional)
+      placeholder: https://github.com/yourorg
   - type: textarea
     id: summary
     attributes:
