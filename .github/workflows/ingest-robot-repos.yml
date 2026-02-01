@@ -141,7 +141,13 @@ jobs:
             };
 
             const fields = parseIssueFields(body);
-            const repoUrl = clean(fields["GitHub repo URL"]);
+            let repoUrl = clean(fields["GitHub repo URL"]);
+            if (!repoUrl) {
+              const match = body.match(/https?:\/\/github\.com\/[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+(?:\/[^\s\)]*)?/);
+              if (match) {
+                repoUrl = match[0];
+              }
+            }
             if (!repoUrl) {
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
