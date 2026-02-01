@@ -5,7 +5,7 @@ A lightweight, public list of robot repositories curated for URDF Studio.
 ## How to submit
 
 Use the submission form:
-https://github.com/urdf-studio/urdf-robot-gallery/issues/new?template=robot-repo-submission.yml
+https://github.com/urdf-studio/urdf-robot-gallery/issues/new/choose
 
 ## Data source
 

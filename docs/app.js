@@ -1,6 +1,6 @@
 const dataUrl = "robots.json";
 const issueUrl =
-  "https://github.com/urdf-studio/urdf-robot-gallery/issues/new?template=robot-repo-submission.yml";
+  "https://github.com/urdf-studio/urdf-robot-gallery/issues/new/choose";
 
 const grid = document.getElementById("grid");
 const emptyState = document.getElementById("empty");
