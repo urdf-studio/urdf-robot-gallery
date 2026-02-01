@@ -1,13 +1,13 @@
 name: Robot Repo Submission
 description: Submit a robot repository.
-title: "showcase-request"
+title: "robot-showcase-request"
 labels:
   - robot-repo
 body:
   - type: markdown
     attributes:
       value: |
-        Please keep the default issue title: **showcase-request**
+        Please keep the default issue title: **robot-showcase-request**
   - type: input
     id: repo
     attributes:
