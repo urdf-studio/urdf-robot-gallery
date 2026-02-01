@@ -19,6 +19,12 @@ body:
         - Author or company / lab
         - Tags
         - Robots list (one per line)
+
+        **Example**
+        - Repo: https://github.com/acme/so100
+        - Summary: Lightweight humanoid arm with URDF + meshes
+        - Author: Acme Robotics
+        - Robots: SO100 — urdf/so100.urdf
   - type: input
     id: repo
     attributes:
