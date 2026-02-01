@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>URDF Robot Gallery</title>
+    <meta
+      name="description"
+      content="Curated robot repositories for URDF Studio. Submit your repo to be featured."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div>
+          <p class="eyebrow">URDF STUDIO</p>
+          <h1>URDF Robot Gallery</h1>
+          <p class="subhead">
+            A curated list of robot repositories. Submit yours to be featured.
+          </p>
+        </div>
+        <div class="header-actions">
+          <a class="btn ghost" href="https://urdfstudio.com" target="_blank" rel="noopener noreferrer">
+            Main site
+          </a>
+          <a
+            class="btn primary"
+            href="https://github.com/urdf-studio/urdf-robot-gallery/issues/new?template=robot_repo_submission.yml"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Submit a robot
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="controls">
+        <div class="stats">
+          <span id="robot-count">0</span> robots featured
+        </div>
+        <div class="search">
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Search by name, org, tags..."
+            autocomplete="off"
+          />
+        </div>
+      </section>
+
+      <section id="grid" class="grid"></section>
+
+      <section id="empty" class="empty-state hidden">
+        <p>No robots yet. Be the first to submit your repo.</p>
+        <a
+          class="btn primary"
+          href="https://github.com/urdf-studio/urdf-robot-gallery/issues/new?template=robot_repo_submission.yml"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Submit a robot
+        </a>
+      </section>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

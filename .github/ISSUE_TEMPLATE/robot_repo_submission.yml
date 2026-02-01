@@ -1,0 +1,57 @@
+name: Robot Repo Submission
+description: Suggest a robot repository to feature in URDF Robot Gallery.
+title: "[Robot Repo] "
+labels:
+  - robot-repo
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for sharing your robot repo! Fill the short form below.
+        Only **name**, **repo**, and **summary** are required.
+  - type: input
+    id: name
+    attributes:
+      label: Robot name
+      description: The robot or project name.
+      placeholder: SO100
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub repo URL
+      placeholder: https://github.com/org/repo
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Short summary
+      description: One line about what makes it interesting.
+      placeholder: Lightweight humanoid arm with sample URDF.
+    validations:
+      required: true
+  - type: input
+    id: org
+    attributes:
+      label: Company / Lab (optional)
+  - type: input
+    id: demo
+    attributes:
+      label: Demo URL (optional)
+  - type: input
+    id: tags
+    attributes:
+      label: Tags (optional)
+      description: Comma-separated (e.g. arm, urdf, simulation).
+  - type: input
+    id: contact
+    attributes:
+      label: Contact (optional)
+      description: Email, Discord, or other contact.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Extra links or notes (optional)
+      description: Papers, videos, docs, etc.
