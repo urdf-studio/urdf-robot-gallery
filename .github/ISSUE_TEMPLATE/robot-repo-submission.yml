@@ -40,7 +40,8 @@ body:
   - type: textarea
     id: hf_datasets
     attributes:
-      label: Hugging Face datasets (optional)
+      label: Hugging Face datasets (one per line, optional)
+      description: Paste one link per line.
       placeholder: https://huggingface.co/datasets/your-dataset
   - type: textarea
     id: robots
