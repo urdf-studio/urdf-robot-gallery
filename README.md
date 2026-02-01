@@ -9,4 +9,4 @@ https://github.com/urdf-studio/urdf-robot-gallery/issues/new?template=robot-repo
 
 ## Where the gallery is displayed
 
-The public gallery is displayed on the URDF Studio website (not via GitHub Pages).
+The public gallery is displayed on https://www.urdfstudio.com (not via GitHub Pages).
