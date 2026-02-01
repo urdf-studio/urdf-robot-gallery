@@ -164,6 +164,11 @@ h1 {
   color: rgba(240, 240, 240, 0.7);
 }
 
+.card p.robots {
+  font-size: 0.78rem;
+  color: rgba(240, 240, 240, 0.55);
+}
+
 .card .tags {
   display: flex;
   flex-wrap: wrap;

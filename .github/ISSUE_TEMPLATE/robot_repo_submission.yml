@@ -10,20 +10,18 @@ body:
         Thanks for sharing your robot repo! Fill the short form below.
         Only **name**, **repo**, and **summary** are required.
   - type: input
-    id: name
-    attributes:
-      label: Robot name
-      description: The robot or project name.
-      placeholder: SO100
-    validations:
-      required: true
-  - type: input
     id: repo
     attributes:
       label: GitHub repo URL
       placeholder: https://github.com/org/repo
     validations:
       required: true
+  - type: input
+    id: name
+    attributes:
+      label: Robot / project name (optional)
+      description: If left blank, we will use the repo name.
+      placeholder: SO100
   - type: textarea
     id: summary
     attributes:
@@ -45,6 +43,11 @@ body:
     attributes:
       label: Tags (optional)
       description: Comma-separated (e.g. arm, urdf, simulation).
+  - type: textarea
+    id: robots
+    attributes:
+      label: Robots inside the repo (optional)
+      description: One per line. Example: `SO100 — urdf/so100.urdf`
   - type: input
     id: contact
     attributes:

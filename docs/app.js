@@ -35,7 +35,8 @@ const renderCard = (robot) => {
 
   const heading = document.createElement("div");
   const name = document.createElement("h3");
-  name.textContent = robot.name;
+  const fallbackName = robot.repo ? robot.repo.split("/").slice(-2).join("/") : "Robot Repo";
+  name.textContent = robot.name || fallbackName;
   heading.appendChild(name);
   if (robot.org) {
     const org = document.createElement("div");
@@ -46,6 +47,14 @@ const renderCard = (robot) => {
 
   const summary = document.createElement("p");
   summary.textContent = robot.summary;
+
+  let robotsLine = null;
+  if (Array.isArray(robot.robots) && robot.robots.length > 0) {
+    const names = robot.robots.map((entry) => entry.name || entry).join(", ");
+    robotsLine = document.createElement("p");
+    robotsLine.className = "robots";
+    robotsLine.textContent = `Robots: ${names}`;
+  }
 
   const tags = document.createElement("div");
   tags.className = "tags";
@@ -78,6 +87,9 @@ const renderCard = (robot) => {
 
   card.appendChild(heading);
   card.appendChild(summary);
+  if (robotsLine) {
+    card.appendChild(robotsLine);
+  }
   if (robot.tags && robot.tags.length) {
     card.appendChild(tags);
   }
