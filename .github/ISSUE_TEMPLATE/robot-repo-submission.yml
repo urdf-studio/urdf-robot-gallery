@@ -67,7 +67,7 @@ body:
     id: robots
     attributes:
       label: Robot mapping (optional)
-      description: Use "RobotName — file.urdf" (filename only; no path).
+      description: Use "RobotName — file.urdf" (filename only; no path). If omitted, we use the .urdf filename as the robot name.
       placeholder: |-
         SO-ARM100 — so100.urdf
         SO-ARM101 — so101_new_calib.urdf
