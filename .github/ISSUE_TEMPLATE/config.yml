@@ -1,5 +1,1 @@
 blank_issues_enabled: false
-contact_links:
-  - name: Browse the gallery
-    url: https://urdf-studio.github.io/urdf-robot-gallery/
-    about: View the current list of featured robot repositories.
