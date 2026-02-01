@@ -17,3 +17,9 @@ labels: robot-repo
 - Demo URL:
 - Contact:
 - Extra links or notes:
+
+**Example**
+- GitHub repo URL: https://github.com/TheRobotStudio/SO-ARM100
+- Author / Company / Lab: The Robot Studio
+- Robot / project name: SO100, SO101
+- Tags: LeRobotCompatible, HuggingFace, Arm, Gripper

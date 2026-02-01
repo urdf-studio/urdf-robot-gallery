@@ -8,32 +8,39 @@ body:
     id: repo
     attributes:
       label: GitHub repo URL
+      placeholder: https://github.com/TheRobotStudio/SO-ARM100
     validations:
       required: true
   - type: input
     id: name
     attributes:
       label: Robot / project name (optional)
+      placeholder: SO100, SO101
   - type: input
     id: org
     attributes:
       label: Author / Company / Lab (optional)
+      placeholder: The Robot Studio
   - type: textarea
     id: summary
     attributes:
       label: Short summary
+      placeholder: LeRobot-compatible SO-ARM100 with gripper.
   - type: input
     id: demo
     attributes:
       label: Demo URL (optional)
+      placeholder: https://huggingface.co/spaces/your-demo
   - type: input
     id: tags
     attributes:
       label: Tags (optional)
+      placeholder: LeRobotCompatible, HuggingFace, Arm, Gripper
   - type: textarea
     id: robots
     attributes:
       label: Robots (optional)
+      placeholder: SO100 — urdf/so100.urdf\nSO101 — urdf/so101.urdf
   - type: input
     id: contact
     attributes:
