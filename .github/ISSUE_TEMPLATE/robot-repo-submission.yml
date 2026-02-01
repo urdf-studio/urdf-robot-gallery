@@ -1,14 +1,17 @@
 name: Robot Repo Submission
 description: Submit a robot repository.
-title: "[Robot Repo]"
+title: "showcase-request"
 labels:
   - robot-repo
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Please keep the default issue title: **showcase-request**
   - type: input
     id: repo
     attributes:
       label: GitHub repo URL
-      description: Please keep the default issue title.
       placeholder: https://github.com/TheRobotStudio/SO-ARM100
     validations:
       required: true
