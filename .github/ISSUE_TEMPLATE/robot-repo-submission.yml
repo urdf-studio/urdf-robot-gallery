@@ -13,11 +13,6 @@ body:
     validations:
       required: true
   - type: input
-    id: name
-    attributes:
-      label: Robot / project name (optional)
-      placeholder: SO100, SO101
-  - type: input
     id: org
     attributes:
       label: Author / Company / Lab (optional)
