@@ -42,7 +42,9 @@ body:
     attributes:
       label: Hugging Face datasets (one per line, optional)
       description: Paste one link per line.
-      placeholder: https://huggingface.co/datasets/your-dataset
+      placeholder: |-
+        https://huggingface.co/datasets/your-dataset
+        https://huggingface.co/datasets/your-other-dataset
   - type: textarea
     id: robots
     attributes:
