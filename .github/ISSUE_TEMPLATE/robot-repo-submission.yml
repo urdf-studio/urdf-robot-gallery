@@ -48,8 +48,8 @@ body:
     attributes:
       label: Robots (optional)
       placeholder: |-
-        SO100 — urdf/so100.urdf
-        SO101 — urdf/so101.urdf
+        SO-ARM100 — so100.urdf
+        SO-ARM101 — so101_new_calib.urdf
   - type: input
     id: contact
     attributes:
