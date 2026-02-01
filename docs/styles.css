@@ -204,6 +204,46 @@ h1 {
   color: rgba(240, 240, 240, 0.6);
 }
 
+.site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 28px 0 40px;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-title {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.footer-note {
+  margin: 8px 0 0;
+  color: rgba(240, 240, 240, 0.6);
+  font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.footer-links a {
+  color: rgba(240, 240, 240, 0.7);
+  text-decoration: none;
+}
+
 .hidden {
   display: none;
 }
@@ -224,5 +264,9 @@ h1 {
 
   .search input {
     width: 100%;
+  }
+
+  .footer-inner {
+    align-items: flex-start;
   }
 }
