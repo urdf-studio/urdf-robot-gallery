@@ -7,12 +7,23 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for sharing your robot repo! Fill the short form below.
-        Only **name**, **repo**, and **summary** are required.
+        Thanks for sharing your robot repo! Please include a **GitHub repo link**, a **one-line summary**, and (optionally) the **author/company**.
+        After you submit, we will auto-detect URDF/Xacro files and comment back in ~1 minute.
+
+        **Required**
+        - GitHub repo URL
+        - Short summary
+
+        **Optional**
+        - Robot / project name
+        - Author or company / lab
+        - Tags
+        - Robots list (one per line)
   - type: input
     id: repo
     attributes:
       label: GitHub repo URL
+      description: Paste the GitHub repository URL you want featured.
       placeholder: https://github.com/org/repo
     validations:
       required: true
@@ -22,6 +33,11 @@ body:
       label: Robot / project name (optional)
       description: If left blank, we will use the repo name.
       placeholder: SO100
+  - type: input
+    id: org
+    attributes:
+      label: Author / Company / Lab (optional)
+      description: Who created or maintains the robot.
   - type: textarea
     id: summary
     attributes:
@@ -30,10 +46,6 @@ body:
       placeholder: Lightweight humanoid arm with sample URDF.
     validations:
       required: true
-  - type: input
-    id: org
-    attributes:
-      label: Company / Lab (optional)
   - type: input
     id: demo
     attributes:
