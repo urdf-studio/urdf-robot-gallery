@@ -46,7 +46,8 @@ body:
   - type: textarea
     id: robots
     attributes:
-      label: Robots (optional)
+      label: Robot mapping (optional)
+      description: Use "RobotName — file.urdf" (filename only; no path).
       placeholder: |-
         SO-ARM100 — so100.urdf
         SO-ARM101 — so101_new_calib.urdf
