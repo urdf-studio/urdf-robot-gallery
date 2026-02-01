@@ -18,6 +18,8 @@ labels: robot-repo
 - Contact:
 - Extra links or notes:
 
+Please keep the default issue title.
+
 **Example**
 - GitHub repo URL: https://github.com/TheRobotStudio/SO-ARM100
 - Author / Company / Lab: The Robot Studio
