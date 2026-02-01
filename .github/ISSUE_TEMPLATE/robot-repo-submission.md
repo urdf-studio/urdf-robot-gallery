@@ -7,9 +7,9 @@ labels: robot-repo
 
 **Required**
 - GitHub repo URL:
-- Short summary:
 
 **Optional**
+- Short summary:
 - Robot / project name:
 - Author / Company / Lab:
 - Tags:

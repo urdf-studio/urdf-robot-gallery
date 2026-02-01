@@ -1,6 +1,6 @@
 name: Robot Repo Submission
 description: Submit a robot repository.
-title: "[Robot Repo] "
+title: "[Robot Repo]"
 labels:
   - robot-repo
 body:
@@ -22,8 +22,6 @@ body:
     id: summary
     attributes:
       label: Short summary
-    validations:
-      required: true
   - type: input
     id: demo
     attributes:
