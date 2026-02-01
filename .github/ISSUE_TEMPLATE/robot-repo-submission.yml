@@ -7,8 +7,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for sharing your robot repo! Please include a **GitHub repo link**, a **one-line summary**, and (optionally) the **author/company**.
-        After you submit, we will auto-detect URDF/Xacro files and comment back in ~1 minute.
+        Thanks for sharing your robot repo! Please include a **GitHub repo link** and a **one-line summary**.
+        After you submit, we auto-detect URDF/Xacro files and comment back in ~1 minute.
 
         **Required**
         - GitHub repo URL
@@ -19,17 +19,11 @@ body:
         - Author or company / lab
         - Tags
         - Robots list (one per line)
-
-        **Example**
-        - Repo: https://github.com/acme/so100
-        - Summary: Lightweight humanoid arm with URDF + meshes
-        - Author: Acme Robotics
-        - Robots: SO100 — urdf/so100.urdf
   - type: input
     id: repo
     attributes:
       label: GitHub repo URL
-      description: Paste the GitHub repository URL you want featured.
+      description: "Paste the GitHub repository URL you want featured."
       placeholder: https://github.com/org/repo
     validations:
       required: true
@@ -37,18 +31,18 @@ body:
     id: name
     attributes:
       label: Robot / project name (optional)
-      description: If left blank, we will use the repo name.
+      description: "If left blank, we will use the repo name."
       placeholder: SO100
   - type: input
     id: org
     attributes:
       label: Author / Company / Lab (optional)
-      description: Who created or maintains the robot.
+      description: "Who created or maintains the robot."
   - type: textarea
     id: summary
     attributes:
       label: Short summary
-      description: One line about what makes it interesting.
+      description: "One line about what makes it interesting."
       placeholder: Lightweight humanoid arm with sample URDF.
     validations:
       required: true
@@ -60,12 +54,12 @@ body:
     id: tags
     attributes:
       label: Tags (optional)
-      description: Comma-separated (e.g. arm, urdf, simulation).
+      description: "Comma-separated (e.g. arm, urdf, simulation)."
   - type: textarea
     id: robots
     attributes:
       label: Robots inside the repo (optional)
-      description: One per line. Example: `SO100 — urdf/so100.urdf`
+      description: "One per line. Example: SO100 — urdf/so100.urdf"
   - type: input
     id: contact
     attributes:
