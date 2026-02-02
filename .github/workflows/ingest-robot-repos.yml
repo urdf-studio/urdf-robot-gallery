@@ -380,6 +380,7 @@ jobs:
               return;
             }
             const payload = JSON.parse(process.env.DISPATCH_PAYLOAD || "{}");
+            const { getOctokit } = require("@actions/github");
             const dispatchClient = getOctokit(process.env.DISPATCH_TOKEN);
             try {
               await dispatchClient.rest.repos.createDispatchEvent({
