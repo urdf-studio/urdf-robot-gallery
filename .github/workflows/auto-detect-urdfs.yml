@@ -3,10 +3,16 @@ name: Auto-detect URDFs
 on:
   issues:
     types: [opened, edited, labeled]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Issue number to re-scan
+        required: true
+        type: number
 
 jobs:
   detect:
-    if: contains(join(github.event.issue.labels.*.name, ','), 'robot-repo') || startsWith(github.event.issue.title || '', 'robot-showcase-request')
+    if: github.event_name == 'workflow_dispatch' || contains(join(github.event.issue.labels.*.name, ','), 'robot-repo') || startsWith(github.event.issue.title || '', 'robot-showcase-request')
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -16,7 +22,19 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const issue = context.payload.issue;
+            let issue = context.payload.issue;
+            if (!issue) {
+              const issueNumber = Number(core.getInput("issue_number") || 0);
+              if (!issueNumber) {
+                throw new Error("issue_number input is required for workflow_dispatch");
+              }
+              const response = await github.rest.issues.get({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+              });
+              issue = response.data;
+            }
             const body = issue.body || "";
 
             const clean = (value) => {
