@@ -24,7 +24,7 @@ jobs:
           script: |
             let issue = context.payload.issue;
             if (!issue) {
-              const issueNumber = Number(core.getInput("issue_number") || 0);
+              const issueNumber = Number(context.payload?.inputs?.issue_number || 0);
               if (!issueNumber) {
                 throw new Error("issue_number input is required for workflow_dispatch");
               }
