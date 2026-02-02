@@ -1,1 +1,28 @@
-[]
+[
+  {
+    "repo": "https://github.com/TheRobotStudio/SO-ARM100",
+    "repoKey": "therobotstudio/so-arm100",
+    "org": "The Robot Studio",
+    "summary": "",
+    "demo": "",
+    "tags": [],
+    "robots": [
+      {
+        "name": "SO-ARM100"
+      },
+      {
+        "name": "SO-ARM101"
+      }
+    ],
+    "hfDatasets": [
+      "https://huggingface.co/datasets/lirislab/sweep_tissue_cube"
+    ],
+    "authorWebsite": "https://www.therobotstudio.com/",
+    "authorX": "",
+    "authorLinkedin": "",
+    "authorGithub": "",
+    "contact": "",
+    "extra": "",
+    "updatedAt": "2026-02-02T14:05:27.252Z"
+  }
+]
