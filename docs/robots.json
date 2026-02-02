@@ -5,13 +5,18 @@
     "org": "The Robot Studio",
     "summary": "",
     "demo": "",
-    "tags": [],
+    "tags": [
+      "LeRobot",
+      "arm"
+    ],
     "robots": [
       {
-        "name": "SO-ARM100"
+        "name": "SO-ARM100",
+        "file": "so100.urdf"
       },
       {
-        "name": "SO-ARM101"
+        "name": "SO-ARM101",
+        "file": "so101_new_calib.urdf"
       }
     ],
     "hfDatasets": [
@@ -23,6 +28,6 @@
     "authorGithub": "",
     "contact": "",
     "extra": "",
-    "updatedAt": "2026-02-02T14:15:38.324Z"
+    "updatedAt": "2026-02-02T16:38:39.688Z"
   }
 ]
