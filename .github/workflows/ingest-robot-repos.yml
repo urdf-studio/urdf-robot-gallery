@@ -374,16 +374,15 @@ jobs:
           DISPATCH_PAYLOAD: ${{ steps.ingest.outputs.dispatch_payload }}
           DISPATCH_TOKEN: ${{ secrets.URDF_STUDIO_DISPATCH_TOKEN }}
         with:
+          github-token: ${{ secrets.URDF_STUDIO_DISPATCH_TOKEN }}
           script: |
             if (!process.env.DISPATCH_TOKEN) {
               core.info("URDF_STUDIO_DISPATCH_TOKEN is not set. Skipping dispatch.");
               return;
             }
             const payload = JSON.parse(process.env.DISPATCH_PAYLOAD || "{}");
-            const { getOctokit } = require("@actions/github");
-            const dispatchClient = getOctokit(process.env.DISPATCH_TOKEN);
             try {
-              await dispatchClient.rest.repos.createDispatchEvent({
+              await github.rest.repos.createDispatchEvent({
                 owner: "amtellezfernandez",
                 repo: "urdf-star-studio",
                 event_type: "robot-repos-updated",
