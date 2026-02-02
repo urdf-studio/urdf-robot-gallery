@@ -396,6 +396,8 @@ jobs:
 
             let prNumber = null;
             let prError = null;
+            let mergeError = null;
+            let merged = false;
             if (prs.data.length > 0) {
               prNumber = prs.data[0].number;
             } else {
@@ -419,12 +421,47 @@ jobs:
 
             const manualPrUrl = `https://github.com/${galleryOwner}/${galleryRepo}/compare/${galleryDefaultBranch}...${branchName}?expand=1`;
 
+            if (prNumber) {
+              try {
+                const mergeResponse = await github.rest.pulls.merge({
+                  owner: galleryOwner,
+                  repo: galleryRepo,
+                  pull_number: prNumber,
+                  merge_method: "squash",
+                });
+                merged = Boolean(mergeResponse.data && mergeResponse.data.merged);
+              } catch (error) {
+                mergeError = error;
+                core.warning(
+                  `Auto-ingest: could not auto-merge PR #${prNumber} (${error.status || "unknown"} ${error.message || error}).`
+                );
+              }
+            }
+
+            if (merged) {
+              try {
+                await github.rest.git.deleteRef({
+                  owner: galleryOwner,
+                  repo: galleryRepo,
+                  ref: `heads/${branchName}`,
+                });
+              } catch (error) {
+                core.warning(
+                  `Auto-ingest: could not delete branch ${branchName} (${error.status || "unknown"} ${error.message || error}).`
+                );
+              }
+            }
+
             await github.rest.issues.createComment({
               owner: galleryOwner,
               repo: galleryRepo,
               issue_number: issue.number,
               body: prNumber
-                ? `Auto-ingest: opened PR #${prNumber}. Please merge to publish this entry.`
+                ? merged
+                  ? `Auto-ingest: merged PR #${prNumber}. This entry is now live.`
+                  : mergeError && mergeError.message && mergeError.message.includes("create or approve pull requests")
+                    ? `Auto-ingest: opened PR #${prNumber}, but GitHub Actions is not permitted to auto-merge PRs in this repo. Please merge it manually.`
+                    : `Auto-ingest: opened PR #${prNumber}. Please merge to publish this entry.`
                 : prError && prError.message && prError.message.includes("create or approve pull requests")
                   ? `Auto-ingest: updated branch, but GitHub Actions is not permitted to create PRs in this repo. Please open one manually:\n${manualPrUrl}`
                   : `Auto-ingest: updated branch, but couldn't open a PR. Please open one manually:\n${manualPrUrl}`,
