@@ -395,19 +395,29 @@ jobs:
             });
 
             let prNumber = null;
+            let prError = null;
             if (prs.data.length > 0) {
               prNumber = prs.data[0].number;
             } else {
-              const pr = await github.rest.pulls.create({
-                owner: galleryOwner,
-                repo: galleryRepo,
-                title: `Auto-ingest robot repo from issue #${issue.number}`,
-                head: branchName,
-                base: galleryDefaultBranch,
-                body: `Closes #${issue.number}\n\nAuto-generated update from submission.`,
-              });
-              prNumber = pr.data.number;
+              try {
+                const pr = await github.rest.pulls.create({
+                  owner: galleryOwner,
+                  repo: galleryRepo,
+                  title: `Auto-ingest robot repo from issue #${issue.number}`,
+                  head: branchName,
+                  base: galleryDefaultBranch,
+                  body: `Closes #${issue.number}\n\nAuto-generated update from submission.`,
+                });
+                prNumber = pr.data.number;
+              } catch (error) {
+                prError = error;
+                core.warning(
+                  `Auto-ingest: could not create PR (${error.status || "unknown"} ${error.message || error}).`
+                );
+              }
             }
+
+            const manualPrUrl = `https://github.com/${galleryOwner}/${galleryRepo}/compare/${galleryDefaultBranch}...${branchName}?expand=1`;
 
             await github.rest.issues.createComment({
               owner: galleryOwner,
@@ -415,7 +425,9 @@ jobs:
               issue_number: issue.number,
               body: prNumber
                 ? `Auto-ingest: opened PR #${prNumber}. Please merge to publish this entry.`
-                : "Auto-ingest: updated branch, but couldn't open a PR. Please open one manually.",
+                : prError && prError.message && prError.message.includes("create or approve pull requests")
+                  ? `Auto-ingest: updated branch, but GitHub Actions is not permitted to create PRs in this repo. Please open one manually:\n${manualPrUrl}`
+                  : `Auto-ingest: updated branch, but couldn't open a PR. Please open one manually:\n${manualPrUrl}`,
             });
 
             core.setOutput("dispatch_payload", "");
