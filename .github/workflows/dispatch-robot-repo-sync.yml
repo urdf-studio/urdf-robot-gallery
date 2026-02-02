@@ -19,13 +19,13 @@ jobs:
         env:
           DISPATCH_TOKEN: ${{ secrets.URDF_STUDIO_DISPATCH_TOKEN }}
         with:
+          github-token: ${{ secrets.URDF_STUDIO_DISPATCH_TOKEN }}
           script: |
             if (!process.env.DISPATCH_TOKEN) {
               core.setFailed("URDF_STUDIO_DISPATCH_TOKEN is not set.");
               return;
             }
-            const dispatchClient = getOctokit(process.env.DISPATCH_TOKEN);
-            await dispatchClient.rest.repos.createDispatchEvent({
+            await github.rest.repos.createDispatchEvent({
               owner: "amtellezfernandez",
               repo: "urdf-star-studio",
               event_type: "robot-repos-updated",
