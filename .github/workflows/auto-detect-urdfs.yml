@@ -6,7 +6,7 @@ on:
 
 jobs:
   detect:
-    if: contains(join(github.event.issue.labels.*.name, ','), 'robot-repo') || startsWith(toLower(github.event.issue.title || ''), 'robot-showcase-request')
+    if: contains(join(github.event.issue.labels.*.name, ','), 'robot-repo') || startsWith(github.event.issue.title || '', 'robot-showcase-request')
     runs-on: ubuntu-latest
     permissions:
       issues: write

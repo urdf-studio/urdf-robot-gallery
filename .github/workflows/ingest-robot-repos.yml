@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   ingest:
-    if: github.event_name == 'workflow_dispatch' || contains(join(github.event.issue.labels.*.name, ','), 'robot-repo') || startsWith(toLower(github.event.issue.title || ''), 'robot-showcase-request')
+    if: github.event_name == 'workflow_dispatch' || contains(join(github.event.issue.labels.*.name, ','), 'robot-repo') || startsWith(github.event.issue.title || '', 'robot-showcase-request')
     runs-on: ubuntu-latest
     permissions:
       contents: write
