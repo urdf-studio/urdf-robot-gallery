@@ -347,6 +347,11 @@ jobs:
               branch: galleryDefaultBranch,
             });
 
+            const dispatchPayload = {
+              issueNumber: issue.number,
+              repo: entry.repo,
+            };
+
             await github.rest.issues.createComment({
               owner: galleryOwner,
               repo: galleryRepo,
@@ -360,7 +365,7 @@ jobs:
               state: "closed",
             });
 
-            core.setOutput("dispatch_payload", "");
+            core.setOutput("dispatch_payload", JSON.stringify(dispatchPayload));
 
       - name: Trigger URDF Studio sync
         if: ${{ steps.ingest.outputs.dispatch_payload != '' }}
