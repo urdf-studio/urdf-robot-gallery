@@ -1,5 +1,211 @@
 [
   {
+    "repo": "https://github.com/unitreerobotics/unitree_ros",
+    "repoKey": "unitreerobotics/unitree_ros",
+    "org": "Unitree Robotics",
+    "summary": "",
+    "demo": "",
+    "tags": [],
+    "robots": [
+      {
+        "name": "a1",
+        "file": "a1.urdf"
+      },
+      {
+        "name": "a2",
+        "file": "a2.urdf"
+      },
+      {
+        "name": "aliengo",
+        "file": "aliengo.urdf"
+      },
+      {
+        "name": "b1",
+        "file": "b1.urdf"
+      },
+      {
+        "name": "b2_description",
+        "file": "b2_description.urdf"
+      },
+      {
+        "name": "b2_description",
+        "file": "b2_description.urdf"
+      },
+      {
+        "name": "b2w_description",
+        "file": "b2w_description.urdf"
+      },
+      {
+        "name": "dex1_1",
+        "file": "dex1_1.urdf"
+      },
+      {
+        "name": "dex3_1_l",
+        "file": "dex3_1_l.urdf"
+      },
+      {
+        "name": "dex3_1_r",
+        "file": "dex3_1_r.urdf"
+      },
+      {
+        "name": "Dex5-URDF-L",
+        "file": "Dex5-URDF-L.urdf"
+      },
+      {
+        "name": "Dex5-URDF-R",
+        "file": "Dex5-URDF-R.urdf"
+      },
+      {
+        "name": "g1_23dof",
+        "file": "g1_23dof.urdf"
+      },
+      {
+        "name": "g1_23dof_mode_10",
+        "file": "g1_23dof_mode_10.urdf"
+      },
+      {
+        "name": "g1_23dof_rev_1_0",
+        "file": "g1_23dof_rev_1_0.urdf"
+      },
+      {
+        "name": "g1_29dof",
+        "file": "g1_29dof.urdf"
+      },
+      {
+        "name": "g1_29dof_lock_waist",
+        "file": "g1_29dof_lock_waist.urdf"
+      },
+      {
+        "name": "g1_29dof_lock_waist_rev_1_0",
+        "file": "g1_29dof_lock_waist_rev_1_0.urdf"
+      },
+      {
+        "name": "g1_29dof_lock_waist_with_hand_rev_1_0",
+        "file": "g1_29dof_lock_waist_with_hand_rev_1_0.urdf"
+      },
+      {
+        "name": "g1_29dof_mode_11",
+        "file": "g1_29dof_mode_11.urdf"
+      },
+      {
+        "name": "g1_29dof_mode_12",
+        "file": "g1_29dof_mode_12.urdf"
+      },
+      {
+        "name": "g1_29dof_mode_13",
+        "file": "g1_29dof_mode_13.urdf"
+      },
+      {
+        "name": "g1_29dof_mode_14",
+        "file": "g1_29dof_mode_14.urdf"
+      },
+      {
+        "name": "g1_29dof_mode_15",
+        "file": "g1_29dof_mode_15.urdf"
+      },
+      {
+        "name": "g1_29dof_mode_16",
+        "file": "g1_29dof_mode_16.urdf"
+      },
+      {
+        "name": "g1_29dof_rev_1_0",
+        "file": "g1_29dof_rev_1_0.urdf"
+      },
+      {
+        "name": "g1_29dof_rev_1_0_with_inspire_hand_DFQ",
+        "file": "g1_29dof_rev_1_0_with_inspire_hand_DFQ.urdf"
+      },
+      {
+        "name": "g1_29dof_rev_1_0_with_inspire_hand_FTP",
+        "file": "g1_29dof_rev_1_0_with_inspire_hand_FTP.urdf"
+      },
+      {
+        "name": "g1_29dof_with_hand",
+        "file": "g1_29dof_with_hand.urdf"
+      },
+      {
+        "name": "g1_29dof_with_hand_rev_1_0",
+        "file": "g1_29dof_with_hand_rev_1_0.urdf"
+      },
+      {
+        "name": "g1_comp",
+        "file": "g1_comp.urdf"
+      },
+      {
+        "name": "g1_dual_arm",
+        "file": "g1_dual_arm.urdf"
+      },
+      {
+        "name": "DFQ_left_hand",
+        "file": "DFQ_left_hand.urdf"
+      },
+      {
+        "name": "DFQ_right_hand",
+        "file": "DFQ_right_hand.urdf"
+      },
+      {
+        "name": "FTP_left_hand",
+        "file": "FTP_left_hand.urdf"
+      },
+      {
+        "name": "FTP_right_hand",
+        "file": "FTP_right_hand.urdf"
+      },
+      {
+        "name": "g1_29dof_mode_15_brainco_hand",
+        "file": "g1_29dof_mode_15_brainco_hand.urdf"
+      },
+      {
+        "name": "go1",
+        "file": "go1.urdf"
+      },
+      {
+        "name": "go2_description",
+        "file": "go2_description.urdf"
+      },
+      {
+        "name": "go2w_description",
+        "file": "go2w_description.urdf"
+      },
+      {
+        "name": "h1_2",
+        "file": "h1_2.urdf"
+      },
+      {
+        "name": "h1_2_handless",
+        "file": "h1_2_handless.urdf"
+      },
+      {
+        "name": "h1",
+        "file": "h1.urdf"
+      },
+      {
+        "name": "h1_with_hand",
+        "file": "h1_with_hand.urdf"
+      },
+      {
+        "name": "laikago",
+        "file": "laikago.urdf"
+      },
+      {
+        "name": "R1",
+        "file": "R1.urdf"
+      },
+      {
+        "name": "z1",
+        "file": "z1.urdf"
+      }
+    ],
+    "hfDatasets": [],
+    "authorWebsite": "https://www.unitree.com/",
+    "authorX": "",
+    "authorLinkedin": "",
+    "authorGithub": "",
+    "contact": "",
+    "extra": "",
+    "updatedAt": "2026-02-02T23:19:05.529Z"
+  },
+  {
     "repo": "https://github.com/TheRobotStudio/SO-ARM100",
     "repoKey": "therobotstudio/so-arm100",
     "org": "The Robot Studio",
