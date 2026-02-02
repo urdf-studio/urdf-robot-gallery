@@ -467,6 +467,15 @@ jobs:
                   : `Auto-ingest: updated branch, but couldn't open a PR. Please open one manually:\n${manualPrUrl}`,
             });
 
+            if (merged) {
+              await github.rest.issues.update({
+                owner: galleryOwner,
+                repo: galleryRepo,
+                issue_number: issue.number,
+                state: "closed",
+              });
+            }
+
             core.setOutput("dispatch_payload", "");
 
       - name: Trigger URDF Studio sync
