@@ -1,5 +1,39 @@
 [
   {
+    "repo": "https://github.com/ROBOTIS-GIT/turtlebot3",
+    "repoKey": "robotis-git/turtlebot3",
+    "org": "",
+    "summary": "",
+    "demo": "",
+    "tags": [],
+    "robots": [
+      {
+        "name": "common_properties",
+        "file": "common_properties.urdf"
+      },
+      {
+        "name": "turtlebot3_burger",
+        "file": "turtlebot3_burger.urdf"
+      },
+      {
+        "name": "turtlebot3_waffle",
+        "file": "turtlebot3_waffle.urdf"
+      },
+      {
+        "name": "turtlebot3_waffle_pi",
+        "file": "turtlebot3_waffle_pi.urdf"
+      }
+    ],
+    "hfDatasets": [],
+    "authorWebsite": "",
+    "authorX": "",
+    "authorLinkedin": "",
+    "authorGithub": "",
+    "contact": "",
+    "extra": "",
+    "updatedAt": "2026-02-03T00:07:31.058Z"
+  },
+  {
     "repo": "https://github.com/unitreerobotics/unitree_ros",
     "repoKey": "unitreerobotics/unitree_ros",
     "org": "Unitree Robotics",
