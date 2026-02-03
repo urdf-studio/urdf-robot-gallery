@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-03T21:17:12.367Z",
+  "generatedAt": "2026-02-03T21:35:54.896Z",
   "previews": [
     {
       "repoKey": "robotis-git/turtlebot3",
@@ -32,24 +32,28 @@
     {
       "repoKey": "therobotstudio/so-arm100",
       "fileBase": "so101_new_calib",
+      "webm": "previews/therobotstudio/so-arm100/so101_new_calib.webm",
       "webp": "previews/therobotstudio/so-arm100/so101_new_calib.webp",
       "png": "thumbnails/therobotstudio/so-arm100/so101_new_calib.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
       "fileBase": "a1",
+      "webm": "previews/unitreerobotics/unitree_ros/a1.webm",
       "webp": "previews/unitreerobotics/unitree_ros/a1.webp",
       "png": "thumbnails/unitreerobotics/unitree_ros/a1.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
       "fileBase": "a2",
+      "webm": "previews/unitreerobotics/unitree_ros/a2.webm",
       "webp": "previews/unitreerobotics/unitree_ros/a2.webp",
       "png": "thumbnails/unitreerobotics/unitree_ros/a2.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
       "fileBase": "aliengo",
+      "webm": "previews/unitreerobotics/unitree_ros/aliengo.webm",
       "webp": "previews/unitreerobotics/unitree_ros/aliengo.webp",
       "png": "thumbnails/unitreerobotics/unitree_ros/aliengo.png"
     }
