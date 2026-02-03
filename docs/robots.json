@@ -2,7 +2,7 @@
   {
     "repo": "https://github.com/ros-industrial/universal_robot",
     "repoKey": "ros-industrial/universal_robot",
-    "org": "",
+    "org": "ROS Industrial",
     "summary": "",
     "demo": "",
     "tags": [],
@@ -13,7 +13,7 @@
     "authorGithub": "",
     "contact": "",
     "extra": "",
-    "updatedAt": "2026-02-03T00:10:26.366Z"
+    "updatedAt": "2026-02-03T22:49:58.755Z"
   },
   {
     "repo": "https://github.com/ROBOTIS-GIT/turtlebot3",
