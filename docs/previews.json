@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-03T12:08:06.081Z",
+  "generatedAt": "2026-02-03T12:20:48.746Z",
   "previews": [
     {
       "repoKey": "robotis-git/turtlebot3",
@@ -34,6 +34,14 @@
       "png": "thumbnails/robotis-git/turtlebot3/turtlebot3_waffle_pi.png"
     },
     {
+      "repoKey": "therobotstudio/so-arm100",
+      "fileBase": "so100",
+      "mp4": "previews/therobotstudio/so-arm100/so100.mp4",
+      "webm": "previews/therobotstudio/so-arm100/so100.webm",
+      "webp": "previews/therobotstudio/so-arm100/so100.webp",
+      "png": "thumbnails/therobotstudio/so-arm100/so100.png"
+    },
+    {
       "repoKey": "unitreerobotics/unitree_ros",
       "fileBase": "a1",
       "mp4": "previews/unitreerobotics/unitree_ros/a1.mp4",
@@ -56,6 +64,22 @@
       "webm": "previews/unitreerobotics/unitree_ros/aliengo.webm",
       "webp": "previews/unitreerobotics/unitree_ros/aliengo.webp",
       "png": "thumbnails/unitreerobotics/unitree_ros/aliengo.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "b1",
+      "mp4": "previews/unitreerobotics/unitree_ros/b1.mp4",
+      "webm": "previews/unitreerobotics/unitree_ros/b1.webm",
+      "webp": "previews/unitreerobotics/unitree_ros/b1.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/b1.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "b2_description",
+      "mp4": "previews/unitreerobotics/unitree_ros/b2_description.mp4",
+      "webm": "previews/unitreerobotics/unitree_ros/b2_description.webm",
+      "webp": "previews/unitreerobotics/unitree_ros/b2_description.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/b2_description.png"
     }
   ]
 }
