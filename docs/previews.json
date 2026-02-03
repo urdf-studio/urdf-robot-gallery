@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-03T13:57:41.426Z",
+  "generatedAt": "2026-02-03T14:09:52.055Z",
   "previews": [
     {
       "repoKey": "robotis-git/turtlebot3",
@@ -87,6 +87,13 @@
       "webm": "previews/unitreerobotics/unitree_ros/b2_description.webm",
       "webp": "previews/unitreerobotics/unitree_ros/b2_description.webp",
       "png": "thumbnails/unitreerobotics/unitree_ros/b2_description.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "b2w_description",
+      "mp4": "previews/unitreerobotics/unitree_ros/b2w_description.mp4",
+      "webp": "previews/unitreerobotics/unitree_ros/b2w_description.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/b2w_description.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -178,6 +185,13 @@
       "mp4": "previews/unitreerobotics/unitree_ros/g1_29dof_rev_1_0_with_inspire_hand_DFQ.mp4",
       "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_rev_1_0_with_inspire_hand_DFQ.webp",
       "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_rev_1_0_with_inspire_hand_DFQ.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "g1_29dof_with_hand_rev_1_0",
+      "mp4": "previews/unitreerobotics/unitree_ros/g1_29dof_with_hand_rev_1_0.mp4",
+      "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_with_hand_rev_1_0.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_with_hand_rev_1_0.png"
     }
   ]
 }
