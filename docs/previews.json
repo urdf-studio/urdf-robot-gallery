@@ -1,10 +1,13 @@
 {
-  "generatedAt": "2026-02-03T10:37:06.778Z",
+  "generatedAt": "2026-02-03T10:42:02.434Z",
   "previews": [
     {
       "repoKey": "robotis-git/turtlebot3",
       "fileBase": "turtlebot3_burger",
-      "png": "thumbnails/robotis-git/turtlebot3/turtlebot3_burger.png"
+      "png": "thumbnails/robotis-git/turtlebot3/turtlebot3_burger.png",
+      "webp": "previews/robotis-git/turtlebot3/turtlebot3_burger.webp",
+      "webm": "previews/robotis-git/turtlebot3/turtlebot3_burger.webm",
+      "mp4": "previews/robotis-git/turtlebot3/turtlebot3_burger.mp4"
     }
   ]
 }
