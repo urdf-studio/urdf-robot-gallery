@@ -1,0 +1,11 @@
+{
+  "name": "urdf-robot-gallery",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "render-thumbnails": "node tools/render-thumbnails.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.50.1"
+  }
+}
