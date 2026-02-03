@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-03T13:30:52.995Z",
+  "generatedAt": "2026-02-03T13:57:41.426Z",
   "previews": [
     {
       "repoKey": "robotis-git/turtlebot3",
@@ -40,6 +40,13 @@
       "webm": "previews/therobotstudio/so-arm100/so100.webm",
       "webp": "previews/therobotstudio/so-arm100/so100.webp",
       "png": "thumbnails/therobotstudio/so-arm100/so100.png"
+    },
+    {
+      "repoKey": "therobotstudio/so-arm100",
+      "fileBase": "so101_new_calib",
+      "mp4": "previews/therobotstudio/so-arm100/so101_new_calib.mp4",
+      "webp": "previews/therobotstudio/so-arm100/so101_new_calib.webp",
+      "png": "thumbnails/therobotstudio/so-arm100/so101_new_calib.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -132,10 +139,45 @@
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "g1_29dof",
+      "mp4": "previews/unitreerobotics/unitree_ros/g1_29dof.mp4",
+      "webp": "previews/unitreerobotics/unitree_ros/g1_29dof.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "g1_29dof_lock_waist",
+      "mp4": "previews/unitreerobotics/unitree_ros/g1_29dof_lock_waist.mp4",
+      "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_lock_waist.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_lock_waist.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
       "fileBase": "g1_29dof_lock_waist_rev_1_0",
       "mp4": "previews/unitreerobotics/unitree_ros/g1_29dof_lock_waist_rev_1_0.mp4",
       "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_lock_waist_rev_1_0.webp",
       "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_lock_waist_rev_1_0.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "g1_29dof_mode_14",
+      "mp4": "previews/unitreerobotics/unitree_ros/g1_29dof_mode_14.mp4",
+      "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_mode_14.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_mode_14.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "g1_29dof_mode_15",
+      "mp4": "previews/unitreerobotics/unitree_ros/g1_29dof_mode_15.mp4",
+      "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_mode_15.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_mode_15.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "g1_29dof_rev_1_0_with_inspire_hand_DFQ",
+      "mp4": "previews/unitreerobotics/unitree_ros/g1_29dof_rev_1_0_with_inspire_hand_DFQ.mp4",
+      "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_rev_1_0_with_inspire_hand_DFQ.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_rev_1_0_with_inspire_hand_DFQ.png"
     }
   ]
 }
