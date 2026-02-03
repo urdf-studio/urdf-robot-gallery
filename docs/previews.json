@@ -1,27 +1,31 @@
 {
-  "generatedAt": "2026-02-03T19:32:30.908Z",
+  "generatedAt": "2026-02-03T21:17:12.367Z",
   "previews": [
     {
       "repoKey": "robotis-git/turtlebot3",
       "fileBase": "common_properties",
+      "webm": "previews/robotis-git/turtlebot3/common_properties.webm",
       "webp": "previews/robotis-git/turtlebot3/common_properties.webp",
       "png": "thumbnails/robotis-git/turtlebot3/common_properties.png"
     },
     {
       "repoKey": "robotis-git/turtlebot3",
       "fileBase": "turtlebot3_burger",
+      "webm": "previews/robotis-git/turtlebot3/turtlebot3_burger.webm",
       "webp": "previews/robotis-git/turtlebot3/turtlebot3_burger.webp",
       "png": "thumbnails/robotis-git/turtlebot3/turtlebot3_burger.png"
     },
     {
       "repoKey": "robotis-git/turtlebot3",
       "fileBase": "turtlebot3_waffle",
+      "webm": "previews/robotis-git/turtlebot3/turtlebot3_waffle.webm",
       "webp": "previews/robotis-git/turtlebot3/turtlebot3_waffle.webp",
       "png": "thumbnails/robotis-git/turtlebot3/turtlebot3_waffle.png"
     },
     {
       "repoKey": "therobotstudio/so-arm100",
       "fileBase": "so100",
+      "webm": "previews/therobotstudio/so-arm100/so100.webm",
       "webp": "previews/therobotstudio/so-arm100/so100.webp",
       "png": "thumbnails/therobotstudio/so-arm100/so100.png"
     },
