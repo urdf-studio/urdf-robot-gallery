@@ -238,6 +238,31 @@ jobs:
                 .filter(Boolean);
             };
 
+            const slugify = (value) =>
+              value
+                .trim()
+                .replace(/\.urdf$/i, "")
+                .replace(/[^a-zA-Z0-9._-]+/g, "-")
+                .replace(/-+/g, "-")
+                .replace(/^-|-$/g, "")
+                .toLowerCase();
+
+            const hashString = (value) => {
+              let hash = 2166136261;
+              for (let i = 0; i < value.length; i += 1) {
+                hash ^= value.charCodeAt(i);
+                hash = Math.imul(hash, 16777619);
+              }
+              return (hash >>> 0).toString(36);
+            };
+
+            const toPreviewBase = (value) => {
+              const normalized = value.replace(/\\/g, "/").replace(/\.urdf$/i, "");
+              const name = normalized.split("/").pop() || normalized;
+              const slug = slugify(name) || "robot";
+              return `${slug}--${hashString(normalized)}`;
+            };
+
             const normalizeTagKey = (value) =>
               value
                 .toLowerCase()
@@ -555,13 +580,15 @@ jobs:
                 if (!actualPath) continue;
                 const baseName = (actualPath.split("/").pop() || actualPath).replace(/\.urdf$/i, "");
                 const name = (robot.name || baseName).trim();
-                mappedRobots.push({ name, file: actualPath });
+                const fileName = actualPath.split("/").pop() || actualPath;
+                mappedRobots.push({ name, file: fileName, fileBase: toPreviewBase(actualPath) });
                 mappedFileKeys.add(actualPath.toLowerCase());
               }
             }
             const detectedRobots = urdfFiles.map((filePath) => ({
               name: (filePath.split("/").pop() || filePath).replace(/\.urdf$/i, ""),
-              file: filePath,
+              file: filePath.split("/").pop() || filePath,
+              fileBase: toPreviewBase(filePath),
             }));
             const robots =
               mapping.length > 0

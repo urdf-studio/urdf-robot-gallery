@@ -84,7 +84,10 @@ const main = async () => {
     for (const robot of robots) {
       const file = typeof robot === "string" ? robot : robot?.file;
       if (!file) continue;
-      const fileBase = toPreviewBase(file);
+      const fileBase =
+        typeof robot !== "string" && robot?.fileBase
+          ? robot.fileBase
+          : toPreviewBase(file);
       const manifestDir = path.join(MANIFEST_ROOT, normalizedRepoKey);
       const manifestPath = path.join(manifestDir, `${fileBase}.json`);
 

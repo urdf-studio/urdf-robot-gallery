@@ -74,6 +74,31 @@ const pickBestPath = (paths, preferredPrefix, originalPath) => {
   return [...candidates].sort((a, b) => a.length - b.length || a.localeCompare(b))[0];
 };
 
+const slugify = (value) =>
+  value
+    .trim()
+    .replace(/\.urdf$/i, "")
+    .replace(/[^a-zA-Z0-9._-]+/g, "-")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "")
+    .toLowerCase();
+
+const hashString = (value) => {
+  let hash = 2166136261;
+  for (let i = 0; i < value.length; i += 1) {
+    hash ^= value.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0).toString(36);
+};
+
+const toPreviewBase = (value) => {
+  const normalized = value.replace(/\\/g, "/").replace(/\.urdf$/i, "");
+  const name = normalized.split("/").pop() || normalized;
+  const slug = slugify(name) || "robot";
+  return `${slug}--${hashString(normalized)}`;
+};
+
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const githubFetchOnce = (url) =>
@@ -247,23 +272,26 @@ const main = async () => {
         continue;
       }
       matchedPaths.add(candidate.toLowerCase());
-      if (isString) {
-        updatedRobots.push(candidate);
-      } else {
-        updatedRobots.push({
-          ...robot,
-          file: candidate,
-        });
-      }
+      const fileName = path.posix.basename(candidate);
+      const fileBase = toPreviewBase(candidate);
+      const name = !isString && robot?.name ? robot.name : fileName.replace(/\.urdf$/i, "");
+      updatedRobots.push({
+        ...(isString ? {} : robot),
+        name,
+        file: fileName,
+        fileBase,
+      });
     }
 
     const sortedExtra = urdfPaths
       .filter((p) => !matchedPaths.has(p.toLowerCase()))
       .sort((a, b) => a.localeCompare(b));
     for (const extra of sortedExtra) {
+      const fileName = path.posix.basename(extra);
       updatedRobots.push({
-        name: path.posix.basename(extra).replace(/\.urdf$/i, ""),
-        file: extra,
+        name: fileName.replace(/\.urdf$/i, ""),
+        file: fileName,
+        fileBase: toPreviewBase(extra),
       });
     }
 

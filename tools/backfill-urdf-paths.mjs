@@ -265,47 +265,42 @@ const main = async () => {
     let changed = false;
     const updatedRobots = robots.map((robot) => {
       if (!robot) return robot;
-      if (typeof robot === "string") {
-        const raw = robot.replace(/\\/g, "/").replace(/^\/+/, "");
-        const direct = urdfByPath.get(raw.toLowerCase());
-        const nameKey = path.posix.basename(raw).toLowerCase();
-        const candidate = direct || pickBestPath(urdfByName.get(nameKey), normalizedPath);
-        if (candidate && candidate !== robot) {
-          changed = true;
-          return candidate;
-        }
-        if (!candidate) {
-          report.missing.push({ repoKey, file: robot, reason: "not found in tree" });
-        }
-        return robot;
-      }
-
-      const fileValue = (robot.file || "").replace(/\\/g, "/").replace(/^\/+/, "");
-      if (!fileValue) return robot;
-      const direct = urdfByPath.get(fileValue.toLowerCase());
-      const nameKey = path.posix.basename(fileValue).toLowerCase();
+      const isString = typeof robot === "string";
+      const raw = (isString ? robot : robot.file || "").replace(/\\/g, "/").replace(/^\/+/, "");
+      if (!raw) return robot;
+      const direct = urdfByPath.get(raw.toLowerCase());
+      const nameKey = path.posix.basename(raw).toLowerCase();
       const candidate = direct || pickBestPath(urdfByName.get(nameKey), normalizedPath);
       if (!candidate) {
-        report.missing.push({ repoKey, file: robot.file, reason: "not found in tree" });
-        return robot;
+        report.missing.push({ repoKey, file: raw, reason: "not found in tree" });
       }
-      if (candidate !== robot.file) {
+      const resolved = candidate || raw;
+      const fileName = path.posix.basename(resolved);
+      const fileBase = toPreviewBase(resolved);
+      const name = !isString && robot?.name ? robot.name : fileName.replace(/\.urdf$/i, "");
+      const prevFile = isString ? raw : robot.file || "";
+      const prevBase = isString ? "" : robot.fileBase || "";
+      if (isString || prevFile !== fileName || prevBase !== fileBase) {
         changed = true;
-        return { ...robot, file: candidate };
       }
-      return robot;
+      return {
+        ...(isString ? {} : robot),
+        name,
+        file: fileName,
+        fileBase,
+      };
     });
 
     if (changed) {
       entry.robots = updatedRobots;
       report.updated += 1;
       for (const robot of updatedRobots) {
-        const file = typeof robot === "string" ? robot : robot?.file;
-        if (!file) continue;
-        const previewKey = `${repoKey}::${toPreviewBase(file)}`;
+        const fileBase = typeof robot === "string" ? "" : robot?.fileBase;
+        if (!fileBase) continue;
+        const previewKey = `${repoKey}::${fileBase}`;
         previewKeySet.add(previewKey);
         const list = collisionMap.get(previewKey) || [];
-        list.push(file);
+        list.push(fileBase);
         collisionMap.set(previewKey, list);
       }
     } else {

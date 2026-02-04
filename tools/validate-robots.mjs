@@ -24,30 +24,7 @@ const normalizeRepoKey = (value) =>
         .toLowerCase()
     : "";
 
-const slugify = (value) =>
-  value
-    .trim()
-    .replace(/\.urdf$/i, "")
-    .replace(/[^a-zA-Z0-9._-]+/g, "-")
-    .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "")
-    .toLowerCase();
-
-const hashString = (value) => {
-  let hash = 2166136261;
-  for (let i = 0; i < value.length; i += 1) {
-    hash ^= value.charCodeAt(i);
-    hash = Math.imul(hash, 16777619);
-  }
-  return (hash >>> 0).toString(36);
-};
-
-const toPreviewBase = (value) => {
-  const normalized = value.replace(/\\/g, "/").replace(/\.urdf$/i, "");
-  const name = normalized.split("/").pop() || normalized;
-  const slug = slugify(name) || "robot";
-  return `${slug}--${hashString(normalized)}`;
-};
+const FILEBASE_REGEX = /^[a-z0-9][a-z0-9._-]*--[a-z0-9]+$/i;
 
 const main = async () => {
   const [robots, schema, allowedTags] = await Promise.all([
@@ -90,25 +67,46 @@ const main = async () => {
     }
 
     if (Array.isArray(entry.robots)) {
-      const seen = new Set();
+      const seenFiles = new Map();
+      const seenFileBases = new Set();
       for (const robot of entry.robots) {
         const file = robot?.file || "";
         if (!file) continue;
-        const key = file.toLowerCase();
-        if (seen.has(key)) {
+        if (file.includes("/") || file.includes("\\")) {
           errors.push(
-            `Entry ${index} (${repoKey || entry.repo}): duplicate file "${file}".`
+            `Entry ${index} (${repoKey || entry.repo}): file "${file}" must be a filename only (no path).`
           );
-        } else {
-          seen.add(key);
         }
-        if (robot?.fileBase) {
-          const expectedBase = toPreviewBase(file);
-          if (robot.fileBase !== expectedBase) {
+        const key = file.toLowerCase();
+        const info = seenFiles.get(key) || { count: 0, bases: new Set() };
+        info.count += 1;
+
+        const fileBase = robot?.fileBase || "";
+        if (fileBase) {
+          if (!FILEBASE_REGEX.test(fileBase)) {
             errors.push(
-              `Entry ${index} (${repoKey || entry.repo}): fileBase "${robot.fileBase}" does not match "${expectedBase}" for file "${file}".`
+              `Entry ${index} (${repoKey || entry.repo}): fileBase "${fileBase}" is not in the expected slug--hash format.`
             );
           }
+          const baseKey = fileBase.toLowerCase();
+          if (seenFileBases.has(baseKey)) {
+            errors.push(
+              `Entry ${index} (${repoKey || entry.repo}): duplicate fileBase "${fileBase}".`
+            );
+          } else {
+            seenFileBases.add(baseKey);
+          }
+          info.bases.add(baseKey);
+        }
+
+        seenFiles.set(key, info);
+      }
+
+      for (const [fileKey, info] of seenFiles.entries()) {
+        if (info.count > 1 && info.bases.size < info.count) {
+          errors.push(
+            `Entry ${index} (${repoKey || entry.repo}): duplicate file "${fileKey}" requires unique fileBase values.`
+          );
         }
       }
     }

@@ -9,19 +9,23 @@
     "robots": [
       {
         "name": "common_properties",
-        "file": "turtlebot3_description/urdf/common_properties.urdf"
+        "file": "common_properties.urdf",
+        "fileBase": "common_properties--1oyc4eg"
       },
       {
         "name": "turtlebot3_burger",
-        "file": "turtlebot3_description/urdf/turtlebot3_burger.urdf"
+        "file": "turtlebot3_burger.urdf",
+        "fileBase": "turtlebot3_burger--ax3px7"
       },
       {
         "name": "turtlebot3_waffle",
-        "file": "turtlebot3_description/urdf/turtlebot3_waffle.urdf"
+        "file": "turtlebot3_waffle.urdf",
+        "fileBase": "turtlebot3_waffle--hiw5vp"
       },
       {
         "name": "turtlebot3_waffle_pi",
-        "file": "turtlebot3_description/urdf/turtlebot3_waffle_pi.urdf"
+        "file": "turtlebot3_waffle_pi.urdf",
+        "fileBase": "turtlebot3_waffle_pi--13xns15"
       }
     ],
     "hfDatasets": [],
@@ -43,199 +47,243 @@
     "robots": [
       {
         "name": "a1",
-        "file": "robots/a1_description/urdf/a1.urdf"
+        "file": "a1.urdf",
+        "fileBase": "a1--1ac70hh"
       },
       {
         "name": "a2",
-        "file": "robots/a2_description/urdf/a2.urdf"
+        "file": "a2.urdf",
+        "fileBase": "a2--dvxrz9"
       },
       {
         "name": "aliengo",
-        "file": "robots/aliengo_description/urdf/aliengo.urdf"
+        "file": "aliengo.urdf",
+        "fileBase": "aliengo--lqz3m3"
       },
       {
         "name": "b1",
-        "file": "robots/b1_description/xacro/b1.urdf"
+        "file": "b1.urdf",
+        "fileBase": "b1--h6idr"
       },
       {
         "name": "b2_description",
-        "file": "robots/b2_description/urdf/b2_description.urdf"
-      },
-      {
-        "name": "b2_description",
-        "file": "robots/b2_description/urdf/b2_description.urdf"
+        "file": "b2_description.urdf",
+        "fileBase": "b2_description--gg409g"
       },
       {
         "name": "b2w_description",
-        "file": "robots/b2w_description/urdf/b2w_description.urdf"
+        "file": "b2w_description.urdf",
+        "fileBase": "b2w_description--i3juye"
       },
       {
         "name": "dex1_1",
-        "file": "robots/dexterous_hand_description/dex1_1/dex1_1.urdf"
+        "file": "dex1_1.urdf",
+        "fileBase": "dex1_1--1t4lyj1"
       },
       {
         "name": "dex3_1_l",
-        "file": "robots/dexterous_hand_description/dex3_1/dex3_1_l.urdf"
+        "file": "dex3_1_l.urdf",
+        "fileBase": "dex3_1_l--1hs35wm"
       },
       {
         "name": "dex3_1_r",
-        "file": "robots/dexterous_hand_description/dex3_1/dex3_1_r.urdf"
+        "file": "dex3_1_r.urdf",
+        "fileBase": "dex3_1_r--1ozstxw"
       },
       {
         "name": "Dex5-URDF-L",
-        "file": "robots/dexterous_hand_description/dex5_1/Dex5-URDF-L/Dex5-URDF-L.urdf"
+        "file": "Dex5-URDF-L.urdf",
+        "fileBase": "dex5-urdf-l--m1ckkc"
       },
       {
         "name": "Dex5-URDF-R",
-        "file": "robots/dexterous_hand_description/dex5_1/Dex5-URDF-R/Dex5-URDF-R.urdf"
+        "file": "Dex5-URDF-R.urdf",
+        "fileBase": "dex5-urdf-r--1cc12b4"
       },
       {
         "name": "g1_23dof",
-        "file": "robots/g1_description/g1_23dof.urdf"
+        "file": "g1_23dof.urdf",
+        "fileBase": "g1_23dof--194gh0q"
       },
       {
         "name": "g1_23dof_mode_10",
-        "file": "robots/g1_description/g1_23dof_mode_10.urdf"
+        "file": "g1_23dof_mode_10.urdf",
+        "fileBase": "g1_23dof_mode_10--qi2tzo"
       },
       {
         "name": "g1_23dof_rev_1_0",
-        "file": "robots/g1_description/g1_23dof_rev_1_0.urdf"
+        "file": "g1_23dof_rev_1_0.urdf",
+        "fileBase": "g1_23dof_rev_1_0--9i7rnn"
       },
       {
         "name": "g1_29dof",
-        "file": "robots/g1_description/g1_29dof.urdf"
+        "file": "g1_29dof.urdf",
+        "fileBase": "g1_29dof--b3e340"
       },
       {
         "name": "g1_29dof_lock_waist",
-        "file": "robots/g1_description/g1_29dof_lock_waist.urdf"
+        "file": "g1_29dof_lock_waist.urdf",
+        "fileBase": "g1_29dof_lock_waist--7vn8hd"
       },
       {
         "name": "g1_29dof_lock_waist_rev_1_0",
-        "file": "robots/g1_description/g1_29dof_lock_waist_rev_1_0.urdf"
+        "file": "g1_29dof_lock_waist_rev_1_0.urdf",
+        "fileBase": "g1_29dof_lock_waist_rev_1_0--1169g4g"
       },
       {
         "name": "g1_29dof_lock_waist_with_hand_rev_1_0",
-        "file": "robots/g1_description/g1_29dof_lock_waist_with_hand_rev_1_0.urdf"
+        "file": "g1_29dof_lock_waist_with_hand_rev_1_0.urdf",
+        "fileBase": "g1_29dof_lock_waist_with_hand_rev_1_0--1gp8vu3"
       },
       {
         "name": "g1_29dof_mode_11",
-        "file": "robots/g1_description/g1_29dof_mode_11.urdf"
+        "file": "g1_29dof_mode_11.urdf",
+        "fileBase": "g1_29dof_mode_11--1qm6nj5"
       },
       {
         "name": "g1_29dof_mode_12",
-        "file": "robots/g1_description/g1_29dof_mode_12.urdf"
+        "file": "g1_29dof_mode_12.urdf",
+        "fileBase": "g1_29dof_mode_12--1ps7ug8"
       },
       {
         "name": "g1_29dof_mode_13",
-        "file": "robots/g1_description/g1_29dof_mode_13.urdf"
+        "file": "g1_29dof_mode_13.urdf",
+        "fileBase": "g1_29dof_mode_13--1q27g57"
       },
       {
         "name": "g1_29dof_mode_14",
-        "file": "robots/g1_description/g1_29dof_mode_14.urdf"
+        "file": "g1_29dof_mode_14.urdf",
+        "fileBase": "g1_29dof_mode_14--1rg5gm2"
       },
       {
         "name": "g1_29dof_mode_15",
-        "file": "robots/g1_description/g1_29dof_mode_15.urdf"
+        "file": "g1_29dof_mode_15.urdf",
+        "fileBase": "g1_29dof_mode_15--1rq52b1"
       },
       {
         "name": "g1_29dof_mode_16",
-        "file": "robots/g1_description/g1_29dof_mode_16.urdf"
+        "file": "g1_29dof_mode_16.urdf",
+        "fileBase": "g1_29dof_mode_16--1qw6984"
       },
       {
         "name": "g1_29dof_rev_1_0",
-        "file": "robots/g1_description/g1_29dof_rev_1_0.urdf"
+        "file": "g1_29dof_rev_1_0.urdf",
+        "fileBase": "g1_29dof_rev_1_0--1hbxd3x"
       },
       {
         "name": "g1_29dof_rev_1_0_with_inspire_hand_DFQ",
-        "file": "robots/g1_description/g1_29dof_rev_1_0_with_inspire_hand_DFQ.urdf"
+        "file": "g1_29dof_rev_1_0_with_inspire_hand_DFQ.urdf",
+        "fileBase": "g1_29dof_rev_1_0_with_inspire_hand_dfq--kymbp3"
       },
       {
         "name": "g1_29dof_rev_1_0_with_inspire_hand_FTP",
-        "file": "robots/g1_description/g1_29dof_rev_1_0_with_inspire_hand_FTP.urdf"
+        "file": "g1_29dof_rev_1_0_with_inspire_hand_FTP.urdf",
+        "fileBase": "g1_29dof_rev_1_0_with_inspire_hand_ftp--t38pag"
       },
       {
         "name": "g1_29dof_with_hand",
-        "file": "robots/g1_description/g1_29dof_with_hand.urdf"
+        "file": "g1_29dof_with_hand.urdf",
+        "fileBase": "g1_29dof_with_hand--8azpjj"
       },
       {
         "name": "g1_29dof_with_hand_rev_1_0",
-        "file": "robots/g1_description/g1_29dof_with_hand_rev_1_0.urdf"
+        "file": "g1_29dof_with_hand_rev_1_0.urdf",
+        "fileBase": "g1_29dof_with_hand_rev_1_0--uej1pm"
       },
       {
         "name": "g1_comp",
-        "file": "robots/g1_description/g1_comp.urdf"
+        "file": "g1_comp.urdf",
+        "fileBase": "g1_comp--sl3igx"
       },
       {
         "name": "g1_dual_arm",
-        "file": "robots/g1_description/g1_dual_arm.urdf"
+        "file": "g1_dual_arm.urdf",
+        "fileBase": "g1_dual_arm--1awpzm5"
       },
       {
         "name": "DFQ_left_hand",
-        "file": "robots/g1_description/inspire_hand/DFQ_left_hand.urdf"
+        "file": "DFQ_left_hand.urdf",
+        "fileBase": "dfq_left_hand--1fc09xp"
       },
       {
         "name": "DFQ_right_hand",
-        "file": "robots/g1_description/inspire_hand/DFQ_right_hand.urdf"
+        "file": "DFQ_right_hand.urdf",
+        "fileBase": "dfq_right_hand--l0bj6k"
       },
       {
         "name": "FTP_left_hand",
-        "file": "robots/g1_description/inspire_hand/FTP_left_hand.urdf"
+        "file": "FTP_left_hand.urdf",
+        "fileBase": "ftp_left_hand--1wjpxbq"
       },
       {
         "name": "FTP_right_hand",
-        "file": "robots/g1_description/inspire_hand/FTP_right_hand.urdf"
+        "file": "FTP_right_hand.urdf",
+        "fileBase": "ftp_right_hand--16ogrx5"
       },
       {
         "name": "g1_29dof_mode_15_brainco_hand",
-        "file": "robots/g1_with_brainco_hand/g1_29dof_mode_15_brainco_hand.urdf"
+        "file": "g1_29dof_mode_15_brainco_hand.urdf",
+        "fileBase": "g1_29dof_mode_15_brainco_hand--k6rcr9"
       },
       {
         "name": "go1",
-        "file": "robots/go1_description/urdf/go1.urdf"
+        "file": "go1.urdf",
+        "fileBase": "go1--vkyrbf"
       },
       {
         "name": "go2_description",
-        "file": "robots/go2_description/urdf/go2_description.urdf"
+        "file": "go2_description.urdf",
+        "fileBase": "go2_description--url1mg"
       },
       {
         "name": "go2w_description",
-        "file": "robots/go2w_description/urdf/go2w_description.urdf"
+        "file": "go2w_description.urdf",
+        "fileBase": "go2w_description--1hcsn8k"
       },
       {
         "name": "h1_2",
-        "file": "robots/h1_2_description/h1_2.urdf"
+        "file": "h1_2.urdf",
+        "fileBase": "h1_2--o7s5bx"
       },
       {
         "name": "h1_2_handless",
-        "file": "robots/h1_2_description/h1_2_handless.urdf"
+        "file": "h1_2_handless.urdf",
+        "fileBase": "h1_2_handless--1wau832"
       },
       {
         "name": "h1",
-        "file": "robots/h1_description/urdf/h1.urdf"
+        "file": "h1.urdf",
+        "fileBase": "h1--1iocyuh"
       },
       {
         "name": "h1_with_hand",
-        "file": "robots/h1_description/urdf/h1_with_hand.urdf"
+        "file": "h1_with_hand.urdf",
+        "fileBase": "h1_with_hand--2chxy2"
       },
       {
         "name": "laikago",
-        "file": "robots/laikago_description/urdf/laikago.urdf"
+        "file": "laikago.urdf",
+        "fileBase": "laikago--o6i839"
       },
       {
         "name": "R1",
-        "file": "robots/r1_description/R1.urdf"
+        "file": "R1.urdf",
+        "fileBase": "r1--z6t3k3"
       },
       {
         "name": "z1",
-        "file": "robots/z1_description/xacro/z1.urdf"
+        "file": "z1.urdf",
+        "fileBase": "z1--bpx0kf"
       },
       {
         "name": "b2_description",
-        "file": "robots/b2_description_mujoco/xml/b2_description.urdf"
+        "file": "b2_description.urdf",
+        "fileBase": "b2_description--hqoppc"
       },
       {
         "name": "R1_AIR",
-        "file": "robots/r1_air_description/R1_AIR.urdf"
+        "file": "R1_AIR.urdf",
+        "fileBase": "r1_air--2i8bcx"
       }
     ],
     "hfDatasets": [],
@@ -260,15 +308,18 @@
     "robots": [
       {
         "name": "SO-ARM100",
-        "file": "Simulation/SO100/so100.urdf"
+        "file": "so100.urdf",
+        "fileBase": "so100--vyv9ty"
       },
       {
         "name": "SO-ARM101",
-        "file": "Simulation/SO101/so101_new_calib.urdf"
+        "file": "so101_new_calib.urdf",
+        "fileBase": "so101_new_calib--1v0dn17"
       },
       {
         "name": "so101_old_calib",
-        "file": "Simulation/SO101/so101_old_calib.urdf"
+        "file": "so101_old_calib.urdf",
+        "fileBase": "so101_old_calib--1byrygc"
       }
     ],
     "hfDatasets": [

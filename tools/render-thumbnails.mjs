@@ -66,9 +66,10 @@ const buildTasks = (repos) => {
     for (const robot of robots) {
       const file = typeof robot === "string" ? robot : robot.file || robot.name || "";
       const name = typeof robot === "string" ? robot : robot.name || robot.file || "";
+      const fileBase = typeof robot === "string" ? "" : robot.fileBase || "";
       if (!file && !name) continue;
       const baseTarget = file || name;
-      const baseName = toPreviewBase(baseTarget || name);
+      const baseName = fileBase || toPreviewBase(baseTarget || name);
       if (!baseName) continue;
       tasks.push({
         repoUrl,
