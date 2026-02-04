@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-02-04T15:05:13.348Z",
+  "generatedAt": "2026-02-04T15:06:42.685Z",
   "previews": [
     {
       "repoKey": "robotis-git/turtlebot3",
@@ -176,6 +176,13 @@
       "webm": "previews/unitreerobotics/unitree_ros/g1_23dof_rev_1_0--9i7rnn.webm",
       "webp": "previews/unitreerobotics/unitree_ros/g1_23dof_rev_1_0--9i7rnn.webp",
       "png": "thumbnails/unitreerobotics/unitree_ros/g1_23dof_rev_1_0--9i7rnn.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "g1_23dof--194gh0q",
+      "webm": "previews/unitreerobotics/unitree_ros/g1_23dof--194gh0q.webm",
+      "webp": "previews/unitreerobotics/unitree_ros/g1_23dof--194gh0q.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_23dof--194gh0q.png"
     }
   ]
 }
