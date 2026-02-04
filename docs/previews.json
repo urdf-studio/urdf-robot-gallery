@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-02-04T15:08:08.035Z",
+  "generatedAt": "2026-02-04T15:10:16.957Z",
   "previews": [
     {
       "repoKey": "robotis-git/turtlebot3",
@@ -190,6 +190,13 @@
       "webm": "previews/unitreerobotics/unitree_ros/g1_29dof_lock_waist_rev_1_0--1169g4g.webm",
       "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_lock_waist_rev_1_0--1169g4g.webp",
       "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_lock_waist_rev_1_0--1169g4g.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "g1_29dof_lock_waist_with_hand_rev_1_0--1gp8vu3",
+      "webm": "previews/unitreerobotics/unitree_ros/g1_29dof_lock_waist_with_hand_rev_1_0--1gp8vu3.webm",
+      "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_lock_waist_with_hand_rev_1_0--1gp8vu3.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_lock_waist_with_hand_rev_1_0--1gp8vu3.png"
     }
   ]
 }
