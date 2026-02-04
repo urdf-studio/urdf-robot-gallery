@@ -1,21 +1,5 @@
 [
   {
-    "repo": "https://github.com/ros-industrial/universal_robot",
-    "repoKey": "ros-industrial/universal_robot",
-    "org": "ROS Industrial",
-    "summary": "",
-    "demo": "",
-    "tags": [],
-    "hfDatasets": [],
-    "authorWebsite": "",
-    "authorX": "",
-    "authorLinkedin": "",
-    "authorGithub": "",
-    "contact": "",
-    "extra": "",
-    "updatedAt": "2026-02-03T22:49:58.755Z"
-  },
-  {
     "repo": "https://github.com/ROBOTIS-GIT/turtlebot3",
     "repoKey": "robotis-git/turtlebot3",
     "org": "",
