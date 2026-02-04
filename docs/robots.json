@@ -1,5 +1,28 @@
 [
   {
+    "repo": "https://github.com/SIGRobotics-UIUC/LeKiwi",
+    "repoKey": "sigrobotics-uiuc/lekiwi",
+    "org": "",
+    "summary": "",
+    "demo": "",
+    "tags": [],
+    "robots": [
+      {
+        "name": "LeKiwi",
+        "file": "LeKiwi.urdf",
+        "fileBase": "lekiwi--gkj1ce"
+      }
+    ],
+    "hfDatasets": [],
+    "authorWebsite": "",
+    "authorX": "",
+    "authorLinkedin": "",
+    "authorGithub": "",
+    "contact": "",
+    "extra": "",
+    "updatedAt": "2026-02-04T15:31:32.117Z"
+  },
+  {
     "repo": "https://github.com/ROBOTIS-GIT/turtlebot3",
     "repoKey": "robotis-git/turtlebot3",
     "org": "",
