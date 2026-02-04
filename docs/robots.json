@@ -246,8 +246,8 @@
     "summary": "",
     "demo": "",
     "tags": [
-      "LeRobot",
-      "arms"
+      "LeRobotCompatible",
+      "Arm"
     ],
     "robots": [
       {

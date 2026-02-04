@@ -7,7 +7,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please keep the default issue title: **robot-showcase-request**
+        The issue title will be updated automatically to include the repo name.
+        Auto-ingest runs only when the submitter has write access to the repo or is a URDF Studio maintainer.
+        If you don't have access or have repeated failed submissions (including missing URDFs), your issue will be reviewed manually.
   - type: input
     id: repo
     attributes:
@@ -55,6 +57,7 @@ body:
     id: tags
     attributes:
       label: Tags (optional)
+      description: Use tags from docs/tags.json (controlled list).
       placeholder: LeRobotCompatible, HuggingFace, Arm, Gripper
   - type: textarea
     id: hf_datasets
@@ -68,7 +71,7 @@ body:
     id: robots
     attributes:
       label: Robot mapping (optional)
-      description: Use "RobotName — file.urdf" (filename only; no path). If omitted, we use the .urdf filename as the robot name.
+      description: Use "RobotName — file.urdf" (filename only; no path). We merge this mapping with detected URDFs (missing or invalid entries are ignored). If no URDFs are detected, we will not add the repo.
       placeholder: |-
         SO-ARM100 — so100.urdf
         SO-ARM101 — so101_new_calib.urdf

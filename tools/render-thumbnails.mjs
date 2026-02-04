@@ -30,6 +30,22 @@ const slugify = (value) =>
     .replace(/^-|-$/g, "")
     .toLowerCase();
 
+const hashString = (value) => {
+  let hash = 2166136261;
+  for (let i = 0; i < value.length; i += 1) {
+    hash ^= value.charCodeAt(i);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0).toString(36);
+};
+
+const toPreviewBase = (value) => {
+  const normalized = value.replace(/\\/g, "/").replace(/\.urdf$/i, "");
+  const name = normalized.split("/").pop() || normalized;
+  const slug = slugify(name) || "robot";
+  return `${slug}--${hashString(normalized)}`;
+};
+
 const readRobots = async () => {
   const raw = await fs.readFile(ROBOTS_JSON, "utf8");
   const parsed = JSON.parse(raw);
@@ -51,13 +67,14 @@ const buildTasks = (repos) => {
       const file = typeof robot === "string" ? robot : robot.file || robot.name || "";
       const name = typeof robot === "string" ? robot : robot.name || robot.file || "";
       if (!file && !name) continue;
-      const baseName = slugify(file || name);
+      const baseTarget = file || name;
+      const baseName = toPreviewBase(baseTarget || name);
       if (!baseName) continue;
       tasks.push({
         repoUrl,
         repoKey,
         baseName,
-        fileTarget: file || name,
+        fileTarget: baseTarget,
       });
     }
   }

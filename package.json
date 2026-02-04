@@ -3,9 +3,17 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "render-thumbnails": "node tools/render-thumbnails.mjs"
+    "render-thumbnails": "node tools/render-thumbnails.mjs",
+    "validate:robots": "node tools/validate-robots.mjs",
+    "validate:previews": "node tools/validate-previews.mjs",
+    "generate:manifests": "node tools/generate-manifests.mjs",
+    "cleanup:previews": "node tools/cleanup-previews.mjs",
+    "backfill:urdf-paths": "node tools/backfill-urdf-paths.mjs",
+    "refresh:robots": "node tools/refresh-robots.mjs",
+    "rebuild:previews": "node tools/rebuild-previews.mjs"
   },
   "devDependencies": {
+    "ajv": "^8.12.0",
     "playwright": "^1.50.1"
   }
 }

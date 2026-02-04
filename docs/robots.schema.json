@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["repo", "repoKey", "robots", "updatedAt"],
+    "properties": {
+      "repo": { "type": "string" },
+      "repoKey": { "type": "string" },
+      "path": { "type": "string" },
+      "name": { "type": "string" },
+      "summary": { "type": "string" },
+      "org": { "type": "string" },
+      "demo": { "type": "string" },
+      "tags": {
+        "type": "array",
+        "items": { "type": "string" },
+        "uniqueItems": true
+      },
+      "robots": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "$ref": "#/$defs/robot" }
+      },
+      "hfDatasets": {
+        "type": "array",
+        "items": { "type": "string" },
+        "uniqueItems": true
+      },
+      "authorWebsite": { "type": "string" },
+      "authorX": { "type": "string" },
+      "authorLinkedin": { "type": "string" },
+      "authorGithub": { "type": "string" },
+      "contact": { "type": "string" },
+      "extra": { "type": "string" },
+      "stars": { "type": "number" },
+      "ownerLogin": { "type": "string" },
+      "ownerAvatar": { "type": "string" },
+      "authorLogin": { "type": "string" },
+      "authorAvatar": { "type": "string" },
+      "repoUpdatedAt": { "type": "string" },
+      "updatedAt": { "type": "string" }
+    },
+    "additionalProperties": true
+  },
+  "$defs": {
+    "robot": {
+      "type": "object",
+      "required": ["file"],
+      "properties": {
+        "name": { "type": "string" },
+        "file": { "type": "string", "pattern": "\\\\.[uU][rR][dD][fF]$" },
+        "fileBase": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

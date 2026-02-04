@@ -1,0 +1,67 @@
+name: Refresh robots.json
+
+on:
+  workflow_dispatch:
+    inputs:
+      write:
+        description: "Write changes to docs/robots.json"
+        required: false
+        default: "true"
+      only:
+        description: "Comma-separated repoKey list (optional)"
+        required: false
+      limit:
+        description: "Limit number of repos processed (optional)"
+        required: false
+
+concurrency:
+  group: refresh-robots
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Refresh robots.json
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          args=()
+          if [ -n "${{ inputs.only }}" ]; then
+            args+=(--only "${{ inputs.only }}")
+          fi
+          if [ -n "${{ inputs.limit }}" ]; then
+            args+=(--limit "${{ inputs.limit }}")
+          fi
+          if [ "${{ inputs.write }}" = "true" ]; then
+            args+=(--write)
+          fi
+          node tools/refresh-robots.mjs "${args[@]}"
+
+      - name: Commit changes
+        run: |
+          if [ -z "$(git status --porcelain docs/robots.json docs/robots.meta.json docs/refresh-report.json)" ]; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add docs/robots.json docs/robots.meta.json docs/refresh-report.json
+          git commit -m "Refresh robots.json"
+          git push origin HEAD:main

@@ -44,6 +44,111 @@ jobs:
                 })
               ).data;
             const body = issue.body || "";
+            const issueOwner = context.repo.owner;
+            const issueRepo = context.repo.repo;
+
+            const ensureComment = async (prefix, text) => {
+              const comments = await github.rest.issues.listComments({
+                owner: issueOwner,
+                repo: issueRepo,
+                issue_number: issue.number,
+              });
+              const existing = comments.data.find(
+                (comment) =>
+                  comment.user &&
+                  comment.user.type === "Bot" &&
+                  typeof comment.body === "string" &&
+                  comment.body.startsWith(prefix)
+              );
+              if (existing) return;
+              await github.rest.issues.createComment({
+                owner: issueOwner,
+                repo: issueRepo,
+                issue_number: issue.number,
+                body: text,
+              });
+            };
+
+            const issueAuthor = issue.user?.login || "";
+            const isMaintainer =
+              issueAuthor.toLowerCase() === "amtellezfernandez" ||
+              issueAuthor.toLowerCase() === "urdf-studio";
+            if (!isMaintainer && issueAuthor) {
+              const FAILURE_STREAK_LIMIT = 3;
+              const NO_URDF_LIMIT = 3;
+              const NO_URDF_WINDOW_DAYS = 30;
+              const ISSUE_LOOKBACK = 20;
+              const noUrdfSince = new Date(
+                Date.now() - NO_URDF_WINDOW_DAYS * 24 * 60 * 60 * 1000
+              );
+              const recentIssues = await github.rest.issues.listForRepo({
+                owner: issueOwner,
+                repo: issueRepo,
+                creator: issueAuthor,
+                labels: "robot-repo",
+                state: "all",
+                per_page: ISSUE_LOOKBACK,
+                sort: "created",
+                direction: "desc",
+              });
+
+              const FAILURE_PREFIXES = [
+                "Auto-ingest: no .urdf files were detected",
+                "Auto-ingest: missing GitHub repo URL.",
+                "Auto-ingest: couldn't parse repo URL:",
+                "Auto-ingest: couldn't access",
+              ];
+              const SUCCESS_PREFIX = "Auto-ingest: updated robots.json on main.";
+
+              const getOutcome = async (issueNumber, createdAt) => {
+                const comments = await github.rest.issues.listComments({
+                  owner: issueOwner,
+                  repo: issueRepo,
+                  issue_number: issueNumber,
+                  per_page: 100,
+                });
+                const bodies = (comments.data || []).map((comment) => comment.body || "");
+                const hasSuccess = bodies.some((body) => body.startsWith(SUCCESS_PREFIX));
+                const hasFailure = bodies.some((body) =>
+                  FAILURE_PREFIXES.some((prefix) => body.startsWith(prefix))
+                );
+                const hasNoUrdf = bodies.some((body) =>
+                  body.startsWith("Auto-ingest: no .urdf files were detected")
+                );
+                const createdDate = createdAt ? new Date(createdAt) : null;
+                const inNoUrdfWindow = createdDate ? createdDate >= noUrdfSince : false;
+                return {
+                  success: hasSuccess,
+                  failure: hasFailure,
+                  noUrdf: hasNoUrdf && inNoUrdfWindow,
+                };
+              };
+
+              let failureStreak = 0;
+              let noUrdfCount = 0;
+              for (const item of recentIssues.data || []) {
+                if (item.pull_request) continue;
+                if (item.number === issue.number) continue;
+                const outcome = await getOutcome(item.number, item.created_at);
+                if (outcome.noUrdf) noUrdfCount += 1;
+                if (outcome.success) break;
+                if (outcome.failure) {
+                  failureStreak += 1;
+                  if (failureStreak >= FAILURE_STREAK_LIMIT) break;
+                  continue;
+                }
+                if (failureStreak > 0) break;
+              }
+
+              if (failureStreak >= FAILURE_STREAK_LIMIT || noUrdfCount >= NO_URDF_LIMIT) {
+                await ensureComment(
+                  "Auto-ingest: repeated failed submissions.",
+                  `Auto-ingest: repeated failed submissions from ${issueAuthor}. ` +
+                    "This submission will be reviewed manually by a maintainer."
+                );
+                return;
+              }
+            }
 
             const clean = (value) => {
               if (!value) return "";
@@ -133,6 +238,17 @@ jobs:
                 .filter(Boolean);
             };
 
+            const normalizeTagKey = (value) =>
+              value
+                .toLowerCase()
+                .replace(/[^a-z0-9]+/g, "")
+                .trim();
+
+            const TAG_ALIASES = new Map([
+              ["lerobot", "LeRobotCompatible"],
+              ["arms", "Arm"],
+            ]);
+
             const parseRobotMapping = (value) => {
               if (!value) return [];
               const lines = parseLines(value);
@@ -168,6 +284,51 @@ jobs:
               return robots;
             };
 
+            const normalizeRepoKey = (value) =>
+              value
+                ? value
+                    .replace(/^https?:\/\/github\.com\//, "")
+                    .split("/")
+                    .slice(0, 2)
+                    .join("/")
+                    .toLowerCase()
+                : "";
+
+            const fetchGalleryJson = async (filePath, fallback) => {
+              try {
+                const file = await github.rest.repos.getContent({
+                  owner: galleryOwner,
+                  repo: galleryRepo,
+                  path: filePath,
+                  ref: galleryDefaultBranch,
+                });
+                if (!Array.isArray(file.data) && file.data.content) {
+                  const decoded = Buffer.from(file.data.content, "base64").toString("utf8");
+                  return JSON.parse(decoded);
+                }
+              } catch {
+                // ignore
+              }
+              return fallback;
+            };
+
+            const fetchGallerySha = async (filePath) => {
+              try {
+                const file = await github.rest.repos.getContent({
+                  owner: galleryOwner,
+                  repo: galleryRepo,
+                  path: filePath,
+                  ref: galleryDefaultBranch,
+                });
+                if (!Array.isArray(file.data)) {
+                  return file.data.sha || null;
+                }
+              } catch {
+                // ignore
+              }
+              return null;
+            };
+
             const fields = parseIssueFields(body);
             let repoUrl = clean(fields["GitHub repo URL"]);
             if (!repoUrl) {
@@ -177,12 +338,7 @@ jobs:
               }
             }
             if (!repoUrl) {
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issue.number,
-                body: "Auto-ingest: missing GitHub repo URL.",
-              });
+              await ensureComment("Auto-ingest: missing GitHub repo URL.", "Auto-ingest: missing GitHub repo URL.");
               return;
             }
 
@@ -192,27 +348,106 @@ jobs:
                 repoInfo && repoInfo.error === "missing-repo"
                   ? `Auto-ingest: please provide a full GitHub repo URL (owner/repo). I received an org URL: ${repoUrl}\nExample: https://github.com/TheRobotStudio/SO-ARM100`
                   : `Auto-ingest: couldn't parse repo URL: ${repoUrl}`;
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issue.number,
-                body: errorMessage,
-              });
+              await ensureComment("Auto-ingest: couldn't parse repo URL:", errorMessage);
               return;
             }
 
             const { owner, repo, path } = repoInfo;
+            const desiredTitle = `robot-showcase-request: ${owner}/${repo}`;
+            if ((issue.title || "").trim() !== desiredTitle) {
+              try {
+                await github.rest.issues.update({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issue.number,
+                  title: desiredTitle,
+                });
+              } catch {
+                // Non-fatal if title update fails.
+              }
+            }
+            const galleryOwner = context.repo.owner;
+            const galleryRepo = context.repo.repo;
+            const galleryInfo = await github.rest.repos.get({
+              owner: galleryOwner,
+              repo: galleryRepo,
+            });
+            const galleryDefaultBranch = galleryInfo.data.default_branch || "main";
+
+            let existing = [];
+            let existingSha = null;
+            try {
+              const file = await github.rest.repos.getContent({
+                owner: galleryOwner,
+                repo: galleryRepo,
+                path: "docs/robots.json",
+                ref: galleryDefaultBranch,
+              });
+              if (!Array.isArray(file.data) && file.data.content) {
+                const decoded = Buffer.from(file.data.content, "base64").toString("utf8");
+                existing = JSON.parse(decoded);
+                existingSha = file.data.sha;
+              }
+            } catch {
+              existing = [];
+            }
+
+            const allowedTags = await fetchGalleryJson("docs/tags.json", []);
+            const allowedTagMap = new Map(
+              (Array.isArray(allowedTags) ? allowedTags : []).map((tag) => [normalizeTagKey(tag), tag])
+            );
+            const allowedTagList = Array.isArray(allowedTags) ? allowedTags : [];
+
+            const repoKeyCandidate = `${owner}/${repo}`.toLowerCase();
+            const alreadyIncluded = existing.findIndex(
+              (item) => normalizeRepoKey(item.repo || item.repoKey) === repoKeyCandidate
+            );
+            if (alreadyIncluded >= 0) {
+              await ensureComment(
+                "Auto-ingest: repo already included.",
+                `Auto-ingest: ${owner}/${repo} is already included in the gallery. Closing this issue.`
+              );
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                state: "closed",
+              });
+              return;
+            }
+
             let defaultBranch = "main";
             try {
               const repoData = await github.rest.repos.get({ owner, repo });
               defaultBranch = repoData.data.default_branch || "main";
             } catch (error) {
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issue.number,
-                body: `Auto-ingest: couldn't access ${owner}/${repo}.`,
-              });
+              await ensureComment(
+                "Auto-ingest: couldn't access",
+                `Auto-ingest: couldn't access ${owner}/${repo}.`
+              );
+              return;
+            }
+
+            let hasWriteAccess = false;
+            if (!isMaintainer && issueAuthor) {
+              try {
+                const permission = await github.rest.repos.getCollaboratorPermissionLevel({
+                  owner,
+                  repo,
+                  username: issueAuthor,
+                });
+                const level = permission?.data?.permission || "";
+                hasWriteAccess = ["admin", "maintain", "write"].includes(level);
+              } catch {
+                hasWriteAccess = false;
+              }
+            }
+            if (!isMaintainer && !hasWriteAccess) {
+              await ensureComment(
+                "Auto-ingest: manual review required.",
+                `Auto-ingest: manual review required. ${issueAuthor || "The submitter"} does not appear to have write access to ${owner}/${repo}. ` +
+                  "This submission will be reviewed manually by a maintainer."
+              );
               return;
             }
 
@@ -239,18 +474,104 @@ jobs:
             };
 
             const tree = await fetchTree();
-            const urdfFiles = tree
+            const normalizedPath = path ? path.replace(/^\/+|\/+$/g, "") : "";
+            const hasPrefix =
+              normalizedPath &&
+              tree.some((entry) => entry.path && entry.path.startsWith(`${normalizedPath}/`));
+            const normalizedTree =
+              normalizedPath && !hasPrefix
+                ? tree.map((entry) =>
+                    entry.path ? { ...entry, path: `${normalizedPath}/${entry.path}` } : entry
+                  )
+                : tree;
+            const urdfFiles = normalizedTree
               .filter((entry) => entry.type === "blob" && entry.path.toLowerCase().endsWith(".urdf"))
               .map((entry) => entry.path);
+            if (urdfFiles.length === 0) {
+              const altFormats = [".xacro", ".sdf", ".mjcf", ".xml", ".urdf.xacro"];
+              const foundAlt = normalizedTree
+                .filter((entry) => entry.type === "blob")
+                .map((entry) => entry.path.toLowerCase())
+                .filter((path) => altFormats.some((ext) => path.endsWith(ext)));
+              const altHint = foundAlt.length
+                ? `Detected non-URDF files: ${foundAlt.slice(0, 5).join(", ")}. `
+                : "";
+              await ensureComment(
+                "Auto-ingest: no .urdf files were detected",
+                `Auto-ingest: no .urdf files were detected in ${owner}/${repo}. ` +
+                  altHint +
+                  "If your robot uses another format, support is coming. " +
+                  "Please add a URDF or point to the correct path and re-open this issue."
+              );
+              return;
+            }
+
+            const rawTags = parseTags(clean(fields["Tags (optional)"]));
+            const normalizedTags = [];
+            const invalidTags = [];
+            for (const tag of rawTags) {
+              const key = normalizeTagKey(tag);
+              const canonical = TAG_ALIASES.get(key) || allowedTagMap.get(key);
+              if (!canonical) {
+                invalidTags.push(tag);
+                continue;
+              }
+              if (!normalizedTags.includes(canonical)) {
+                normalizedTags.push(canonical);
+              }
+            }
+            if (invalidTags.length > 0) {
+              const allowedText = allowedTagList.length
+                ? `Allowed tags: ${allowedTagList.join(", ")}.`
+                : "Allowed tags list is unavailable.";
+              await ensureComment(
+                "Auto-ingest: invalid tags.",
+                `Auto-ingest: invalid tags provided: ${invalidTags.join(", ")}. ${allowedText}`
+              );
+              return;
+            }
 
             const mapping = parseRobotMapping(clean(fields["Robot mapping (optional)"]));
+            const urdfFileNameMap = new Map();
+            for (const filePath of urdfFiles) {
+              const fileName = filePath.split("/").pop() || filePath;
+              const key = fileName.toLowerCase();
+              if (!urdfFileNameMap.has(key)) urdfFileNameMap.set(key, []);
+              urdfFileNameMap.get(key).push(filePath);
+            }
+            const pickBestPath = (paths) => {
+              if (!Array.isArray(paths) || paths.length === 0) return "";
+              return [...paths].sort((a, b) => a.length - b.length || a.localeCompare(b))[0];
+            };
+            const mappedRobots = [];
+            const mappedFileKeys = new Set();
+            if (mapping.length > 0) {
+              for (const robot of mapping) {
+                const rawFile = (robot.file || "").trim();
+                if (!rawFile) continue;
+                const candidate = rawFile.toLowerCase().endsWith(".urdf") ? rawFile : `${rawFile}.urdf`;
+                const key = candidate.toLowerCase();
+                const actualPath = pickBestPath(urdfFileNameMap.get(key));
+                if (!actualPath) continue;
+                const baseName = (actualPath.split("/").pop() || actualPath).replace(/\.urdf$/i, "");
+                const name = (robot.name || baseName).trim();
+                mappedRobots.push({ name, file: actualPath });
+                mappedFileKeys.add(actualPath.toLowerCase());
+              }
+            }
+            const detectedRobots = urdfFiles.map((filePath) => ({
+              name: (filePath.split("/").pop() || filePath).replace(/\.urdf$/i, ""),
+              file: filePath,
+            }));
             const robots =
               mapping.length > 0
-                ? mapping
-                : urdfFiles.map((filePath) => {
-                    const fileName = filePath.split("/").pop() || filePath;
-                    return { name: fileName.replace(/\.urdf$/i, ""), file: fileName };
-                  });
+                ? [
+                    ...mappedRobots,
+                    ...detectedRobots.filter(
+                      (robot) => !mappedFileKeys.has(robot.file.toLowerCase())
+                    ),
+                  ]
+                : detectedRobots;
 
             const entry = {
               repo: `https://github.com/${owner}/${repo}`,
@@ -259,7 +580,7 @@ jobs:
               org: clean(fields["Author / Company / Lab (optional)"]),
               summary: clean(fields["Short summary"]),
               demo: clean(fields["Demo URL (optional)"]),
-              tags: parseTags(clean(fields["Tags (optional)"])),
+              tags: normalizedTags,
               robots: robots.length ? robots : undefined,
               hfDatasets: parseLines(clean(fields["Hugging Face datasets (one per line, optional)"])),
               authorWebsite: clean(fields["Author website (optional)"]),
@@ -270,42 +591,6 @@ jobs:
               extra: clean(fields["Extra links or notes (optional)"]),
               updatedAt: new Date().toISOString(),
             };
-
-            const normalizeRepoKey = (value) =>
-              value
-                ? value
-                    .replace(/^https?:\/\/github\.com\//, "")
-                    .split("/")
-                    .slice(0, 2)
-                    .join("/")
-                    .toLowerCase()
-                : "";
-
-            const galleryOwner = context.repo.owner;
-            const galleryRepo = context.repo.repo;
-            const galleryInfo = await github.rest.repos.get({
-              owner: galleryOwner,
-              repo: galleryRepo,
-            });
-            const galleryDefaultBranch = galleryInfo.data.default_branch || "main";
-
-            let existing = [];
-            let existingSha = null;
-            try {
-              const file = await github.rest.repos.getContent({
-                owner: galleryOwner,
-                repo: galleryRepo,
-                path: "docs/robots.json",
-                ref: galleryDefaultBranch,
-              });
-              if (!Array.isArray(file.data) && file.data.content) {
-                const decoded = Buffer.from(file.data.content, "base64").toString("utf8");
-                existing = JSON.parse(decoded);
-                existingSha = file.data.sha;
-              }
-            } catch {
-              existing = [];
-            }
 
             const repoKey = entry.repoKey;
             const idx = existing.findIndex((item) => normalizeRepoKey(item.repo || item.repoKey) === repoKey);
@@ -344,6 +629,22 @@ jobs:
               message: `Update robots.json from issue #${issue.number}`,
               content,
               sha: existingSha || undefined,
+              branch: galleryDefaultBranch,
+            });
+
+            const meta = {
+              version: 1,
+              generatedAt: new Date().toISOString(),
+              count: existing.length,
+            };
+            const metaSha = await fetchGallerySha("docs/robots.meta.json");
+            await github.rest.repos.createOrUpdateFileContents({
+              owner: galleryOwner,
+              repo: galleryRepo,
+              path: "docs/robots.meta.json",
+              message: `Update robots.meta.json from issue #${issue.number}`,
+              content: Buffer.from(JSON.stringify(meta, null, 2)).toString("base64"),
+              sha: metaSha || undefined,
               branch: galleryDefaultBranch,
             });
 

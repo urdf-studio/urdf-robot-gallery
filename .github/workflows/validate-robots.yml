@@ -1,0 +1,43 @@
+name: Validate robots.json
+
+on:
+  pull_request:
+    paths:
+      - "docs/robots.json"
+      - "docs/robots.schema.json"
+      - "docs/tags.json"
+      - "docs/previews.json"
+      - "docs/previews.schema.json"
+      - "tools/validate-robots.mjs"
+      - "tools/validate-previews.mjs"
+  push:
+    branches: [main]
+    paths:
+      - "docs/robots.json"
+      - "docs/robots.schema.json"
+      - "docs/tags.json"
+      - "docs/previews.json"
+      - "docs/previews.schema.json"
+      - "tools/validate-robots.mjs"
+      - "tools/validate-previews.mjs"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Validate robots.json
+        run: npm run validate:robots
+
+      - name: Validate previews.json
+        run: npm run validate:previews
