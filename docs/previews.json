@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-02-04T14:17:08.780Z",
+  "generatedAt": "2026-02-04T14:20:04.996Z",
   "previews": [
     {
       "repoKey": "robotis-git/turtlebot3",
@@ -8,6 +8,13 @@
       "webm": "previews/robotis-git/turtlebot3/common_properties--1oyc4eg.webm",
       "webp": "previews/robotis-git/turtlebot3/common_properties--1oyc4eg.webp",
       "png": "thumbnails/robotis-git/turtlebot3/common_properties--1oyc4eg.png"
+    },
+    {
+      "repoKey": "robotis-git/turtlebot3",
+      "fileBase": "turtlebot3_burger--ax3px7",
+      "webm": "previews/robotis-git/turtlebot3/turtlebot3_burger--ax3px7.webm",
+      "webp": "previews/robotis-git/turtlebot3/turtlebot3_burger--ax3px7.webp",
+      "png": "thumbnails/robotis-git/turtlebot3/turtlebot3_burger--ax3px7.png"
     }
   ]
 }
