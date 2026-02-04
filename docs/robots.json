@@ -1,5 +1,28 @@
 [
   {
+    "repo": "https://github.com/ANYbotics/anymal_b_simple_description",
+    "repoKey": "anybotics/anymal_b_simple_description",
+    "org": "",
+    "summary": "",
+    "demo": "",
+    "tags": [],
+    "robots": [
+      {
+        "name": "anymal",
+        "file": "anymal.urdf",
+        "fileBase": "anymal--185350l"
+      }
+    ],
+    "hfDatasets": [],
+    "authorWebsite": "",
+    "authorX": "",
+    "authorLinkedin": "",
+    "authorGithub": "",
+    "contact": "",
+    "extra": "",
+    "updatedAt": "2026-02-04T15:41:04.361Z"
+  },
+  {
     "repo": "https://github.com/SIGRobotics-UIUC/LeKiwi",
     "repoKey": "sigrobotics-uiuc/lekiwi",
     "org": "",
