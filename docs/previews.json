@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-02-04T13:44:17.775Z",
+  "generatedAt": "2026-02-04T13:45:00.464Z",
   "previews": [
     {
       "repoKey": "robotis-git/turtlebot3",
@@ -36,6 +36,13 @@
       "webm": "previews/robotis-git/turtlebot3/turtlebot3_waffle.webm",
       "webp": "previews/robotis-git/turtlebot3/turtlebot3_waffle.webp",
       "png": "thumbnails/robotis-git/turtlebot3/turtlebot3_waffle.png"
+    },
+    {
+      "repoKey": "robotis-git/turtlebot3",
+      "fileBase": "turtlebot3_waffle_pi--13xns15",
+      "webm": "previews/robotis-git/turtlebot3/turtlebot3_waffle_pi--13xns15.webm",
+      "webp": "previews/robotis-git/turtlebot3/turtlebot3_waffle_pi--13xns15.webp",
+      "png": "thumbnails/robotis-git/turtlebot3/turtlebot3_waffle_pi--13xns15.png"
     },
     {
       "repoKey": "therobotstudio/so-arm100",
