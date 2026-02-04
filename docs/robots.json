@@ -278,12 +278,17 @@
       {
         "name": "b2_description",
         "file": "b2_description.urdf",
-        "fileBase": "b2_description--hqoppc"
+        "fileBase": "b2_description--gg409g"
       },
       {
         "name": "R1_AIR",
         "file": "R1_AIR.urdf",
         "fileBase": "r1_air--2i8bcx"
+      },
+      {
+        "name": "b2_description",
+        "file": "b2_description.urdf",
+        "fileBase": "b2_description--hqoppc"
       }
     ],
     "hfDatasets": [],
