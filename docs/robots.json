@@ -288,6 +288,11 @@
       {
         "name": "b2_description",
         "file": "b2_description.urdf",
+        "fileBase": "b2_description--gg409g"
+      },
+      {
+        "name": "b2_description",
+        "file": "b2_description.urdf",
         "fileBase": "b2_description--hqoppc"
       }
     ],
