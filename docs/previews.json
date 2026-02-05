@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-02-05T00:54:14.859Z",
+  "generatedAt": "2026-02-05T01:00:04.199Z",
   "previews": [
     {
       "repoKey": "anybotics/anymal_b_simple_description",
@@ -43,6 +43,13 @@
       "webm": "previews/robotis-git/turtlebot3/turtlebot3_waffle--hiw5vp.webm",
       "webp": "previews/robotis-git/turtlebot3/turtlebot3_waffle--hiw5vp.webp",
       "png": "thumbnails/robotis-git/turtlebot3/turtlebot3_waffle--hiw5vp.png"
+    },
+    {
+      "repoKey": "sigrobotics-uiuc/lekiwi",
+      "fileBase": "lekiwi--gkj1ce",
+      "webm": "previews/sigrobotics-uiuc/lekiwi/lekiwi--gkj1ce.webm",
+      "webp": "previews/sigrobotics-uiuc/lekiwi/lekiwi--gkj1ce.webp",
+      "png": "thumbnails/sigrobotics-uiuc/lekiwi/lekiwi--gkj1ce.png"
     },
     {
       "repoKey": "therobotstudio/so-arm100",
