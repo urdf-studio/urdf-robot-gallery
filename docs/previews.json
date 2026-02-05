@@ -1,7 +1,14 @@
 {
   "version": 1,
-  "generatedAt": "2026-02-05T00:43:55.901Z",
+  "generatedAt": "2026-02-05T00:48:05.024Z",
   "previews": [
+    {
+      "repoKey": "anybotics/anymal_b_simple_description",
+      "fileBase": "anymal--185350l",
+      "webm": "previews/anybotics/anymal_b_simple_description/anymal--185350l.webm",
+      "webp": "previews/anybotics/anymal_b_simple_description/anymal--185350l.webp",
+      "png": "thumbnails/anybotics/anymal_b_simple_description/anymal--185350l.png"
+    },
     {
       "repoKey": "robotis-git/turtlebot3",
       "fileBase": "common_properties--1oyc4eg",
