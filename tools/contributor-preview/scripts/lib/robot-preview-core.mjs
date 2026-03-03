@@ -314,11 +314,18 @@ export const generateRobotPreview = async ({
   const operationTimeout = config.timeoutMs ?? DEFAULT_CONFIG.timeoutMs;
   page.setDefaultTimeout(operationTimeout);
   page.setDefaultNavigationTimeout(operationTimeout);
-  await page.setViewport({
-    width: config.width,
-    height: config.height,
-    deviceScaleFactor: config.pixelRatio,
-  });
+  if (typeof page.setViewport === "function") {
+    await page.setViewport({
+      width: config.width,
+      height: config.height,
+      deviceScaleFactor: config.pixelRatio,
+    });
+  } else if (typeof page.setViewportSize === "function") {
+    await page.setViewportSize({
+      width: config.width,
+      height: config.height,
+    });
+  }
 
   const robotLabel = robot.name || robot.id || robot.urdfUrl;
   const seenConsoleMessages = new Map();
@@ -462,13 +469,21 @@ export const generateRobotPreview = async ({
         : 0.985;
     const hardMaxTolerance = 0.002;
 
-    let bestCoverage = -1;
-    let bestViewScore = -1;
-    let bestViewBalance = -1;
-    let bestCoverageFramePath = "";
+    let bestPreferredCoverage = -1;
+    let bestPreferredViewScore = -1;
+    let bestPreferredViewBalance = -1;
+    let bestPreferredFramePath = "";
+    let bestFallbackCoverage = -1;
+    let bestFallbackViewScore = -1;
+    let bestFallbackViewBalance = -1;
+    let bestFallbackFramePath = "";
     let finalFramePath = "";
     let worstCoverage = 0;
     const thumbnailCandidateStart = Math.floor(config.frameCount * 0.25);
+    const thumbnailMinViewBalance =
+      Number.isFinite(config.thumbnailMinViewBalance) && Number(config.thumbnailMinViewBalance) > 0
+        ? Math.min(0.95, Math.max(0.1, Number(config.thumbnailMinViewBalance)))
+        : 0.38;
     for (let i = 0; i < config.frameCount; i += 1) {
       const angle = i * anglePerFrame;
       await page.evaluate(
@@ -509,18 +524,32 @@ export const generateRobotPreview = async ({
       worstCoverage = Math.max(worstCoverage, coverage);
       const frameIsSafe = coverage <= hardMaxFramingNdc + hardMaxTolerance;
       if (i >= thumbnailCandidateStart && frameIsSafe) {
-        // Keep default orientation flow, but penalize edge-on silhouettes for thumbnail selection.
-        const viewScore = coverage * (0.72 + 0.28 * viewBalance);
+        // Prefer fuller silhouettes and strongly penalize edge-on/lateral profiles.
+        const viewScore = coverage * (0.52 + 0.48 * viewBalance);
         if (
-          viewScore > bestViewScore + 1e-9 ||
-          (Math.abs(viewScore - bestViewScore) <= 1e-9 &&
-            (viewBalance > bestViewBalance + 1e-9 ||
-              (Math.abs(viewBalance - bestViewBalance) <= 1e-9 && coverage > bestCoverage + 1e-9)))
+          viewScore > bestFallbackViewScore + 1e-9 ||
+          (Math.abs(viewScore - bestFallbackViewScore) <= 1e-9 &&
+            (viewBalance > bestFallbackViewBalance + 1e-9 ||
+              (Math.abs(viewBalance - bestFallbackViewBalance) <= 1e-9 &&
+                coverage > bestFallbackCoverage + 1e-9)))
         ) {
-          bestCoverage = coverage;
-          bestViewScore = viewScore;
-          bestViewBalance = viewBalance;
-          bestCoverageFramePath = framePath;
+          bestFallbackCoverage = coverage;
+          bestFallbackViewScore = viewScore;
+          bestFallbackViewBalance = viewBalance;
+          bestFallbackFramePath = framePath;
+        }
+        if (
+          viewBalance >= thumbnailMinViewBalance &&
+          (viewScore > bestPreferredViewScore + 1e-9 ||
+            (Math.abs(viewScore - bestPreferredViewScore) <= 1e-9 &&
+              (viewBalance > bestPreferredViewBalance + 1e-9 ||
+                (Math.abs(viewBalance - bestPreferredViewBalance) <= 1e-9 &&
+                  coverage > bestPreferredCoverage + 1e-9))))
+        ) {
+          bestPreferredCoverage = coverage;
+          bestPreferredViewScore = viewScore;
+          bestPreferredViewBalance = viewBalance;
+          bestPreferredFramePath = framePath;
         }
       }
     }
@@ -534,7 +563,7 @@ export const generateRobotPreview = async ({
     }
 
     await fs.copyFile(
-      bestCoverageFramePath || finalFramePath || path.join(framesDir, "frame_000.png"),
+      bestPreferredFramePath || bestFallbackFramePath || finalFramePath || path.join(framesDir, "frame_000.png"),
       tempThumbnailPath
     );
 

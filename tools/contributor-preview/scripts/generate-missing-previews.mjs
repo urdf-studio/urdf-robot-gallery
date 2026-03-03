@@ -8,9 +8,11 @@
  */
 
 import fs from "node:fs/promises";
+import fsSync from "node:fs";
 import path from "node:path";
 import os from "node:os";
 import { spawnSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import { parseArgs } from "./lib/cli.mjs";
 import { readJsonFile, writeJsonFile } from "./lib/fs-utils.mjs";
 import {
@@ -151,6 +153,23 @@ const buildGeneratorArgs = (tmpConfigPath, tmpManifestPath) => {
   if (cacheClean) generatorArgs.push("--cache-clean");
 
   return generatorArgs;
+};
+
+const resolveGeneratorPath = () => {
+  const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+  const candidates = [
+    path.resolve("scripts/generate-robot-previews.mjs"),
+    path.resolve("tools/contributor-preview/scripts/generate-robot-previews.mjs"),
+    path.join(scriptDir, "generate-robot-previews.mjs"),
+  ];
+  for (const candidate of candidates) {
+    if (fsSync.existsSync(candidate)) {
+      return candidate;
+    }
+  }
+  throw new Error(
+    `[missing-previews] Could not locate generate-robot-previews.mjs. Tried: ${candidates.join(", ")}`
+  );
 };
 
 const mergeBatchPreviewMetadata = async (batchManifestPath) => {
@@ -304,7 +323,7 @@ const main = async () => {
   );
 
   const batches = chunkItems(robots, commitEach && !batchSize ? 1 : batchSize);
-  const generatorPath = path.resolve("scripts/generate-robot-previews.mjs");
+  const generatorPath = resolveGeneratorPath();
 
   for (const batch of batches) {
     const config = buildGeneratorConfig({

@@ -1,7 +1,9 @@
 import fs from "node:fs/promises";
+import fsSync from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import { fileURLToPath } from "node:url";
 import { fetchGitHubApiJson } from "./github-api.mjs";
 import { detectRobotSourceType, stripRobotSourceExtension } from "./robot-source-type.mjs";
 import {
@@ -1165,7 +1167,19 @@ export const clearCacheDir = async (dir) => {
 };
 
 export const runSyncManifest = (galleryRoot) => {
-  const syncPath = path.resolve("scripts/sync-previews-manifest.mjs");
+  const libDir = path.dirname(fileURLToPath(import.meta.url));
+  const candidates = [
+    path.resolve("scripts/sync-previews-manifest.mjs"),
+    path.resolve("tools/contributor-preview/scripts/sync-previews-manifest.mjs"),
+    path.resolve(libDir, "..", "sync-previews-manifest.mjs"),
+  ];
+  const syncPath = candidates.find((candidate) => fsSync.existsSync(candidate));
+  if (!syncPath) {
+    console.error(
+      `[missing-previews] Could not locate sync-previews-manifest.mjs. Tried: ${candidates.join(", ")}`
+    );
+    return false;
+  }
   const result = spawnSync("node", [syncPath, "--gallery", galleryRoot], { stdio: "inherit" });
   return result.status === 0;
 };
