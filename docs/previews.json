@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-03T06:15:51.484Z",
+  "generatedAt": "2026-03-03T06:20:28.733Z",
   "previews": [
     {
       "repoKey": "anybotics/anymal_b_simple_description",
@@ -5792,19 +5792,112 @@
     {
       "repoKey": "unitreerobotics/unitree_ros",
       "fileBase": "g1_29dof_mode_14--1rg5gm2",
+      "sourceType": "urdf",
+      "meshCount": 35,
+      "linkCount": 39,
+      "jointCount": 38,
+      "armCount": 1,
+      "legCount": 2,
+      "wheelCount": 0,
+      "tags": [
+        "meshes:35",
+        "links:39",
+        "joints:38",
+        "arms:1",
+        "legs:2",
+        "wheels:0",
+        "source:urdf"
+      ],
       "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_mode_14--1rg5gm2.webp",
       "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_mode_14--1rg5gm2.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
       "fileBase": "g1_29dof_mode_15_brainco_hand--k6rcr9",
+      "sourceType": "urdf",
+      "meshCount": 69,
+      "linkCount": 73,
+      "jointCount": 72,
+      "armCount": 1,
+      "legCount": 2,
+      "wheelCount": 0,
+      "tags": [
+        "meshes:69",
+        "links:73",
+        "joints:72",
+        "arms:1",
+        "legs:2",
+        "wheels:0",
+        "source:urdf"
+      ],
       "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_mode_15_brainco_hand--k6rcr9.webp",
       "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_mode_15_brainco_hand--k6rcr9.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
       "fileBase": "g1_29dof_mode_15_with_dex1_1--s00477",
+      "sourceType": "urdf",
+      "meshCount": 39,
+      "linkCount": 43,
+      "jointCount": 42,
+      "armCount": 1,
+      "legCount": 2,
+      "wheelCount": 0,
+      "tags": [
+        "meshes:39",
+        "links:43",
+        "joints:42",
+        "arms:1",
+        "legs:2",
+        "wheels:0",
+        "source:urdf"
+      ],
+      "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_mode_15_with_dex1_1--s00477.webp",
       "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_mode_15_with_dex1_1--s00477.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "g1_29dof_mode_15--1rq52b1",
+      "sourceType": "urdf",
+      "meshCount": 35,
+      "linkCount": 39,
+      "jointCount": 38,
+      "armCount": 1,
+      "legCount": 2,
+      "wheelCount": 0,
+      "tags": [
+        "meshes:35",
+        "links:39",
+        "joints:38",
+        "arms:1",
+        "legs:2",
+        "wheels:0",
+        "source:urdf"
+      ],
+      "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_mode_15--1rq52b1.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_mode_15--1rq52b1.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "g1_29dof_mode_16--1qw6984",
+      "sourceType": "urdf",
+      "meshCount": 35,
+      "linkCount": 39,
+      "jointCount": 38,
+      "armCount": 1,
+      "legCount": 2,
+      "wheelCount": 0,
+      "tags": [
+        "meshes:35",
+        "links:39",
+        "joints:38",
+        "arms:1",
+        "legs:2",
+        "wheels:0",
+        "source:urdf"
+      ],
+      "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_mode_16--1qw6984.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_mode_16--1qw6984.png"
     }
   ]
 }
