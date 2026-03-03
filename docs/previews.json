@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-03T13:25:20.498Z",
+  "generatedAt": "2026-03-03T13:30:08.056Z",
   "previews": [
     {
       "repoKey": "anybotics/anymal_b_simple_description",
@@ -2047,6 +2047,28 @@
       ],
       "webp": "previews/bulletphysics/bullet3/wsg50_one_motor_gripper_left_finger--1f3sbjt.webp",
       "png": "thumbnails/bulletphysics/bullet3/wsg50_one_motor_gripper_left_finger--1f3sbjt.png"
+    },
+    {
+      "repoKey": "bulletphysics/bullet3",
+      "fileBase": "wsg50_one_motor_gripper_right_finger--7ogrf8",
+      "sourceType": "urdf",
+      "meshCount": 1,
+      "linkCount": 1,
+      "jointCount": 0,
+      "armCount": 0,
+      "legCount": 0,
+      "wheelCount": 0,
+      "tags": [
+        "meshes:1",
+        "links:1",
+        "joints:0",
+        "arms:0",
+        "legs:0",
+        "wheels:0",
+        "source:urdf"
+      ],
+      "webp": "previews/bulletphysics/bullet3/wsg50_one_motor_gripper_right_finger--7ogrf8.webp",
+      "png": "thumbnails/bulletphysics/bullet3/wsg50_one_motor_gripper_right_finger--7ogrf8.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
