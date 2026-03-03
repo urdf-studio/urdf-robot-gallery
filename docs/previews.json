@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-03T06:05:13.389Z",
+  "generatedAt": "2026-03-03T06:07:19.416Z",
   "previews": [
     {
       "repoKey": "anybotics/anymal_b_simple_description",
@@ -5461,6 +5461,50 @@
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "dex5-urdf-l--m1ckkc",
+      "sourceType": "urdf",
+      "meshCount": 21,
+      "linkCount": 21,
+      "jointCount": 20,
+      "armCount": 5,
+      "legCount": 0,
+      "wheelCount": 0,
+      "tags": [
+        "meshes:21",
+        "links:21",
+        "joints:20",
+        "arms:5",
+        "legs:0",
+        "wheels:0",
+        "source:urdf"
+      ],
+      "webp": "previews/unitreerobotics/unitree_ros/dex5-urdf-l--m1ckkc.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/dex5-urdf-l--m1ckkc.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "dex5-urdf-r--1cc12b4",
+      "sourceType": "urdf",
+      "meshCount": 21,
+      "linkCount": 21,
+      "jointCount": 20,
+      "armCount": 5,
+      "legCount": 0,
+      "wheelCount": 0,
+      "tags": [
+        "meshes:21",
+        "links:21",
+        "joints:20",
+        "arms:5",
+        "legs:0",
+        "wheels:0",
+        "source:urdf"
+      ],
+      "webp": "previews/unitreerobotics/unitree_ros/dex5-urdf-r--1cc12b4.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/dex5-urdf-r--1cc12b4.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
       "fileBase": "dfq_left_hand--1fc09xp",
       "sourceType": "urdf",
       "meshCount": 13,
@@ -5507,14 +5551,14 @@
       "repoKey": "unitreerobotics/unitree_ros",
       "fileBase": "ftp_left_hand--1wjpxbq",
       "sourceType": "urdf",
-      "meshCount": 0,
+      "meshCount": 30,
       "linkCount": 31,
       "jointCount": 30,
       "armCount": 5,
       "legCount": 0,
       "wheelCount": 0,
       "tags": [
-        "meshes:0",
+        "meshes:30",
         "links:31",
         "joints:30",
         "arms:5",
