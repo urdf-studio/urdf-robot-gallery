@@ -38,7 +38,7 @@ export const DEFAULT_CONFIG = {
   maxDistance: 50,
   distanceMultiplier: 1.6,
   humanoidDistanceMultiplier: 1.2,
-  framingTargetNdc: 0.88,
+  framingTargetNdc: 0.9,
   framingHardMaxNdc: 0.985,
   framingRotationSamples: 72,
   framingDistanceSafety: 1.04,
@@ -463,8 +463,6 @@ export const generateRobotPreview = async ({
     const hardMaxTolerance = 0.002;
 
     let bestCoverage = -1;
-    let bestViewScore = -1;
-    let bestViewBalance = -1;
     let bestCoverageFramePath = "";
     let finalFramePath = "";
     let worstCoverage = 0;
@@ -501,27 +499,11 @@ export const generateRobotPreview = async ({
         return { coverage: 0, maxAbsX: 0, maxAbsY: 0 };
       });
       const coverage = Number(metrics?.coverage || 0);
-      const maxAbsX = Number(metrics?.maxAbsX || 0);
-      const maxAbsY = Number(metrics?.maxAbsY || 0);
-      const maxAxis = Math.max(maxAbsX, maxAbsY);
-      const minAxis = Math.min(maxAbsX, maxAbsY);
-      const viewBalance = maxAxis > 1e-6 ? minAxis / maxAxis : 0;
       worstCoverage = Math.max(worstCoverage, coverage);
       const frameIsSafe = coverage <= hardMaxFramingNdc + hardMaxTolerance;
-      if (i >= thumbnailCandidateStart && frameIsSafe) {
-        // Prefer large framed views, but penalize edge-on silhouettes to avoid side-only thumbnails.
-        const viewScore = coverage * (0.72 + 0.28 * viewBalance);
-        if (
-          viewScore > bestViewScore + 1e-9 ||
-          (Math.abs(viewScore - bestViewScore) <= 1e-9 &&
-            (viewBalance > bestViewBalance + 1e-9 ||
-              (Math.abs(viewBalance - bestViewBalance) <= 1e-9 && coverage > bestCoverage + 1e-9)))
-        ) {
-          bestCoverage = coverage;
-          bestViewScore = viewScore;
-          bestViewBalance = viewBalance;
-          bestCoverageFramePath = framePath;
-        }
+      if (i >= thumbnailCandidateStart && frameIsSafe && coverage > bestCoverage) {
+        bestCoverage = coverage;
+        bestCoverageFramePath = framePath;
       }
     }
 
