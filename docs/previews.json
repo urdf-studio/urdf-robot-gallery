@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-03T13:11:03.096Z",
+  "generatedAt": "2026-03-03T13:14:38.615Z",
   "previews": [
     {
       "repoKey": "anybotics/anymal_b_simple_description",
@@ -1607,6 +1607,28 @@
       ],
       "webp": "previews/bulletphysics/bullet3/racecar_differential--1328pyj.webp",
       "png": "thumbnails/bulletphysics/bullet3/racecar_differential--1328pyj.png"
+    },
+    {
+      "repoKey": "bulletphysics/bullet3",
+      "fileBase": "racecar_differential--mqcal5",
+      "sourceType": "urdf",
+      "meshCount": 21,
+      "linkCount": 21,
+      "jointCount": 20,
+      "armCount": 0,
+      "legCount": 0,
+      "wheelCount": 4,
+      "tags": [
+        "meshes:21",
+        "links:21",
+        "joints:20",
+        "arms:0",
+        "legs:0",
+        "wheels:4",
+        "source:urdf"
+      ],
+      "webp": "previews/bulletphysics/bullet3/racecar_differential--mqcal5.webp",
+      "png": "thumbnails/bulletphysics/bullet3/racecar_differential--mqcal5.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
