@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-03T13:30:08.056Z",
+  "generatedAt": "2026-03-03T13:31:01.659Z",
   "previews": [
     {
       "repoKey": "anybotics/anymal_b_simple_description",
@@ -2074,14 +2074,14 @@
       "repoKey": "bulletphysics/bullet3",
       "fileBase": "xarm6_robot_white--19n2gr4",
       "sourceType": "urdf",
-      "meshCount": 3,
+      "meshCount": 7,
       "linkCount": 8,
       "jointCount": 7,
       "armCount": 1,
       "legCount": 0,
       "wheelCount": 0,
       "tags": [
-        "meshes:3",
+        "meshes:7",
         "links:8",
         "joints:7",
         "arms:1",
