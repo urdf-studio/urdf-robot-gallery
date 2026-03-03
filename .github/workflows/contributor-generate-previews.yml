@@ -22,6 +22,7 @@ env:
   PREVIEW_ENFORCE_MIN_FILL: "0.01"
   PREVIEW_WARN_MIN_EDGE_MARGIN: "10"
   PREVIEW_ENFORCE_MIN_EDGE_MARGIN: "1"
+  PREVIEW_STRICT_ALPHA: "false"
 
 permissions:
   contents: write
@@ -739,6 +740,7 @@ jobs:
           PREVIEW_BATCH_SIZE: ${{ env.PREVIEW_BATCH_SIZE }}
           MAX_BATCH_COMMITS: ${{ env.MAX_BATCH_COMMITS }}
           DEFAULT_FORMATS: ${{ env.DEFAULT_FORMATS }}
+          PREVIEW_STRICT_ALPHA: ${{ env.PREVIEW_STRICT_ALPHA }}
           TARGET_ROBOT_KEYS: ${{ steps.target.outputs.resolved_keys }}
           TARGET_SELECTION_MODE: ${{ steps.target.outputs.selection_mode }}
         run: |
@@ -749,6 +751,11 @@ jobs:
           commits_made=0
           limit_reached=false
           target_keys="${TARGET_ROBOT_KEYS:-}"
+          strict_alpha_raw="$(printf '%s' "${PREVIEW_STRICT_ALPHA:-false}" | tr '[:upper:]' '[:lower:]')"
+          strict_alpha_flag=()
+          if [ "$strict_alpha_raw" = "1" ] || [ "$strict_alpha_raw" = "true" ] || [ "$strict_alpha_raw" = "yes" ]; then
+            strict_alpha_flag+=(--strict-alpha)
+          fi
 
           if [ -n "$target_keys" ] && [ "${TARGET_SELECTION_MODE:-}" = "targeted" ]; then
             (
@@ -761,7 +768,7 @@ jobs:
                 --size "${PREVIEW_RENDER_SIZE}" \
                 --xacro-api-base "${XACRO_API_BASE_URL:-http://127.0.0.1:8000}" \
                 --no-background \
-                --strict-alpha \
+                "${strict_alpha_flag[@]}" \
                 --concurrency 2
             )
             git add docs/previews docs/thumbnails docs/previews.json
@@ -782,7 +789,7 @@ jobs:
                   --size "${PREVIEW_RENDER_SIZE}" \
                   --xacro-api-base "${XACRO_API_BASE_URL:-http://127.0.0.1:8000}" \
                   --no-background \
-                  --strict-alpha \
+                  "${strict_alpha_flag[@]}" \
                   --concurrency 2
               )
 
