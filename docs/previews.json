@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-03T09:15:00.384Z",
+  "generatedAt": "2026-03-03T09:30:10.284Z",
   "previews": [
     {
       "repoKey": "anybotics/anymal_b_simple_description",
@@ -6008,6 +6008,24 @@
       ],
       "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_with_hand--8azpjj.webp",
       "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_with_hand--8azpjj.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "g1_29dof--b3e340",
+      "webp": "previews/unitreerobotics/unitree_ros/g1_29dof--b3e340.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof--b3e340.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "g1_comp--sl3igx",
+      "webp": "previews/unitreerobotics/unitree_ros/g1_comp--sl3igx.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_comp--sl3igx.png"
+    },
+    {
+      "repoKey": "unitreerobotics/unitree_ros",
+      "fileBase": "g1_dual_arm--1awpzm5",
+      "webp": "previews/unitreerobotics/unitree_ros/g1_dual_arm--1awpzm5.webp",
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_dual_arm--1awpzm5.png"
     }
   ]
 }
