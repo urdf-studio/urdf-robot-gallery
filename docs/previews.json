@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-02T23:59:03.086Z",
+  "generatedAt": "2026-03-03T05:36:13.822Z",
   "previews": [
     {
       "repoKey": "anybotics/anymal_b_simple_description",
@@ -5083,6 +5083,28 @@
       ],
       "webp": "previews/tetheria/aero-hand-open/aero_hand_open_left--gnzknp.webp",
       "png": "thumbnails/tetheria/aero-hand-open/aero_hand_open_left--gnzknp.png"
+    },
+    {
+      "repoKey": "tetheria/aero-hand-open",
+      "fileBase": "aero_hand_open_right--1igkr8u",
+      "sourceType": "urdf",
+      "meshCount": 22,
+      "linkCount": 22,
+      "jointCount": 21,
+      "armCount": 5,
+      "legCount": 0,
+      "wheelCount": 0,
+      "tags": [
+        "meshes:22",
+        "links:22",
+        "joints:21",
+        "arms:5",
+        "legs:0",
+        "wheels:0",
+        "source:urdf"
+      ],
+      "webp": "previews/tetheria/aero-hand-open/aero_hand_open_right--1igkr8u.webp",
+      "png": "thumbnails/tetheria/aero-hand-open/aero_hand_open_right--1igkr8u.png"
     },
     {
       "repoKey": "therobotstudio/so-arm100",
