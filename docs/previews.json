@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-01T00:57:08.286Z",
+  "generatedAt": "2026-03-02T23:59:03.086Z",
   "previews": [
     {
       "repoKey": "anybotics/anymal_b_simple_description",
@@ -22,10 +22,7 @@
         "source:urdf"
       ],
       "webp": "previews/anybotics/anymal_b_simple_description/anymal--185350l.webp",
-      "png": "thumbnails/anybotics/anymal_b_simple_description/anymal--185350l.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/anybotics/anymal_b_simple_description/anymal--185350l.png"
     },
     {
       "repoKey": "anybotics/anymal_c_simple_description",
@@ -47,10 +44,7 @@
         "source:urdf"
       ],
       "webp": "previews/anybotics/anymal_c_simple_description/anymal--185350l.webp",
-      "png": "thumbnails/anybotics/anymal_c_simple_description/anymal--185350l.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/anybotics/anymal_c_simple_description/anymal--185350l.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -72,10 +66,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/a1--1uavuy9.webp",
-      "png": "thumbnails/bulletphysics/bullet3/a1--1uavuy9.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/a1--1uavuy9.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -97,10 +88,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/aliengo--1s0z5af.webp",
-      "png": "thumbnails/bulletphysics/bullet3/aliengo--1s0z5af.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/aliengo--1s0z5af.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -122,10 +110,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/base_1--1xgzdq7.webp",
-      "png": "thumbnails/bulletphysics/bullet3/base_1--1xgzdq7.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/base_1--1xgzdq7.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -147,10 +132,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/base_2--1xqyzf6.webp",
-      "png": "thumbnails/bulletphysics/bullet3/base_2--1xqyzf6.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/base_2--1xqyzf6.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -172,10 +154,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/base_com--12z40mo.webp",
-      "png": "thumbnails/bulletphysics/bullet3/base_com--12z40mo.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/base_com--12z40mo.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -197,10 +176,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/base--1i2necu.webp",
-      "png": "thumbnails/bulletphysics/bullet3/base--1i2necu.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/base--1i2necu.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -222,10 +198,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/concave_box--1dpicz3.webp",
-      "png": "thumbnails/bulletphysics/bullet3/concave_box--1dpicz3.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/concave_box--1dpicz3.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -247,10 +220,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/concave_box--axqy2p.webp",
-      "png": "thumbnails/bulletphysics/bullet3/concave_box--axqy2p.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/concave_box--axqy2p.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -272,10 +242,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/cup_small--12oo3z3.webp",
-      "png": "thumbnails/bulletphysics/bullet3/cup_small--12oo3z3.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/cup_small--12oo3z3.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -297,10 +264,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/deform_cube--1glyxss.webp",
-      "png": "thumbnails/bulletphysics/bullet3/deform_cube--1glyxss.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/deform_cube--1glyxss.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -322,10 +286,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/domino--1j8nrgt.webp",
-      "png": "thumbnails/bulletphysics/bullet3/domino--1j8nrgt.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/domino--1j8nrgt.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -347,10 +308,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/hinge--m5ijk1.webp",
-      "png": "thumbnails/bulletphysics/bullet3/hinge--m5ijk1.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/hinge--m5ijk1.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -372,10 +330,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/humanoid--1e6s65f.webp",
-      "png": "thumbnails/bulletphysics/bullet3/humanoid--1e6s65f.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/humanoid--1e6s65f.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -397,10 +352,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/husky--12lh74p.webp",
-      "png": "thumbnails/bulletphysics/bullet3/husky--12lh74p.png",
-      "macroTags": [
-        "Wheeled"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/husky--12lh74p.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -422,10 +374,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/husky--421ytr.webp",
-      "png": "thumbnails/bulletphysics/bullet3/husky--421ytr.png",
-      "macroTags": [
-        "Wheeled"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/husky--421ytr.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -447,10 +396,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/kuka--mabmnt.webp",
-      "png": "thumbnails/bulletphysics/bullet3/kuka--mabmnt.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/kuka--mabmnt.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -472,10 +418,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/laikago_toes_limits--8t56wa.webp",
-      "png": "thumbnails/bulletphysics/bullet3/laikago_toes_limits--8t56wa.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/laikago_toes_limits--8t56wa.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -497,10 +440,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/laikago_toes_zup_lores--1m4aiyv.webp",
-      "png": "thumbnails/bulletphysics/bullet3/laikago_toes_zup_lores--1m4aiyv.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/laikago_toes_zup_lores--1m4aiyv.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -522,10 +462,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/laikago_toes_zup--zr0vgh.webp",
-      "png": "thumbnails/bulletphysics/bullet3/laikago_toes_zup--zr0vgh.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/laikago_toes_zup--zr0vgh.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -547,10 +484,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/laikago_toes--oxyocl.webp",
-      "png": "thumbnails/bulletphysics/bullet3/laikago_toes--oxyocl.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/laikago_toes--oxyocl.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -572,10 +506,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/laikago--wgeu8f.webp",
-      "png": "thumbnails/bulletphysics/bullet3/laikago--wgeu8f.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/laikago--wgeu8f.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -597,10 +528,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/link1_com--33tvq4.webp",
-      "png": "thumbnails/bulletphysics/bullet3/link1_com--33tvq4.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/link1_com--33tvq4.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -622,10 +550,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/link1--3bd4xu.webp",
-      "png": "thumbnails/bulletphysics/bullet3/link1--3bd4xu.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/link1--3bd4xu.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -647,10 +572,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/link2_com--tm0xt9.webp",
-      "png": "thumbnails/bulletphysics/bullet3/link2_com--tm0xt9.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/link2_com--tm0xt9.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -672,10 +594,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/link2--31dj8v.webp",
-      "png": "thumbnails/bulletphysics/bullet3/link2--31dj8v.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/link2--31dj8v.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -697,10 +616,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/link3_com--kd0t3u.webp",
-      "png": "thumbnails/bulletphysics/bullet3/link3_com--kd0t3u.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/link3_com--kd0t3u.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -722,10 +638,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/link3--2rdxjw.webp",
-      "png": "thumbnails/bulletphysics/bullet3/link3--2rdxjw.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/link3--2rdxjw.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -747,10 +660,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/link4_com--1td0gez.webp",
-      "png": "thumbnails/bulletphysics/bullet3/link4_com--1td0gez.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/link4_com--1td0gez.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -772,10 +682,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/link4--2hebux.webp",
-      "png": "thumbnails/bulletphysics/bullet3/link4--2hebux.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/link4--2hebux.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -797,10 +704,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/link5_com--16y95mw.webp",
-      "png": "thumbnails/bulletphysics/bullet3/link5_com--16y95mw.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/link5_com--16y95mw.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -822,10 +726,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/link5--27eq5y.webp",
-      "png": "thumbnails/bulletphysics/bullet3/link5--27eq5y.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/link5--27eq5y.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -847,10 +748,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/link6_com--1pd2pyx.webp",
-      "png": "thumbnails/bulletphysics/bullet3/link6_com--1pd2pyx.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/link6_com--1pd2pyx.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -872,10 +770,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/link6--1xf4gz.webp",
-      "png": "thumbnails/bulletphysics/bullet3/link6--1xf4gz.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/link6--1xf4gz.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -897,10 +792,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/microtaur--qpcl77.webp",
-      "png": "thumbnails/bulletphysics/bullet3/microtaur--qpcl77.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/microtaur--qpcl77.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -922,10 +814,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/mini_cheetah--91svrp.webp",
-      "png": "thumbnails/bulletphysics/bullet3/mini_cheetah--91svrp.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/mini_cheetah--91svrp.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -947,10 +836,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/minitaur_derpy--czk6lu.webp",
-      "png": "thumbnails/bulletphysics/bullet3/minitaur_derpy--czk6lu.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/minitaur_derpy--czk6lu.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -972,10 +858,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/minitaur_fixed_all--ixvjk0.webp",
-      "png": "thumbnails/bulletphysics/bullet3/minitaur_fixed_all--ixvjk0.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/minitaur_fixed_all--ixvjk0.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -997,10 +880,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/minitaur_fixed_knees--1xra67z.webp",
-      "png": "thumbnails/bulletphysics/bullet3/minitaur_fixed_knees--1xra67z.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/minitaur_fixed_knees--1xra67z.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1022,10 +902,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/minitaur_rainbow_dash_v1--1rps4c7.webp",
-      "png": "thumbnails/bulletphysics/bullet3/minitaur_rainbow_dash_v1--1rps4c7.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/minitaur_rainbow_dash_v1--1rps4c7.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1047,10 +924,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/minitaur_rainbow_dash_v1--1sxmc6t.webp",
-      "png": "thumbnails/bulletphysics/bullet3/minitaur_rainbow_dash_v1--1sxmc6t.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/minitaur_rainbow_dash_v1--1sxmc6t.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1072,10 +946,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/minitaur_rainbow_dash--1griogz.webp",
-      "png": "thumbnails/bulletphysics/bullet3/minitaur_rainbow_dash--1griogz.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/minitaur_rainbow_dash--1griogz.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1097,10 +968,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/minitaur_rainbow_dash--1rpk1ft.webp",
-      "png": "thumbnails/bulletphysics/bullet3/minitaur_rainbow_dash--1rpk1ft.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/minitaur_rainbow_dash--1rpk1ft.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1122,10 +990,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/minitaur_single_motor--1jingik.webp",
-      "png": "thumbnails/bulletphysics/bullet3/minitaur_single_motor--1jingik.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/minitaur_single_motor--1jingik.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1147,10 +1012,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/minitaur_v1--1yrolhj.webp",
-      "png": "thumbnails/bulletphysics/bullet3/minitaur_v1--1yrolhj.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/minitaur_v1--1yrolhj.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1172,10 +1034,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/minitaur--1c1xxsp.webp",
-      "png": "thumbnails/bulletphysics/bullet3/minitaur--1c1xxsp.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/minitaur--1c1xxsp.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1197,10 +1056,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/model_for_sdf--1gkl4gz.webp",
-      "png": "thumbnails/bulletphysics/bullet3/model_for_sdf--1gkl4gz.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/model_for_sdf--1gkl4gz.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1222,10 +1078,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/model_for_sdf--2epzdl.webp",
-      "png": "thumbnails/bulletphysics/bullet3/model_for_sdf--2epzdl.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/model_for_sdf--2epzdl.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1247,10 +1100,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/model_free_base--12lvii8.webp",
-      "png": "thumbnails/bulletphysics/bullet3/model_free_base--12lvii8.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/model_free_base--12lvii8.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1272,10 +1122,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/model_free_base--1m2vo4e.webp",
-      "png": "thumbnails/bulletphysics/bullet3/model_free_base--1m2vo4e.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/model_free_base--1m2vo4e.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1297,10 +1144,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/model_vr_limits--1gsnrer.webp",
-      "png": "thumbnails/bulletphysics/bullet3/model_vr_limits--1gsnrer.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/model_vr_limits--1gsnrer.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1322,10 +1166,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/model_vr_limits--5olbfx.webp",
-      "png": "thumbnails/bulletphysics/bullet3/model_vr_limits--5olbfx.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/model_vr_limits--5olbfx.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1347,10 +1188,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/model--1a62lhr.webp",
-      "png": "thumbnails/bulletphysics/bullet3/model--1a62lhr.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/model--1a62lhr.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1372,10 +1210,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/model--1x881xd.webp",
-      "png": "thumbnails/bulletphysics/bullet3/model--1x881xd.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/model--1x881xd.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1397,10 +1232,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/mug--coasso.webp",
-      "png": "thumbnails/bulletphysics/bullet3/mug--coasso.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/mug--coasso.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1422,10 +1254,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/mug--d5794d.webp",
-      "png": "thumbnails/bulletphysics/bullet3/mug--d5794d.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/mug--d5794d.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1447,10 +1276,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/nao--1q0bkxo.webp",
-      "png": "thumbnails/bulletphysics/bullet3/nao--1q0bkxo.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/nao--1q0bkxo.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1472,10 +1298,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/pan_tefal--155qvum.webp",
-      "png": "thumbnails/bulletphysics/bullet3/pan_tefal--155qvum.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/pan_tefal--155qvum.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1497,10 +1320,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/panda--1pudohb.webp",
-      "png": "thumbnails/bulletphysics/bullet3/panda--1pudohb.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/panda--1pudohb.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1522,10 +1342,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/pendulum_tendon_1_cart_rail--csi07x.webp",
-      "png": "thumbnails/bulletphysics/bullet3/pendulum_tendon_1_cart_rail--csi07x.png",
-      "macroTags": [
-        "Educational"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/pendulum_tendon_1_cart_rail--csi07x.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1547,10 +1364,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/pendulum5--xvgug9.webp",
-      "png": "thumbnails/bulletphysics/bullet3/pendulum5--xvgug9.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/pendulum5--xvgug9.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1572,10 +1386,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/planemesh--l22zzp.webp",
-      "png": "thumbnails/bulletphysics/bullet3/planemesh--l22zzp.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/planemesh--l22zzp.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1597,10 +1408,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/plate--1u89ozk.webp",
-      "png": "thumbnails/bulletphysics/bullet3/plate--1u89ozk.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/plate--1u89ozk.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1622,10 +1430,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/pole--jozn38.webp",
-      "png": "thumbnails/bulletphysics/bullet3/pole--jozn38.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/pole--jozn38.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1647,11 +1452,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/pr2_gripper--1crfzik.webp",
-      "png": "thumbnails/bulletphysics/bullet3/pr2_gripper--1crfzik.png",
-      "macroTags": [
-        "End Effector",
-        "Mobile Manipulator"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/pr2_gripper--1crfzik.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1673,11 +1474,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/pr2_gripper--1g92kve.webp",
-      "png": "thumbnails/bulletphysics/bullet3/pr2_gripper--1g92kve.png",
-      "macroTags": [
-        "End Effector",
-        "Mobile Manipulator"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/pr2_gripper--1g92kve.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1699,10 +1496,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/prismatic--1lityuu.webp",
-      "png": "thumbnails/bulletphysics/bullet3/prismatic--1lityuu.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/prismatic--1lityuu.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1724,10 +1518,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/quadrotor--46pyp9.webp",
-      "png": "thumbnails/bulletphysics/bullet3/quadrotor--46pyp9.png",
-      "macroTags": [
-        "Drone"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/quadrotor--46pyp9.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1749,10 +1540,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/quadruped--1cc9ml.webp",
-      "png": "thumbnails/bulletphysics/bullet3/quadruped--1cc9ml.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/quadruped--1cc9ml.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1774,10 +1562,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/r2d2--1y8gy8a.webp",
-      "png": "thumbnails/bulletphysics/bullet3/r2d2--1y8gy8a.png",
-      "macroTags": [
-        "Wheeled"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/r2d2--1y8gy8a.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1799,10 +1584,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/r2d2--ok4tfk.webp",
-      "png": "thumbnails/bulletphysics/bullet3/r2d2--ok4tfk.png",
-      "macroTags": [
-        "Wheeled"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/r2d2--ok4tfk.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1824,10 +1606,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/racecar_differential--1328pyj.webp",
-      "png": "thumbnails/bulletphysics/bullet3/racecar_differential--1328pyj.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/racecar_differential--1328pyj.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1849,10 +1628,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/racecar--1opwk7p.webp",
-      "png": "thumbnails/bulletphysics/bullet3/racecar--1opwk7p.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/racecar--1opwk7p.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1874,10 +1650,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/racecar--1suj11v.webp",
-      "png": "thumbnails/bulletphysics/bullet3/racecar--1suj11v.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/racecar--1suj11v.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1899,10 +1672,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/reduced_beam--4r6yuf.webp",
-      "png": "thumbnails/bulletphysics/bullet3/reduced_beam--4r6yuf.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/reduced_beam--4r6yuf.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1924,10 +1694,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/spirit40--1i5xp59.webp",
-      "png": "thumbnails/bulletphysics/bullet3/spirit40--1i5xp59.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/spirit40--1i5xp59.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1949,10 +1716,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/spirit40newer--28v4ya.webp",
-      "png": "thumbnails/bulletphysics/bullet3/spirit40newer--28v4ya.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/spirit40newer--28v4ya.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1974,10 +1738,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/terrain--6m241r.webp",
-      "png": "thumbnails/bulletphysics/bullet3/terrain--6m241r.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/terrain--6m241r.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -1999,10 +1760,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/test_joints_mb--159vix8.webp",
-      "png": "thumbnails/bulletphysics/bullet3/test_joints_mb--159vix8.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/test_joints_mb--159vix8.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -2024,10 +1782,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/threecubes--39cdqn.webp",
-      "png": "thumbnails/bulletphysics/bullet3/threecubes--39cdqn.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/threecubes--39cdqn.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -2049,10 +1804,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/traybox--1txiaxq.webp",
-      "png": "thumbnails/bulletphysics/bullet3/traybox--1txiaxq.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/traybox--1txiaxq.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -2074,10 +1826,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/traybox--ao4iwc.webp",
-      "png": "thumbnails/bulletphysics/bullet3/traybox--ao4iwc.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/traybox--ao4iwc.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -2099,10 +1848,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/twojointrobot_w_fixedjoints--3xvd2.webp",
-      "png": "thumbnails/bulletphysics/bullet3/twojointrobot_w_fixedjoints--3xvd2.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/twojointrobot_w_fixedjoints--3xvd2.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -2124,10 +1870,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/twojointrobot_w_fixedjoints--zeqx04.webp",
-      "png": "thumbnails/bulletphysics/bullet3/twojointrobot_w_fixedjoints--zeqx04.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/twojointrobot_w_fixedjoints--zeqx04.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -2149,10 +1892,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/twojointrobot_wo_fixedjoints--1x2xbkx.webp",
-      "png": "thumbnails/bulletphysics/bullet3/twojointrobot_wo_fixedjoints--1x2xbkx.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/twojointrobot_wo_fixedjoints--1x2xbkx.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -2174,10 +1914,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/twojointrobot_wo_fixedjoints--ghqimz.webp",
-      "png": "thumbnails/bulletphysics/bullet3/twojointrobot_wo_fixedjoints--ghqimz.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/twojointrobot_wo_fixedjoints--ghqimz.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -2199,10 +1936,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/user_data_test_object--2ldij.webp",
-      "png": "thumbnails/bulletphysics/bullet3/user_data_test_object--2ldij.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/user_data_test_object--2ldij.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -2224,10 +1958,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/vision60--1poah66.webp",
-      "png": "thumbnails/bulletphysics/bullet3/vision60--1poah66.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/vision60--1poah66.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -2249,10 +1980,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/vision60--2ekva5.webp",
-      "png": "thumbnails/bulletphysics/bullet3/vision60--2ekva5.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/vision60--2ekva5.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -2274,10 +2002,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/widowx--1rkp2pz.webp",
-      "png": "thumbnails/bulletphysics/bullet3/widowx--1rkp2pz.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/widowx--1rkp2pz.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -2299,10 +2024,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/wsg50_one_motor_gripper_left_finger--1f3sbjt.webp",
-      "png": "thumbnails/bulletphysics/bullet3/wsg50_one_motor_gripper_left_finger--1f3sbjt.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/wsg50_one_motor_gripper_left_finger--1f3sbjt.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -2324,10 +2046,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/xarm6_robot_white--19n2gr4.webp",
-      "png": "thumbnails/bulletphysics/bullet3/xarm6_robot_white--19n2gr4.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/xarm6_robot_white--19n2gr4.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -2349,10 +2068,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/xarm6_robot--f3rriq.webp",
-      "png": "thumbnails/bulletphysics/bullet3/xarm6_robot--f3rriq.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/xarm6_robot--f3rriq.png"
     },
     {
       "repoKey": "bulletphysics/bullet3",
@@ -2374,11 +2090,7 @@
         "source:urdf"
       ],
       "webp": "previews/bulletphysics/bullet3/xarm6_with_gripper--9ghe7y.webp",
-      "png": "thumbnails/bulletphysics/bullet3/xarm6_with_gripper--9ghe7y.png",
-      "macroTags": [
-        "Arm",
-        "End Effector"
-      ]
+      "png": "thumbnails/bulletphysics/bullet3/xarm6_with_gripper--9ghe7y.png"
     },
     {
       "repoKey": "frankarobotics/franka_description",
@@ -2400,10 +2112,7 @@
         "source:xacro"
       ],
       "webp": "previews/frankarobotics/franka_description/argo_drive--17j9fj2.webp",
-      "png": "thumbnails/frankarobotics/franka_description/argo_drive--17j9fj2.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/frankarobotics/franka_description/argo_drive--17j9fj2.png"
     },
     {
       "repoKey": "frankarobotics/franka_description",
@@ -2425,10 +2134,7 @@
         "source:xacro"
       ],
       "webp": "previews/frankarobotics/franka_description/cobot_pump_arguments--1cbeait.webp",
-      "png": "thumbnails/frankarobotics/franka_description/cobot_pump_arguments--1cbeait.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/frankarobotics/franka_description/cobot_pump_arguments--1cbeait.png"
     },
     {
       "repoKey": "frankarobotics/franka_description",
@@ -2450,10 +2156,7 @@
         "source:urdf.xacro"
       ],
       "webp": "previews/frankarobotics/franka_description/cobot_pump--1ets0gi.webp",
-      "png": "thumbnails/frankarobotics/franka_description/cobot_pump--1ets0gi.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/frankarobotics/franka_description/cobot_pump--1ets0gi.png"
     },
     {
       "repoKey": "frankarobotics/franka_description",
@@ -2475,10 +2178,7 @@
         "source:xacro"
       ],
       "webp": "previews/frankarobotics/franka_description/ee_with_one_link--1cfmow8.webp",
-      "png": "thumbnails/frankarobotics/franka_description/ee_with_one_link--1cfmow8.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/frankarobotics/franka_description/ee_with_one_link--1cfmow8.png"
     },
     {
       "repoKey": "frankarobotics/franka_description",
@@ -2500,10 +2200,7 @@
         "source:urdf.xacro"
       ],
       "webp": "previews/frankarobotics/franka_description/fer--k8n88c.webp",
-      "png": "thumbnails/frankarobotics/franka_description/fer--k8n88c.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/frankarobotics/franka_description/fer--k8n88c.png"
     },
     {
       "repoKey": "frankarobotics/franka_description",
@@ -2525,10 +2222,7 @@
         "source:xacro"
       ],
       "webp": "previews/frankarobotics/franka_description/fer.srdf--1yli12l.webp",
-      "png": "thumbnails/frankarobotics/franka_description/fer.srdf--1yli12l.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/frankarobotics/franka_description/fer.srdf--1yli12l.png"
     },
     {
       "repoKey": "frankarobotics/franka_description",
@@ -2550,10 +2244,7 @@
         "source:xacro"
       ],
       "webp": "previews/frankarobotics/franka_description/fp3.srdf--1dnixgl.webp",
-      "png": "thumbnails/frankarobotics/franka_description/fp3.srdf--1dnixgl.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/frankarobotics/franka_description/fp3.srdf--1dnixgl.png"
     },
     {
       "repoKey": "frankarobotics/franka_description",
@@ -2575,10 +2266,7 @@
         "source:urdf.xacro"
       ],
       "webp": "previews/frankarobotics/franka_description/fr3_duo_fixed_structure--1d2htz7.webp",
-      "png": "thumbnails/frankarobotics/franka_description/fr3_duo_fixed_structure--1d2htz7.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/frankarobotics/franka_description/fr3_duo_fixed_structure--1d2htz7.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2600,10 +2288,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/a1--1ac70hh.webp",
-      "png": "thumbnails/gepetto/example-robot-data/a1--1ac70hh.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/a1--1ac70hh.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2625,10 +2310,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/alex_nub_hands--123jyoy.webp",
-      "png": "thumbnails/gepetto/example-robot-data/alex_nub_hands--123jyoy.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/alex_nub_hands--123jyoy.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2650,10 +2332,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/alex_sake_hands--31qf5v.webp",
-      "png": "thumbnails/gepetto/example-robot-data/alex_sake_hands--31qf5v.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/alex_sake_hands--31qf5v.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2675,10 +2354,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/alexander_v1.lowerbodyonly--7h4ydq.webp",
-      "png": "thumbnails/gepetto/example-robot-data/alexander_v1.lowerbodyonly--7h4ydq.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/alexander_v1.lowerbodyonly--7h4ydq.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2700,10 +2376,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/allegro_right_hand--exfv92.webp",
-      "png": "thumbnails/gepetto/example-robot-data/allegro_right_hand--exfv92.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/allegro_right_hand--exfv92.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2725,10 +2398,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/anymal--14q30ai.webp",
-      "png": "thumbnails/gepetto/example-robot-data/anymal--14q30ai.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/anymal--14q30ai.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2750,11 +2420,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/anymal-kinova--whb93k.webp",
-      "png": "thumbnails/gepetto/example-robot-data/anymal-kinova--whb93k.png",
-      "macroTags": [
-        "Arm",
-        "Quadruped"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/anymal-kinova--whb93k.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2776,10 +2442,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/b1--14ey35h.webp",
-      "png": "thumbnails/gepetto/example-robot-data/b1--14ey35h.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/b1--14ey35h.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2801,10 +2464,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/baxter--46uisl.webp",
-      "png": "thumbnails/gepetto/example-robot-data/baxter--46uisl.png",
-      "macroTags": [
-        "Dual Arm"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/baxter--46uisl.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2826,10 +2486,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/bluevolta_bravo7_no_ee--geh81a.webp",
-      "png": "thumbnails/gepetto/example-robot-data/bluevolta_bravo7_no_ee--geh81a.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/bluevolta_bravo7_no_ee--geh81a.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2851,10 +2508,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/bluevolta--h4zjll.webp",
-      "png": "thumbnails/gepetto/example-robot-data/bluevolta--h4zjll.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/bluevolta--h4zjll.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2876,10 +2530,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/bolt--1bsp0kx.webp",
-      "png": "thumbnails/gepetto/example-robot-data/bolt--1bsp0kx.png",
-      "macroTags": [
-        "Biped"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/bolt--1bsp0kx.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2901,10 +2552,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/bravo7_gripper--boes0l.webp",
-      "png": "thumbnails/gepetto/example-robot-data/bravo7_gripper--boes0l.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/bravo7_gripper--boes0l.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2926,10 +2574,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/bravo7_no_ee--13idwdc.webp",
-      "png": "thumbnails/gepetto/example-robot-data/bravo7_no_ee--13idwdc.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/bravo7_no_ee--13idwdc.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2951,10 +2596,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/centauro--14imazx.webp",
-      "png": "thumbnails/gepetto/example-robot-data/centauro--14imazx.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/centauro--14imazx.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -2976,10 +2618,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/double_pendulum_continuous--xpwlot.webp",
-      "png": "thumbnails/gepetto/example-robot-data/double_pendulum_continuous--xpwlot.png",
-      "macroTags": [
-        "Educational"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/double_pendulum_continuous--xpwlot.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3001,10 +2640,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/falcon_bravo7_gripper--6nnrqz.webp",
-      "png": "thumbnails/gepetto/example-robot-data/falcon_bravo7_gripper--6nnrqz.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/falcon_bravo7_gripper--6nnrqz.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3026,10 +2662,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/falcon--1k68yjl.webp",
-      "png": "thumbnails/gepetto/example-robot-data/falcon--1k68yjl.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/falcon--1k68yjl.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3051,10 +2684,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/g1_29dof_rev_1_0--w4f3al.webp",
-      "png": "thumbnails/gepetto/example-robot-data/g1_29dof_rev_1_0--w4f3al.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/g1_29dof_rev_1_0--w4f3al.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3076,10 +2706,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/g1_29dof_with_hand_rev_1_0--1975m4a.webp",
-      "png": "thumbnails/gepetto/example-robot-data/g1_29dof_with_hand_rev_1_0--1975m4a.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/g1_29dof_with_hand_rev_1_0--1975m4a.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3101,10 +2728,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/go1--vkyrbf.webp",
-      "png": "thumbnails/gepetto/example-robot-data/go1--vkyrbf.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/go1--vkyrbf.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3126,10 +2750,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/go2--1q8nfh9.webp",
-      "png": "thumbnails/gepetto/example-robot-data/go2--1q8nfh9.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/go2--1q8nfh9.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3151,10 +2772,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/hextilt_flying_arm_5--1caf3bs.webp",
-      "png": "thumbnails/gepetto/example-robot-data/hextilt_flying_arm_5--1caf3bs.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/hextilt_flying_arm_5--1caf3bs.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3176,10 +2794,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/hyq_no_sensors--1ctmt6p.webp",
-      "png": "thumbnails/gepetto/example-robot-data/hyq_no_sensors--1ctmt6p.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/hyq_no_sensors--1ctmt6p.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3201,10 +2816,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/icub_reduced--1c5gfns.webp",
-      "png": "thumbnails/gepetto/example-robot-data/icub_reduced--1c5gfns.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/icub_reduced--1c5gfns.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3226,10 +2838,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/icub--js902l.webp",
-      "png": "thumbnails/gepetto/example-robot-data/icub--js902l.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/icub--js902l.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3251,10 +2860,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/iris_simple--44hx9g.webp",
-      "png": "thumbnails/gepetto/example-robot-data/iris_simple--44hx9g.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/iris_simple--44hx9g.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3276,10 +2882,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/kinova--1dz2bx.webp",
-      "png": "thumbnails/gepetto/example-robot-data/kinova--1dz2bx.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/kinova--1dz2bx.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3301,10 +2904,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/panda_collision--1ujf3lq.webp",
-      "png": "thumbnails/gepetto/example-robot-data/panda_collision--1ujf3lq.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/panda_collision--1ujf3lq.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3326,10 +2926,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/panda--1ul5s2d.webp",
-      "png": "thumbnails/gepetto/example-robot-data/panda--1ul5s2d.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/panda--1ul5s2d.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3351,10 +2948,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/pr2--15ob39l.webp",
-      "png": "thumbnails/gepetto/example-robot-data/pr2--15ob39l.png",
-      "macroTags": [
-        "Mobile Manipulator"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/pr2--15ob39l.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3376,10 +2970,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/quadrotor_base--z8vuaj.webp",
-      "png": "thumbnails/gepetto/example-robot-data/quadrotor_base--z8vuaj.png",
-      "macroTags": [
-        "Drone"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/quadrotor_base--z8vuaj.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3401,10 +2992,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/quadruped--3jzktj.webp",
-      "png": "thumbnails/gepetto/example-robot-data/quadruped--3jzktj.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/quadruped--3jzktj.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3426,10 +3014,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/romeo_laas_small--gy1i7d.webp",
-      "png": "thumbnails/gepetto/example-robot-data/romeo_laas_small--gy1i7d.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/romeo_laas_small--gy1i7d.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3451,10 +3036,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/romeo_small--1sy3fpl.webp",
-      "png": "thumbnails/gepetto/example-robot-data/romeo_small--1sy3fpl.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/romeo_small--1sy3fpl.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3476,10 +3058,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/romeo--1bu48g1.webp",
-      "png": "thumbnails/gepetto/example-robot-data/romeo--1bu48g1.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/romeo--1bu48g1.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3501,11 +3080,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/simple_humanoid--zyrg6h.webp",
-      "png": "thumbnails/gepetto/example-robot-data/simple_humanoid--zyrg6h.png",
-      "macroTags": [
-        "Educational",
-        "Humanoid"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/simple_humanoid--zyrg6h.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3527,10 +3102,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/so100--cnhqj.webp",
-      "png": "thumbnails/gepetto/example-robot-data/so100--cnhqj.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/so100--cnhqj.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3552,10 +3124,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/so101--2nw1k.webp",
-      "png": "thumbnails/gepetto/example-robot-data/so101--2nw1k.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/so101--2nw1k.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3577,10 +3146,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/solo12--s4tai2.webp",
-      "png": "thumbnails/gepetto/example-robot-data/solo12--s4tai2.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/solo12--s4tai2.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3602,10 +3168,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/talos_full_v2_box--1riol4o.webp",
-      "png": "thumbnails/gepetto/example-robot-data/talos_full_v2_box--1riol4o.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/talos_full_v2_box--1riol4o.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3627,11 +3190,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/talos_left_arm--1iah4mw.webp",
-      "png": "thumbnails/gepetto/example-robot-data/talos_left_arm--1iah4mw.png",
-      "macroTags": [
-        "Arm",
-        "Humanoid"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/talos_left_arm--1iah4mw.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3653,10 +3212,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/talos_reduced_box--tpvfww.webp",
-      "png": "thumbnails/gepetto/example-robot-data/talos_reduced_box--tpvfww.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/talos_reduced_box--tpvfww.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3678,10 +3234,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/talos_reduced_corrected--13qe7wa.webp",
-      "png": "thumbnails/gepetto/example-robot-data/talos_reduced_corrected--13qe7wa.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/talos_reduced_corrected--13qe7wa.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3703,10 +3256,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/talos_reduced--1l6ild6.webp",
-      "png": "thumbnails/gepetto/example-robot-data/talos_reduced--1l6ild6.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/talos_reduced--1l6ild6.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3728,10 +3278,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/tiago_dual--15rt4hc.webp",
-      "png": "thumbnails/gepetto/example-robot-data/tiago_dual--15rt4hc.png",
-      "macroTags": [
-        "Mobile Manipulator"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/tiago_dual--15rt4hc.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3753,10 +3300,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/tiago_pro--1xq159.webp",
-      "png": "thumbnails/gepetto/example-robot-data/tiago_pro--1xq159.png",
-      "macroTags": [
-        "Mobile Manipulator"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/tiago_pro--1xq159.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3778,10 +3322,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/ur10_joint_limited_robot--rp05nl.webp",
-      "png": "thumbnails/gepetto/example-robot-data/ur10_joint_limited_robot--rp05nl.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/ur10_joint_limited_robot--rp05nl.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3803,10 +3344,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/ur10_robot--14y91hn.webp",
-      "png": "thumbnails/gepetto/example-robot-data/ur10_robot--14y91hn.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/ur10_robot--14y91hn.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3828,11 +3366,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/ur3_gripper--h0hdrq.webp",
-      "png": "thumbnails/gepetto/example-robot-data/ur3_gripper--h0hdrq.png",
-      "macroTags": [
-        "Arm",
-        "End Effector"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/ur3_gripper--h0hdrq.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3854,10 +3388,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/ur3_joint_limited_robot--8j5ii7.webp",
-      "png": "thumbnails/gepetto/example-robot-data/ur3_joint_limited_robot--8j5ii7.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/ur3_joint_limited_robot--8j5ii7.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3879,10 +3410,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/ur3_robot--1h0vzul.webp",
-      "png": "thumbnails/gepetto/example-robot-data/ur3_robot--1h0vzul.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/ur3_robot--1h0vzul.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3904,11 +3432,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/ur5_gripper--1xs44ys.webp",
-      "png": "thumbnails/gepetto/example-robot-data/ur5_gripper--1xs44ys.png",
-      "macroTags": [
-        "Arm",
-        "End Effector"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/ur5_gripper--1xs44ys.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3930,10 +3454,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/ur5_joint_limited_robot--ledtnh.webp",
-      "png": "thumbnails/gepetto/example-robot-data/ur5_joint_limited_robot--ledtnh.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/ur5_joint_limited_robot--ledtnh.png"
     },
     {
       "repoKey": "gepetto/example-robot-data",
@@ -3955,10 +3476,7 @@
         "source:urdf"
       ],
       "webp": "previews/gepetto/example-robot-data/ur5_robot--ezq59z.webp",
-      "png": "thumbnails/gepetto/example-robot-data/ur5_robot--ezq59z.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/gepetto/example-robot-data/ur5_robot--ezq59z.png"
     },
     {
       "repoKey": "google-deepmind/mujoco_menagerie",
@@ -3980,10 +3498,7 @@
         "source:urdf"
       ],
       "webp": "previews/google-deepmind/mujoco_menagerie/barkour_v0--1b1ih7q.webp",
-      "png": "thumbnails/google-deepmind/mujoco_menagerie/barkour_v0--1b1ih7q.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/google-deepmind/mujoco_menagerie/barkour_v0--1b1ih7q.png"
     },
     {
       "repoKey": "google-deepmind/mujoco_menagerie",
@@ -4005,10 +3520,7 @@
         "source:urdf"
       ],
       "webp": "previews/google-deepmind/mujoco_menagerie/barkour_vb_rev_1_0_head_straight--1wgqhct.webp",
-      "png": "thumbnails/google-deepmind/mujoco_menagerie/barkour_vb_rev_1_0_head_straight--1wgqhct.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/google-deepmind/mujoco_menagerie/barkour_vb_rev_1_0_head_straight--1wgqhct.png"
     },
     {
       "repoKey": "hshi74/toddlerbot",
@@ -4030,10 +3542,7 @@
         "source:urdf"
       ],
       "webp": "previews/hshi74/toddlerbot/sysid_2xc430--1vzv15y.webp",
-      "png": "thumbnails/hshi74/toddlerbot/sysid_2xc430--1vzv15y.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/hshi74/toddlerbot/sysid_2xc430--1vzv15y.png"
     },
     {
       "repoKey": "hshi74/toddlerbot",
@@ -4055,10 +3564,7 @@
         "source:urdf"
       ],
       "webp": "previews/hshi74/toddlerbot/sysid_2xl430--1y5epqk.webp",
-      "png": "thumbnails/hshi74/toddlerbot/sysid_2xl430--1y5epqk.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/hshi74/toddlerbot/sysid_2xl430--1y5epqk.png"
     },
     {
       "repoKey": "hshi74/toddlerbot",
@@ -4080,10 +3586,7 @@
         "source:urdf"
       ],
       "webp": "previews/hshi74/toddlerbot/sysid_xc330--l0j4lm.webp",
-      "png": "thumbnails/hshi74/toddlerbot/sysid_xc330--l0j4lm.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/hshi74/toddlerbot/sysid_xc330--l0j4lm.png"
     },
     {
       "repoKey": "hshi74/toddlerbot",
@@ -4105,10 +3608,7 @@
         "source:urdf"
       ],
       "webp": "previews/hshi74/toddlerbot/sysid_xc430--185277u.webp",
-      "png": "thumbnails/hshi74/toddlerbot/sysid_xc430--185277u.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/hshi74/toddlerbot/sysid_xc430--185277u.png"
     },
     {
       "repoKey": "hshi74/toddlerbot",
@@ -4130,10 +3630,7 @@
         "source:urdf"
       ],
       "webp": "previews/hshi74/toddlerbot/sysid_xm430--p4r976.webp",
-      "png": "thumbnails/hshi74/toddlerbot/sysid_xm430--p4r976.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/hshi74/toddlerbot/sysid_xm430--p4r976.png"
     },
     {
       "repoKey": "hshi74/toddlerbot",
@@ -4155,10 +3652,7 @@
         "source:urdf"
       ],
       "webp": "previews/hshi74/toddlerbot/toddlerbot_2xc_gripper--1kgb14a.webp",
-      "png": "thumbnails/hshi74/toddlerbot/toddlerbot_2xc_gripper--1kgb14a.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/hshi74/toddlerbot/toddlerbot_2xc_gripper--1kgb14a.png"
     },
     {
       "repoKey": "hshi74/toddlerbot",
@@ -4180,10 +3674,7 @@
         "source:urdf"
       ],
       "webp": "previews/hshi74/toddlerbot/toddlerbot_2xm--3aejf2.webp",
-      "png": "thumbnails/hshi74/toddlerbot/toddlerbot_2xm--3aejf2.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/hshi74/toddlerbot/toddlerbot_2xm--3aejf2.png"
     },
     {
       "repoKey": "kinovarobotics/ros_kortex",
@@ -4205,10 +3696,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros_kortex/gazebo_dual_robot--15xj4lz.webp",
-      "png": "thumbnails/kinovarobotics/ros_kortex/gazebo_dual_robot--15xj4lz.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/kinovarobotics/ros_kortex/gazebo_dual_robot--15xj4lz.png"
     },
     {
       "repoKey": "kinovarobotics/ros_kortex",
@@ -4230,10 +3718,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros_kortex/gazebo_dual_robot--f8w2w.webp",
-      "png": "thumbnails/kinovarobotics/ros_kortex/gazebo_dual_robot--f8w2w.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/kinovarobotics/ros_kortex/gazebo_dual_robot--f8w2w.png"
     },
     {
       "repoKey": "kinovarobotics/ros_kortex",
@@ -4255,10 +3740,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros_kortex/gen3--jet33r.webp",
-      "png": "thumbnails/kinovarobotics/ros_kortex/gen3--jet33r.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/kinovarobotics/ros_kortex/gen3--jet33r.png"
     },
     {
       "repoKey": "kinovarobotics/ros_kortex",
@@ -4280,10 +3762,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros_kortex/gen3-6dof_brakes_no-vision_urdf_arm_v01--1ifgkke.webp",
-      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-6dof_brakes_no-vision_urdf_arm_v01--1ifgkke.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-6dof_brakes_no-vision_urdf_arm_v01--1ifgkke.png"
     },
     {
       "repoKey": "kinovarobotics/ros_kortex",
@@ -4305,10 +3784,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros_kortex/gen3-6dof_brakes_vision_urdf_arm_v01--rwoo2.webp",
-      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-6dof_brakes_vision_urdf_arm_v01--rwoo2.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-6dof_brakes_vision_urdf_arm_v01--rwoo2.png"
     },
     {
       "repoKey": "kinovarobotics/ros_kortex",
@@ -4330,10 +3806,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros_kortex/gen3-6dof_no-vision_urdf_arm_v01--1pgntd3.webp",
-      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-6dof_no-vision_urdf_arm_v01--1pgntd3.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-6dof_no-vision_urdf_arm_v01--1pgntd3.png"
     },
     {
       "repoKey": "kinovarobotics/ros_kortex",
@@ -4355,10 +3828,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros_kortex/gen3-6dof_vision_urdf_arm_v01--1shhlxh.webp",
-      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-6dof_vision_urdf_arm_v01--1shhlxh.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-6dof_vision_urdf_arm_v01--1shhlxh.png"
     },
     {
       "repoKey": "kinovarobotics/ros_kortex",
@@ -4380,10 +3850,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros_kortex/gen3-7dof_brakes_no-vision_urdf_arm_v01--ljahlw.webp",
-      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-7dof_brakes_no-vision_urdf_arm_v01--ljahlw.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-7dof_brakes_no-vision_urdf_arm_v01--ljahlw.png"
     },
     {
       "repoKey": "kinovarobotics/ros_kortex",
@@ -4405,10 +3872,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros_kortex/gen3-7dof_brakes_vision_urdf_arm_v01--1avspk4.webp",
-      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-7dof_brakes_vision_urdf_arm_v01--1avspk4.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-7dof_brakes_vision_urdf_arm_v01--1avspk4.png"
     },
     {
       "repoKey": "kinovarobotics/ros_kortex",
@@ -4430,10 +3894,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros_kortex/gen3-7dof-novision_for_urdf_arm_v12--1ai0m5k.webp",
-      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-7dof-novision_for_urdf_arm_v12--1ai0m5k.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-7dof-novision_for_urdf_arm_v12--1ai0m5k.png"
     },
     {
       "repoKey": "kinovarobotics/ros_kortex",
@@ -4455,10 +3916,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros_kortex/gen3-7dof-vision_arm_urdf_v12--17dcscj.webp",
-      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-7dof-vision_arm_urdf_v12--17dcscj.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-7dof-vision_arm_urdf_v12--17dcscj.png"
     },
     {
       "repoKey": "kinovarobotics/ros_kortex",
@@ -4480,10 +3938,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros_kortex/gen3-lite--1o16jdh.webp",
-      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-lite--1o16jdh.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-lite--1o16jdh.png"
     },
     {
       "repoKey": "kinovarobotics/ros_kortex",
@@ -4505,11 +3960,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros_kortex/gen3-lite-gripper_urdf_simplified_v2--maqpb7.webp",
-      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-lite-gripper_urdf_simplified_v2--maqpb7.png",
-      "macroTags": [
-        "Arm",
-        "End Effector"
-      ]
+      "png": "thumbnails/kinovarobotics/ros_kortex/gen3-lite-gripper_urdf_simplified_v2--maqpb7.png"
     },
     {
       "repoKey": "kinovarobotics/ros2_kortex",
@@ -4531,10 +3982,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros2_kortex/gen3_2f85--1oog9z3.webp",
-      "png": "thumbnails/kinovarobotics/ros2_kortex/gen3_2f85--1oog9z3.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/kinovarobotics/ros2_kortex/gen3_2f85--1oog9z3.png"
     },
     {
       "repoKey": "kinovarobotics/ros2_kortex",
@@ -4556,10 +4004,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros2_kortex/gen3_lite--1o8pmrw.webp",
-      "png": "thumbnails/kinovarobotics/ros2_kortex/gen3_lite--1o8pmrw.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/kinovarobotics/ros2_kortex/gen3_lite--1o8pmrw.png"
     },
     {
       "repoKey": "kinovarobotics/ros2_kortex",
@@ -4581,10 +4026,7 @@
         "source:urdf.xacro"
       ],
       "webp": "previews/kinovarobotics/ros2_kortex/gen3_lite--st1dgg.webp",
-      "png": "thumbnails/kinovarobotics/ros2_kortex/gen3_lite--st1dgg.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/kinovarobotics/ros2_kortex/gen3_lite--st1dgg.png"
     },
     {
       "repoKey": "kinovarobotics/ros2_kortex",
@@ -4606,11 +4048,7 @@
         "source:urdf"
       ],
       "webp": "previews/kinovarobotics/ros2_kortex/gen3-lite-gripper_urdf_simplified_v2--maqpb7.webp",
-      "png": "thumbnails/kinovarobotics/ros2_kortex/gen3-lite-gripper_urdf_simplified_v2--maqpb7.png",
-      "macroTags": [
-        "Arm",
-        "End Effector"
-      ]
+      "png": "thumbnails/kinovarobotics/ros2_kortex/gen3-lite-gripper_urdf_simplified_v2--maqpb7.png"
     },
     {
       "repoKey": "leap-hand/leap_hand_sim",
@@ -4632,10 +4070,7 @@
         "source:urdf"
       ],
       "webp": "previews/leap-hand/leap_hand_sim/ball--8h1wes.webp",
-      "png": "thumbnails/leap-hand/leap_hand_sim/ball--8h1wes.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/leap-hand/leap_hand_sim/ball--8h1wes.png"
     },
     {
       "repoKey": "leap-hand/leap_hand_sim",
@@ -4657,10 +4092,7 @@
         "source:urdf"
       ],
       "webp": "previews/leap-hand/leap_hand_sim/cube--1frj834.webp",
-      "png": "thumbnails/leap-hand/leap_hand_sim/cube--1frj834.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/leap-hand/leap_hand_sim/cube--1frj834.png"
     },
     {
       "repoKey": "leap-hand/leap_hand_sim",
@@ -4682,10 +4114,7 @@
         "source:urdf"
       ],
       "webp": "previews/leap-hand/leap_hand_sim/robot--1825b6q.webp",
-      "png": "thumbnails/leap-hand/leap_hand_sim/robot--1825b6q.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/leap-hand/leap_hand_sim/robot--1825b6q.png"
     },
     {
       "repoKey": "rethinkrobotics/baxter_common",
@@ -4707,10 +4136,7 @@
         "source:urdf"
       ],
       "webp": "previews/rethinkrobotics/baxter_common/baxter--1885pkh.webp",
-      "png": "thumbnails/rethinkrobotics/baxter_common/baxter--1885pkh.png",
-      "macroTags": [
-        "Dual Arm"
-      ]
+      "png": "thumbnails/rethinkrobotics/baxter_common/baxter--1885pkh.png"
     },
     {
       "repoKey": "rimim/awd",
@@ -4732,10 +4158,7 @@
         "source:urdf"
       ],
       "webp": "previews/rimim/awd/block_projectile_large--1odvej5.webp",
-      "png": "thumbnails/rimim/awd/block_projectile_large--1odvej5.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/rimim/awd/block_projectile_large--1odvej5.png"
     },
     {
       "repoKey": "rimim/awd",
@@ -4757,10 +4180,7 @@
         "source:urdf"
       ],
       "webp": "previews/rimim/awd/block_projectile--rd527h.webp",
-      "png": "thumbnails/rimim/awd/block_projectile--rd527h.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/rimim/awd/block_projectile--rd527h.png"
     },
     {
       "repoKey": "rimim/awd",
@@ -4782,10 +4202,7 @@
         "source:urdf"
       ],
       "webp": "previews/rimim/awd/go_bdx--15rym5g.webp",
-      "png": "thumbnails/rimim/awd/go_bdx--15rym5g.png",
-      "macroTags": [
-        "Biped"
-      ]
+      "png": "thumbnails/rimim/awd/go_bdx--15rym5g.png"
     },
     {
       "repoKey": "rimim/awd",
@@ -4807,10 +4224,7 @@
         "source:urdf"
       ],
       "webp": "previews/rimim/awd/heading_marker--kpl805.webp",
-      "png": "thumbnails/rimim/awd/heading_marker--kpl805.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/rimim/awd/heading_marker--kpl805.png"
     },
     {
       "repoKey": "rimim/awd",
@@ -4832,10 +4246,7 @@
         "source:urdf"
       ],
       "webp": "previews/rimim/awd/location_marker--1ascpk6.webp",
-      "png": "thumbnails/rimim/awd/location_marker--1ascpk6.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/rimim/awd/location_marker--1ascpk6.png"
     },
     {
       "repoKey": "rimim/awd",
@@ -4857,10 +4268,7 @@
         "source:urdf"
       ],
       "webp": "previews/rimim/awd/strike_target--7ctfji.webp",
-      "png": "thumbnails/rimim/awd/strike_target--7ctfji.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/rimim/awd/strike_target--7ctfji.png"
     },
     {
       "repoKey": "robotis-git/turtlebot3",
@@ -4882,10 +4290,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotis-git/turtlebot3/turtlebot3_waffle_pi--13xns15.webp",
-      "png": "thumbnails/robotis-git/turtlebot3/turtlebot3_waffle_pi--13xns15.png",
-      "macroTags": [
-        "Wheeled"
-      ]
+      "png": "thumbnails/robotis-git/turtlebot3/turtlebot3_waffle_pi--13xns15.png"
     },
     {
       "repoKey": "robotis-git/turtlebot3",
@@ -4907,10 +4312,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotis-git/turtlebot3/turtlebot3_waffle--hiw5vp.webp",
-      "png": "thumbnails/robotis-git/turtlebot3/turtlebot3_waffle--hiw5vp.png",
-      "macroTags": [
-        "Wheeled"
-      ]
+      "png": "thumbnails/robotis-git/turtlebot3/turtlebot3_waffle--hiw5vp.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -4932,10 +4334,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/allegro_hand_description_right--1mrn1fh.webp",
-      "png": "thumbnails/robotlocomotion/models/allegro_hand_description_right--1mrn1fh.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/robotlocomotion/models/allegro_hand_description_right--1mrn1fh.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -4957,10 +4356,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/atlas_convex_hull--shueeg.webp",
-      "png": "thumbnails/robotlocomotion/models/atlas_convex_hull--shueeg.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/robotlocomotion/models/atlas_convex_hull--shueeg.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -4982,10 +4378,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/dual_iiwa14_polytope_collision--1w6x4kx.webp",
-      "png": "thumbnails/robotlocomotion/models/dual_iiwa14_polytope_collision--1w6x4kx.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/robotlocomotion/models/dual_iiwa14_polytope_collision--1w6x4kx.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5007,10 +4400,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/evo_bowl_compliant--s0p6id.webp",
-      "png": "thumbnails/robotlocomotion/models/evo_bowl_compliant--s0p6id.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/robotlocomotion/models/evo_bowl_compliant--s0p6id.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5032,10 +4422,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/hand--12mz7mj.webp",
-      "png": "thumbnails/robotlocomotion/models/hand--12mz7mj.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/robotlocomotion/models/hand--12mz7mj.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5057,10 +4444,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/iiwa14_no_collision--104xzyp.webp",
-      "png": "thumbnails/robotlocomotion/models/iiwa14_no_collision--104xzyp.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/robotlocomotion/models/iiwa14_no_collision--104xzyp.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5082,10 +4466,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/iiwa14_polytope_collision--1juqyhu.webp",
-      "png": "thumbnails/robotlocomotion/models/iiwa14_polytope_collision--1juqyhu.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/robotlocomotion/models/iiwa14_polytope_collision--1juqyhu.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5107,10 +4488,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/iiwa14_primitive_collision--1chdmy5.webp",
-      "png": "thumbnails/robotlocomotion/models/iiwa14_primitive_collision--1chdmy5.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/robotlocomotion/models/iiwa14_primitive_collision--1chdmy5.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5132,10 +4510,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/iiwa14_spheres_collision--fjs7yy.webp",
-      "png": "thumbnails/robotlocomotion/models/iiwa14_spheres_collision--fjs7yy.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/robotlocomotion/models/iiwa14_spheres_collision--fjs7yy.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5157,10 +4532,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/iiwa14_spheres_dense_collision--1tp34ai.webp",
-      "png": "thumbnails/robotlocomotion/models/iiwa14_spheres_dense_collision--1tp34ai.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/robotlocomotion/models/iiwa14_spheres_dense_collision--1tp34ai.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5182,10 +4554,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/iiwa14_spheres_dense_elbow_collision--ji6tr6.webp",
-      "png": "thumbnails/robotlocomotion/models/iiwa14_spheres_dense_elbow_collision--ji6tr6.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/robotlocomotion/models/iiwa14_spheres_dense_elbow_collision--ji6tr6.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5207,10 +4576,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/j2n6s300_col--1jlhmbh.webp",
-      "png": "thumbnails/robotlocomotion/models/j2n6s300_col--1jlhmbh.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/robotlocomotion/models/j2n6s300_col--1jlhmbh.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5232,10 +4598,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/j2n6s300--1fznu4s.webp",
-      "png": "thumbnails/robotlocomotion/models/j2n6s300--1fznu4s.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/robotlocomotion/models/j2n6s300--1fznu4s.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5257,10 +4620,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/j2s7s300_arm--16a2xlz.webp",
-      "png": "thumbnails/robotlocomotion/models/j2s7s300_arm--16a2xlz.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/robotlocomotion/models/j2s7s300_arm--16a2xlz.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5282,10 +4642,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/j2s7s300_hand_sphere_collision--1w3jvxx.webp",
-      "png": "thumbnails/robotlocomotion/models/j2s7s300_hand_sphere_collision--1w3jvxx.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/robotlocomotion/models/j2s7s300_hand_sphere_collision--1w3jvxx.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5307,10 +4664,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/j2s7s300_hand--1i4fery.webp",
-      "png": "thumbnails/robotlocomotion/models/j2s7s300_hand--1i4fery.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/robotlocomotion/models/j2s7s300_hand--1i4fery.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5332,10 +4686,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/j2s7s300_sphere_collision--1ippauh.webp",
-      "png": "thumbnails/robotlocomotion/models/j2s7s300_sphere_collision--1ippauh.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/robotlocomotion/models/j2s7s300_sphere_collision--1ippauh.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5357,10 +4708,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/j2s7s300--oz2b82.webp",
-      "png": "thumbnails/robotlocomotion/models/j2s7s300--oz2b82.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/robotlocomotion/models/j2s7s300--oz2b82.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5382,11 +4730,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/panda_arm_hand_link5split--r6d08n.webp",
-      "png": "thumbnails/robotlocomotion/models/panda_arm_hand_link5split--r6d08n.png",
-      "macroTags": [
-        "Arm",
-        "End Effector"
-      ]
+      "png": "thumbnails/robotlocomotion/models/panda_arm_hand_link5split--r6d08n.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5408,10 +4752,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/panda_arm_link5split--cg5ji9.webp",
-      "png": "thumbnails/robotlocomotion/models/panda_arm_link5split--cg5ji9.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/robotlocomotion/models/panda_arm_link5split--cg5ji9.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5433,11 +4774,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/panda_hand--bwkxfm.webp",
-      "png": "thumbnails/robotlocomotion/models/panda_hand--bwkxfm.png",
-      "macroTags": [
-        "Arm",
-        "End Effector"
-      ]
+      "png": "thumbnails/robotlocomotion/models/panda_hand--bwkxfm.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5459,10 +4796,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/planar_iiwa14_spheres_dense_elbow_collision--1m4na3l.webp",
-      "png": "thumbnails/robotlocomotion/models/planar_iiwa14_spheres_dense_elbow_collision--1m4na3l.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/robotlocomotion/models/planar_iiwa14_spheres_dense_elbow_collision--1m4na3l.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5484,10 +4818,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/quadrotor--16q40q5.webp",
-      "png": "thumbnails/robotlocomotion/models/quadrotor--16q40q5.png",
-      "macroTags": [
-        "Drone"
-      ]
+      "png": "thumbnails/robotlocomotion/models/quadrotor--16q40q5.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5509,10 +4840,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/table_top--wvmc6i.webp",
-      "png": "thumbnails/robotlocomotion/models/table_top--wvmc6i.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/robotlocomotion/models/table_top--wvmc6i.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5534,10 +4862,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/ur3e_cylinders_collision--1ptrjyu.webp",
-      "png": "thumbnails/robotlocomotion/models/ur3e_cylinders_collision--1ptrjyu.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/robotlocomotion/models/ur3e_cylinders_collision--1ptrjyu.png"
     },
     {
       "repoKey": "robotlocomotion/models",
@@ -5559,10 +4884,7 @@
         "source:urdf"
       ],
       "webp": "previews/robotlocomotion/models/ur3e_spheres_collision--1odnfaj.webp",
-      "png": "thumbnails/robotlocomotion/models/ur3e_spheres_collision--1odnfaj.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/robotlocomotion/models/ur3e_spheres_collision--1odnfaj.png"
     },
     {
       "repoKey": "ros-industrial/universal_robot",
@@ -5584,10 +4906,7 @@
         "source:urdf.xacro"
       ],
       "webp": "previews/ros-industrial/universal_robot/ur10--1ye1ycw.webp",
-      "png": "thumbnails/ros-industrial/universal_robot/ur10--1ye1ycw.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/ros-industrial/universal_robot/ur10--1ye1ycw.png"
     },
     {
       "repoKey": "ros-industrial/universal_robot",
@@ -5609,10 +4928,7 @@
         "source:urdf.xacro"
       ],
       "webp": "previews/ros-industrial/universal_robot/ur10e--3d7cwz.webp",
-      "png": "thumbnails/ros-industrial/universal_robot/ur10e--3d7cwz.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/ros-industrial/universal_robot/ur10e--3d7cwz.png"
     },
     {
       "repoKey": "ros-industrial/universal_robot",
@@ -5634,10 +4950,7 @@
         "source:urdf.xacro"
       ],
       "webp": "previews/ros-industrial/universal_robot/ur3--1jj82me.webp",
-      "png": "thumbnails/ros-industrial/universal_robot/ur3--1jj82me.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/ros-industrial/universal_robot/ur3--1jj82me.png"
     },
     {
       "repoKey": "ros-industrial/universal_robot",
@@ -5659,10 +4972,7 @@
         "source:urdf.xacro"
       ],
       "webp": "previews/ros-industrial/universal_robot/ur3e--1vzfpzp.webp",
-      "png": "thumbnails/ros-industrial/universal_robot/ur3e--1vzfpzp.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/ros-industrial/universal_robot/ur3e--1vzfpzp.png"
     },
     {
       "repoKey": "ros-industrial/universal_robot",
@@ -5684,10 +4994,7 @@
         "source:urdf.xacro"
       ],
       "webp": "previews/ros-industrial/universal_robot/ur5--1k37a0c.webp",
-      "png": "thumbnails/ros-industrial/universal_robot/ur5--1k37a0c.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/ros-industrial/universal_robot/ur5--1k37a0c.png"
     },
     {
       "repoKey": "ros-industrial/universal_robot",
@@ -5709,10 +5016,7 @@
         "source:urdf.xacro"
       ],
       "webp": "previews/ros-industrial/universal_robot/ur5e--1lz8wf3.webp",
-      "png": "thumbnails/ros-industrial/universal_robot/ur5e--1lz8wf3.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/ros-industrial/universal_robot/ur5e--1lz8wf3.png"
     },
     {
       "repoKey": "s1lent4gnt/koch-v1-1",
@@ -5734,10 +5038,7 @@
         "source:urdf"
       ],
       "webp": "previews/s1lent4gnt/koch-v1-1/follower--83c1jt.webp",
-      "png": "thumbnails/s1lent4gnt/koch-v1-1/follower--83c1jt.png",
-      "macroTags": [
-        "Arm"
-      ]
+      "png": "thumbnails/s1lent4gnt/koch-v1-1/follower--83c1jt.png"
     },
     {
       "repoKey": "sigrobotics-uiuc/lekiwi",
@@ -5759,10 +5060,7 @@
         "source:urdf"
       ],
       "webp": "previews/sigrobotics-uiuc/lekiwi/lekiwi--gkj1ce.webp",
-      "png": "thumbnails/sigrobotics-uiuc/lekiwi/lekiwi--gkj1ce.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/sigrobotics-uiuc/lekiwi/lekiwi--gkj1ce.png"
     },
     {
       "repoKey": "tetheria/aero-hand-open",
@@ -5784,10 +5082,7 @@
         "source:urdf"
       ],
       "webp": "previews/tetheria/aero-hand-open/aero_hand_open_left--gnzknp.webp",
-      "png": "thumbnails/tetheria/aero-hand-open/aero_hand_open_left--gnzknp.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/tetheria/aero-hand-open/aero_hand_open_left--gnzknp.png"
     },
     {
       "repoKey": "therobotstudio/so-arm100",
@@ -5809,10 +5104,7 @@
         "source:urdf"
       ],
       "webp": "previews/therobotstudio/so-arm100/so100--vyv9ty.webp",
-      "png": "thumbnails/therobotstudio/so-arm100/so100--vyv9ty.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/therobotstudio/so-arm100/so100--vyv9ty.png"
     },
     {
       "repoKey": "therobotstudio/so-arm100",
@@ -5834,10 +5126,7 @@
         "source:urdf"
       ],
       "webp": "previews/therobotstudio/so-arm100/so101_new_calib--1v0dn17.webp",
-      "png": "thumbnails/therobotstudio/so-arm100/so101_new_calib--1v0dn17.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/therobotstudio/so-arm100/so101_new_calib--1v0dn17.png"
     },
     {
       "repoKey": "therobotstudio/so-arm100",
@@ -5860,10 +5149,7 @@
       ],
       "webm": "previews/therobotstudio/so-arm100/so101_old_calib--1byrygc.webm",
       "webp": "previews/therobotstudio/so-arm100/so101_old_calib--1byrygc.webp",
-      "png": "thumbnails/therobotstudio/so-arm100/so101_old_calib--1byrygc.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/therobotstudio/so-arm100/so101_old_calib--1byrygc.png"
     },
     {
       "repoKey": "timqian/bambot",
@@ -5885,10 +5171,7 @@
         "source:urdf"
       ],
       "webp": "previews/timqian/bambot/bambot_v0_base--1te9xec.webp",
-      "png": "thumbnails/timqian/bambot/bambot_v0_base--1te9xec.png",
-      "macroTags": [
-        "Mobile Manipulator"
-      ]
+      "png": "thumbnails/timqian/bambot/bambot_v0_base--1te9xec.png"
     },
     {
       "repoKey": "timqian/bambot",
@@ -5910,10 +5193,7 @@
         "source:urdf"
       ],
       "webp": "previews/timqian/bambot/bambot_v0--1xszn1o.webp",
-      "png": "thumbnails/timqian/bambot/bambot_v0--1xszn1o.png",
-      "macroTags": [
-        "Mobile Manipulator"
-      ]
+      "png": "thumbnails/timqian/bambot/bambot_v0--1xszn1o.png"
     },
     {
       "repoKey": "timqian/bambot",
@@ -5935,10 +5215,7 @@
         "source:urdf"
       ],
       "webp": "previews/timqian/bambot/so101--i998w2.webp",
-      "png": "thumbnails/timqian/bambot/so101--i998w2.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/timqian/bambot/so101--i998w2.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -5960,10 +5237,7 @@
         "source:urdf"
       ],
       "webp": "previews/unitreerobotics/unitree_ros/aliengo--lqz3m3.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/aliengo--lqz3m3.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/aliengo--lqz3m3.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -5985,10 +5259,7 @@
         "source:urdf"
       ],
       "webp": "previews/unitreerobotics/unitree_ros/b1--h6idr.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/b1--h6idr.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/b1--h6idr.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -6010,10 +5281,7 @@
         "source:urdf"
       ],
       "webp": "previews/unitreerobotics/unitree_ros/b2_description--gg409g.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/b2_description--gg409g.png",
-      "macroTags": [
-        "Quadruped"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/b2_description--gg409g.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -6035,10 +5303,7 @@
         "source:urdf"
       ],
       "webp": "previews/unitreerobotics/unitree_ros/b2w_description--i3juye.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/b2w_description--i3juye.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/b2w_description--i3juye.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -6060,10 +5325,7 @@
         "source:urdf"
       ],
       "webp": "previews/unitreerobotics/unitree_ros/dex3_1_r--1ozstxw.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/dex3_1_r--1ozstxw.png",
-      "macroTags": [
-        "Other"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/dex3_1_r--1ozstxw.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -6085,10 +5347,7 @@
         "source:urdf"
       ],
       "webp": "previews/unitreerobotics/unitree_ros/dfq_left_hand--1fc09xp.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/dfq_left_hand--1fc09xp.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/dfq_left_hand--1fc09xp.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -6110,10 +5369,7 @@
         "source:urdf"
       ],
       "webp": "previews/unitreerobotics/unitree_ros/dfq_right_hand--l0bj6k.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/dfq_right_hand--l0bj6k.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/dfq_right_hand--l0bj6k.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -6135,10 +5391,7 @@
         "source:urdf"
       ],
       "webp": "previews/unitreerobotics/unitree_ros/ftp_left_hand--1wjpxbq.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/ftp_left_hand--1wjpxbq.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/ftp_left_hand--1wjpxbq.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -6160,10 +5413,7 @@
         "source:urdf"
       ],
       "webp": "previews/unitreerobotics/unitree_ros/ftp_right_hand--16ogrx5.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/ftp_right_hand--16ogrx5.png",
-      "macroTags": [
-        "End Effector"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/ftp_right_hand--16ogrx5.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -6185,10 +5435,7 @@
         "source:urdf"
       ],
       "webp": "previews/unitreerobotics/unitree_ros/g1_23dof_mode_10--qi2tzo.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/g1_23dof_mode_10--qi2tzo.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_23dof_mode_10--qi2tzo.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -6210,10 +5457,7 @@
         "source:urdf"
       ],
       "webp": "previews/unitreerobotics/unitree_ros/g1_23dof_rev_1_0--9i7rnn.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/g1_23dof_rev_1_0--9i7rnn.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_23dof_rev_1_0--9i7rnn.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -6235,10 +5479,7 @@
         "source:urdf"
       ],
       "webp": "previews/unitreerobotics/unitree_ros/g1_23dof--194gh0q.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/g1_23dof--194gh0q.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_23dof--194gh0q.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -6260,10 +5501,7 @@
         "source:urdf"
       ],
       "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_lock_waist_with_hand_rev_1_0--1gp8vu3.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_lock_waist_with_hand_rev_1_0--1gp8vu3.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_lock_waist_with_hand_rev_1_0--1gp8vu3.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -6285,10 +5523,7 @@
         "source:urdf"
       ],
       "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_lock_waist--7vn8hd.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_lock_waist--7vn8hd.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_lock_waist--7vn8hd.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
@@ -6310,36 +5545,24 @@
         "source:urdf"
       ],
       "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_mode_12--1ps7ug8.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_mode_12--1ps7ug8.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_mode_12--1ps7ug8.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
       "fileBase": "g1_29dof_mode_14--1rg5gm2",
       "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_mode_14--1rg5gm2.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_mode_14--1rg5gm2.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_mode_14--1rg5gm2.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
       "fileBase": "g1_29dof_mode_15_brainco_hand--k6rcr9",
       "webp": "previews/unitreerobotics/unitree_ros/g1_29dof_mode_15_brainco_hand--k6rcr9.webp",
-      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_mode_15_brainco_hand--k6rcr9.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_mode_15_brainco_hand--k6rcr9.png"
     },
     {
       "repoKey": "unitreerobotics/unitree_ros",
       "fileBase": "g1_29dof_mode_15_with_dex1_1--s00477",
-      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_mode_15_with_dex1_1--s00477.png",
-      "macroTags": [
-        "Humanoid"
-      ]
+      "png": "thumbnails/unitreerobotics/unitree_ros/g1_29dof_mode_15_with_dex1_1--s00477.png"
     }
   ]
 }
