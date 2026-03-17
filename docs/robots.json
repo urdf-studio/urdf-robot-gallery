@@ -1,5 +1,31 @@
 [
   {
+    "repo": "https://github.com/adubredu/DigitRobot.jl",
+    "repoKey": "adubredu/digitrobot.jl",
+    "org": "",
+    "summary": "",
+    "demo": "",
+    "tags": [
+      "Other"
+    ],
+    "license": "No license",
+    "robots": [
+      {
+        "name": "digit_model",
+        "file": "digit_model.urdf",
+        "fileBase": "digit_model--a8f4j4"
+      }
+    ],
+    "hfDatasets": [],
+    "authorWebsite": "",
+    "authorX": "",
+    "authorLinkedin": "",
+    "authorGithub": "",
+    "contact": "",
+    "extra": "",
+    "updatedAt": "2026-03-17T14:06:26.037Z"
+  },
+  {
     "repo": "https://github.com/ANYbotics/anymal_b_simple_description",
     "repoKey": "anybotics/anymal_b_simple_description",
     "org": "",
